@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>垄上工作室-网站建设高端品牌-广州网站建设-企业网站建设</title>
+
+<meta name="keywords" content="网站建设，网页设计，广州网站建设，深圳网站建设，企业网站建设，垄上工作室，手机网站，微信营销、APP开发、扎根垄上" />
+<meta name="description" content="垄上工作室专注网站建设及信息化咨询服务，提供完善的网站建设、移动端应用、企业微信大战略、3D虚拟仿真等一系列企业互联网解决方案，知名客户有欧派、索菲亚、王老吉、PICC、海天味业、珠江钢琴、例外服饰、广百集团、轻工集团、广州发展集团。" />
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+
+<!--<meta name="format-detection" content="telephone=no">-->
+
+<link rel="stylesheet" href="/templates\default\style_m\style.css">
+
+<link rel="stylesheet" href="/templates\default\style_m\media.css">
+
+<script src="/templates\default\js\jquery-2.1.1.min.js"></script>
+
+<script src="/templates\default\js\touch-0.2.14.min.js"></script>
+
+<script src="/templates\default\js\TouchSlide.1.1.js"></script>
+
+<script src="/templates\default\js\common.js"></script> 
+<script src="/templates\default\js\load.js"></script> 
+</head>
+<body>
+
+  <div class="menuCon" id="menuCon">
+
+        <ul class="nav fixed">
+
+            <li><a href="index.htm"><i></i>垄上首页</a></li>
+
+            <li><a href="anli.htm"><i></i>经典案例</a></li>
+
+            <li><a href="kehu.htm"><i></i>知名客户</a></li>
+
+            <li><a href="contact.htm"><i></i>联系我们</a></li>
+
+            <li><a href="web.htm"><i></i>网站建设</a></li>
+
+            <li><a href="m.htm"><i></i>移动端</a></li>
+
+            <li><a href="wei.htm"><i></i>微定制</a></li>
+
+            <li><a href="3d.htm"><i></i>虚拟仿真</a></li>
+
+            <li><a href="n.htm"><i></i>最新动态</a></li>
+
+
+            <li><a href="service.htm"><i></i>服务流程</a></li>
+
+
+        </ul>
+
+      
+
+    </div>
+   
+<header class="fixed">
+	<a href="n.htm" class="goBack"></a>
+	<a href="javascript:;" class="goBack" id="goBackBtn"></a>
+     <h1>新闻详细</h1>
+     <a href="javascript:;" class="headerMenu" id="headerMenu"></a>
+     <a href="javascript:;" class="headerClose" id="closeBtn"></a>
+ </header>
+<section class="bgfd">
+    <h2>Component 的创建和启动</h2>
+    <p>日期：2015-07-25&nbsp;&nbsp;&nbsp;来源：<a href="index.htm">垄上工作室</a></p>
+</section>
+<article class="bgfd">
+<p><span class="ico ico_type_Original"></span></p><p><span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; ">SpringServerServlet继承了ServerServlet， 在web.xml声明了SpringServerServlet。</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "/><span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; ">当Tomcat启动的时候，会调用ServerServlet的init()方法。</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "/><span style="font-weight: 700; color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "><span style="color: rgb(0, 176, 240); ">这是Restlet启动的开始点！</span></span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "/><span style="font-weight: 700; color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "><span style="color: rgb(0, 176, 240); "><br/></span></span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "/><span style="font-family: Arial; font-size: 14px; line-height: 21px; color: rgb(0, 176, 80); "><span style="font-weight: 700; ">一、init()方法</span></span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "/><span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; ">1、ServerServlet init()方法先获取 component :&nbsp;</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "/><span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; ">Component component = getComponent();</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "/><span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; ">2、然后启动component</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "/><span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; ">component.start();</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "/><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "/><span style="font-family: Arial; font-size: 14px; line-height: 21px; color: rgb(0, 176, 80); "><span style="font-weight: 700; ">二、getComponent()方法</span></span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "/><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "/><span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; ">1、getComponent()方法首先调用createComponent()创建compoennt</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "/><span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; ">Compoennt component = createComponent();</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "/><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "/><span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; ">createComponent的方法在SpringServerServlet 中提供了一个实现。</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "/><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "/><span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; ">SpringServerServlet 从Spring环境中以 org.restlet.component 为键值，获取 Component 的实例。如果没有，则创建一个新的 Component 实例。</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "/><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "/><span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; ">这时候，Component实例没有设置 defaultTarget 的值。</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "/><span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; ">2、然后调用 init(component)初始化，完成一些参数的传递</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "/><span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; ">init(component&nbsp;&nbsp;);</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "/><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "/><span style="font-family: Arial; font-size: 14px; line-height: 21px; color: rgb(0, 176, 80); "><span style="font-weight: 700; ">三、component.start()方法</span></span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "/><span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; ">此方法在 ServerServlet 类中 init()方法中。</span></p><p>public synchronized void start() throws Exception {</p><p>&nbsp;&nbsp; &nbsp;if (isStopped()) {</p><p>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;startClients();</p><p>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;startServers();</p><p>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;startRouters();</p><p>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;startServices();</p><p>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;startRealms();</p><p>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;startHelper();</p><p>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;super.start();</p><p>&nbsp;&nbsp; &nbsp; }</p><p>&nbsp;&nbsp; &nbsp;}</p><p><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "/><span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; ">其中 startRouters 如下，internalRouter、defaultHost 和 host都是在这里启动的：</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "/><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "/></p><p><a href="http://127.0.0.1/phpwind/read.php?tid=89" style="text-decoration: none; color: rgb(0, 112, 175); ">复制代码</a></p><p>protected synchronized void startRouters() throws Exception {</p><p>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;if (this.internalRouter != null) {</p><p>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;this.internalRouter.start();</p><p>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;}</p><p><br/></p><p>&nbsp; &nbsp; &nbsp; &nbsp; if (this.defaultHost != null) {</p><p>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;this.defaultHost.start();</p><p>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;}</p><p><br/></p><p>&nbsp; &nbsp; &nbsp; &nbsp; for (VirtualHost host : getHosts()) {</p><p>&nbsp;&nbsp; &nbsp; &nbsp; host.start();</p><p>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;}</p><p>&nbsp;&nbsp; &nbsp;}</p><p><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "/></p><p><br/></p><link rel="stylesheet" href="http://static.blog.csdn.net/css/blog_detail.css"/>
+</article>
+<div class="share bgfd fixed">
+    <span>分享</span>
+    <div class="bdsharebuttonbox">
+        <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+        <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+        <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+        <a href="#" class="bds_more" data-cmd="more"></a>
+    </div>
+    <script>
+        window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+    </script>
+</div>
+
+
+<script type="text/javascript">
+	$('article').imagesLoaded( function() {
+		var wh = $(window).height();
+		var bh = $('body').height();
+		if (bh<wh) {
+			$('body').height(wh);
+		};
+	});
+</script>
+    
+
+
+</body>
+</html>

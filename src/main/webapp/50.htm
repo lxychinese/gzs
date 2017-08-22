@@ -1,0 +1,299 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>网站建设高端品牌-广州网站建设-企业网站建设</title>
+
+
+
+<link rel="stylesheet" href="/templates/default/style/style.css" />
+
+<link rel="stylesheet" href="/templates/default/style/media.css" />
+
+
+
+<script type="text/javascript" src="/templates\default\script\jquery1.72.js"></script>
+
+<script type="text/javascript" src="/templates\default\script\respond.min.js"></script>
+
+<script type="text/javascript" src="/templates\default\script\jquery.SuperSlide2.11.js"></script>
+
+<script type="text/javascript" src="/templates\default\script\jquery.lavalamp.min.js"></script>
+
+<script type="text/javascript" src="/templates\default\script\jquery.imagesloaded.js"></script>
+
+<script type="text/javascript" src="/templates\default\script\jquery.wookmark.min.js"></script>
+
+<script type="text/javascript" src="/templates\default\script\jquery.easing.1.3.min.js"></script>
+
+<script type="text/javascript" src="/templates\default\script\script.js"></script>
+<script src="//cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+<!--[if IE 6]>
+
+        <script type="text/javascript" src="/templates\default\script\DD_PNG.js" ></script>
+
+        <script type="text/javascript">
+
+                DD_belatedPNG.fix('div, ul, img, li, input , a');
+
+        </script>
+
+<![endif]--> 
+
+</head>
+
+<body>
+
+	<div id="web">
+
+
+
+
+
+
+
+		<div class="newsBanner">
+			<ul class="newsMenu fixed">
+				<li rel="18"><a href="#">公司新闻</a></li>
+				<li rel="19"><a href="#">项目动态</a></li>
+				<li rel="20"><a href="#">杂记</a></li>
+
+			</ul>
+		</div>
+		<script>
+    (function ($) {
+        var tid=20;
+         $(".newsMenu li").each(function(ii){  
+             if($(".newsMenu li").eq(ii).attr("rel")==tid)
+             {
+                   $(".newsMenu li").removeClass("on");
+                   $(".newsMenu li").eq(ii).addClass("on");
+             }
+         }); 
+    })(jQuery);
+</script>
+
+
+
+		<div class="newsCon">
+
+			<div class="newsInfoCon wp">
+
+				<div class="newsInfoBox">
+
+					<div class="closeBtn">
+						<a href="javascript:window.close()">关闭</a>
+					</div>
+
+					<h1>	Facebook图片存储架构的学习</h1>
+
+					<div class="time">
+						发布日期：2015-07-25&nbsp;&nbsp;&nbsp;浏览次数：
+						&nbsp;&nbsp;&nbsp;来源：<a href="" title="查看来源">广州网站建设</a>
+					</div>
+
+					<div class="article">
+
+						<p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px; line-height: 19.5px;">分享照片是Facebook上最流行的的功能之一。截至目前，用户已经上传超过15亿张照片，这使得Facebook成为最大的照片共享网站。对于每一个上传的照片，Facebook都生成并存储四个大小不同的图像，从而转化为共60亿张照片，总容量超过1.5PB。目前以每周220万新照片的速度增长，相当于每周要额外增加25TB存储。在高峰期每秒需要传输55万照片。这些数字对Facebook的照片存储基础设施的一个重大的挑战。</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><strong style="color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px; line-height: 19.5px;">旧的 NFS 照片架构</strong></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px; line-height: 1.5em;">老的照片系统架构分以下几个层：</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px; line-height: 19.5px;"></span></p><ol style="line-height: 26px; white-space: normal; border: 0px; margin-bottom: 1.5em; padding: 0px; outline: none; color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255);" class=" list-paddingleft-2"><li><p>上传层接收用户上传的照片并保存在 NFS 存储层。</p></li><li><p>照片服务层接收 HTTP 请求并从 NFS 存储层输出照片。</p></li><li><p>NFS存储层建立在商业存储系统之上。</p></li></ol><p><span style="color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px; line-height: 19.5px;">因为每张照片都以文件形式单独存储，这样庞大的照片量导致非常庞大的元数据规模，超过了 NFS 存储层的缓存上限，导致每次请求上传都包含多次I/O操作。庞大的元数据成为整个照片架构的瓶颈。这就是为什么 Facebook 主要依赖 CDN 的原因。为了解决这些问题，他们做了两项优化：</span><br/></p><p><span style="color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px; line-height: 19.5px;"></span></p><ul style="border: 0px; margin-bottom: 1.5em; padding: 0px; outline: none; color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px;" class=" list-paddingleft-2"><li><p>Cachr: 一个缓存服务器，缓存 Facebook 的小尺寸用户资料照片。</p></li><li><p>NFS文件句柄缓存：部署在照片输出层，以降低 NFS 存储层的元数据开销。</p></li></ul><p><span style="border: 0px; margin: 0px; padding: 0px; outline: none; color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px; line-height: 19.5px;"><strong>新的 Haystack 照片架构</strong></span><br/></p><p><span style="color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px; line-height: 19.5px;"><span style="border: 0px; margin: 0px; padding: 0px; outline: none;"><strong><br/></strong></span></span></p><p><span style="color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px; line-height: 19.5px;"><span style="border: 0px; margin: 0px; padding: 0px; outline: none;"></span></span></p><p style="border: 0px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0.8em; outline: none; line-height: 1.5em; color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px;">新的照片架构将输出层和存储层合并为一个物理层，建立在一个基于HTTP 的照片服务器上，照片存储在一个叫做haystack 的对象库，以消除照片读取操作中不必要的元数据开销。新架构中，I/O 操作只针对真正的照片数据（而不是文件系统元数据）。haystack 可以细分为以下几个功能层：</p><ul style="border: 0px; margin-bottom: 1.5em; padding: 0px; outline: none; color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px;" class=" list-paddingleft-2"><li><p>HTTP 服务器</p></li><li><p>照片存储</p></li><li><p>Haystack 对象存储</p></li><li><p>文件系统</p></li><li><p>存储空间</p></li></ul><p style="border: 0px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0.8em; outline: none; line-height: 1.5em; color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px;">在下面的介绍中，我们会对于上述的每个功能层做详细的讲述。</p><p><span style="border: 0px; margin: 0px; padding: 0px; outline: none; color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px; line-height: 19.5px;"><strong>存储空间</strong></span><br/></p><p><span style="color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px; line-height: 19.5px;"><span style="border: 0px; margin: 0px; padding: 0px; outline: none;"><span style="border: 0px; margin: 0px; padding: 0px; outline: none;"><strong><br/></strong></span></span></span></p><p><span style="color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px; line-height: 19.5px;"><span style="border: 0px; margin: 0px; padding: 0px; outline: none;"><span style="border: 0px; margin: 0px; padding: 0px; outline: none;"></span></span></span></p><p style="border: 0px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0.8em; outline: none; line-height: 1.5em; color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px;">Haystack 部署在商业存储刀片服务器上，典型配置为一个2U的服务器，包含：</p><ul style="border: 0px; margin-bottom: 1.5em; padding: 0px; outline: none; color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px;" class=" list-paddingleft-2"><li><p>两个4核CPU</p></li><li><p>16GB – 32GB 内存</p></li><li><p>硬件 RAID，含256-512M NVRAM 高速缓存</p></li><li><p>超过12个1TB SATA 硬盘</p></li></ul><p style="border: 0px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0.8em; outline: none; line-height: 1.5em; color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px;">每个刀片服务器提供大约10TB的存储能力，使用了硬件 RAID-6, RAID 6在保持低成本的基础上实现了很好的性能和冗余。不佳的写性能可以通过RAID控制器和NVRAM缓存回写解决，写由于读取大多是随机的，NVRAM缓存是完全用于写入的。</p><p><br/></p><p><span style="border: 0px; margin: 0px; padding: 0px; outline: none; color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px; line-height: 19.5px; background-color: rgb(255, 255, 255);"><strong>文件系统</strong></span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"/></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><br/></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px; line-height: 19.5px;"><span style="border: 0px; margin: 0px; padding: 0px; outline: none;"></span></span></p><p style="white-space: normal; border: 0px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0.8em; outline: none; line-height: 1.5em; color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255);">Haystack 对象库是建立在10TB容量的单一文件系统之上。</p><p style="white-space: normal; border: 0px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0.8em; outline: none; line-height: 1.5em; color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255);">图片读取请求需要在读取系统调用这些文件的位置偏移，但是为了执行读取操作，文件系统必须先找到实际物理卷上的数据。文件系统中的每个文件都被一个叫做inode结构标识。inode包含了一个磁盘上逻辑文件偏移和物理区块偏移的映射。在使用的特殊类型文件系统时大文件块映射可能相当大。</p><p style="white-space: normal; border: 0px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0.8em; outline: none; line-height: 1.5em; color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255);">基于文件系统的区块为给个逻辑区块和大文件保存映射。这些信息通常不适合保存在inode的缓存中，而是存储在在间接地址块。所以在读取文件的时候必须按照特定的流程。这里可以多个是间接地址块，所以一个读取会产生多个I/O取决于是否间接地址块被缓存。</p><p style="white-space: normal; border: 0px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0.8em; outline: none; line-height: 1.5em; color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255);">该系统只为连续范围的区块保持映射。一个连续的大文件的块映射可以只由一个范围的标识，这样是适应inode的系统需求的。但是，如果该文件是一个被切割的不连续的块的话，他的块地图可能非常的大。以上可以通过文件系统主动为大的物理文件分配大块的空间来减少碎片。</p><p style="white-space: normal; border: 0px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0.8em; outline: none; line-height: 1.5em; color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255);">目前使用的文件系统为XFS，一个很大程度提供高效的文件预分配系统。</p><p><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"/></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px; line-height: 19.5px;"><span style="border: 0px; margin: 0px; padding: 0px; outline: none;"><span style="border: 0px; margin: 0px; padding: 0px; outline: none;"><strong>Haystack 对象存储</strong></span><br/></span></span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px; line-height: 19.5px;"><span style="border: 0px; margin: 0px; padding: 0px; outline: none;"><span style="border: 0px; margin: 0px; padding: 0px; outline: none;">Haystack 是一个简单的日志结构（只能追加），存储着其内部数据对象的指针。一个 Haystack 包括两个文件，包括指针和索引。下面的图片将描述haystack存储文件的布局：<br/></span></span></span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px; line-height: 19.5px;"><span style="border: 0px; margin: 0px; padding: 0px; outline: none;"><span style="border: 0px; margin: 0px; padding: 0px; outline: none;"><img src="http://img.my.csdn.net/uploads/201212/19/1355912473_7081.jpg" alt="" style="border: none; max-width: 100%;"/><br/></span></span></span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px; line-height: 19.5px;"><span style="border: 0px; margin: 0px; padding: 0px; outline: none;"><span style="border: 0px; margin: 0px; padding: 0px; outline: none;">haystack最前面的8K存储是被超级块占用。紧随超级块是针，每针组成的一个头部，数据和尾部：<br/></span></span></span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px; line-height: 19.5px;"><span style="border: 0px; margin: 0px; padding: 0px; outline: none;"><span style="border: 0px; margin: 0px; padding: 0px; outline: none;"><img src="http://img.my.csdn.net/uploads/201212/19/1355912508_8317.jpg" alt="" style="border: none; max-width: 100%;"/><br/></span></span></span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px; line-height: 19.5px;"><span style="border: 0px; margin: 0px; padding: 0px; outline: none;"><span style="border: 0px; margin: 0px; padding: 0px; outline: none;">一个针被他的&lt;offset&nbsp;key=”&quot;&nbsp;alternate=”&quot;&nbsp;cookie=”&quot;&gt;元组标识，其中的偏移量为其在haystack存储的偏移。Haystack不在任何健值上做限制，即允许可以有重复键针。下图显示了索引文件的布局：<br/></span></span></span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px; line-height: 19.5px;"><span style="border: 0px; margin: 0px; padding: 0px; outline: none;"><span style="border: 0px; margin: 0px; padding: 0px; outline: none;"><img src="http://img.my.csdn.net/uploads/201212/19/1355912542_2162.jpg" alt="" style="border: none; max-width: 100%;"/><br/></span></span></span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px; line-height: 19.5px;"><span style="border: 0px; margin: 0px; padding: 0px; outline: none;"><span style="border: 0px; margin: 0px; padding: 0px; outline: none;"></span></span></span></p><p style="white-space: normal; border: 0px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0.8em; outline: none; line-height: 1.5em; color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255);">在haystack存储文件中有每针相应的的索引记录，并且包含针索引记录的顺序必须和haystack存储文件相关的针的顺序相匹配。按照规定索引文件的最低需求是找到一个特定的针在haystack存储文件的元数据。载入和组织索引记录到一个有效的查找数据结构是Haystack程序的责任。索引文件是不是很关键，因为如果需要它可以从haystack存储文件重建。索引的主要职责是让针元数据无需通过较大的Haystack存储文件，快速加载到内存中。原因是其可以让索引编程原来存储的1%。</p><p style="white-space: normal; border: 0px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0.8em; outline: none; line-height: 1.5em; color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255);"><span style="border: 0px; margin: 0px; padding: 0px; outline: none;"><strong>Haystack 写操作</strong></span></p><p style="white-space: normal; border: 0px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0.8em; outline: none; line-height: 1.5em; color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255);">Haystack 写操作同步将指针追加到 haystack 存储文件，当指针积累到一定程度，就会生成索引写到索引文件。由于索引文件是不是很关键，为了能有更快的性能所以采用异步的方式进行写入。</p><p style="white-space: normal; border: 0px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0.8em; outline: none; line-height: 1.5em; color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255);">为了降低硬件故障带来的损失，索引文件还会定期写到存储空间中。在崩溃或突然断电的情况下，将haystack恢复处理器存储中任何残缺的针和截断haystack存储中最后一个有效的针。接下来，它会把丢失的针的索引记录 写到haystack文件的最后。</p><p style="white-space: normal; border: 0px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0.8em; outline: none; line-height: 1.5em; color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255);">Haystack不允许重写现有的针偏移，如果一个针数据需要被重写，那么新版本必须使用相同的&lt;key alternate=”&quot; key=”&quot; cookie=”&quot;&gt;元组。应用程序会自动分辨出这两个相同的键，有最大偏移的便是最新的那一个。</p><p style="white-space: normal; border: 0px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0.8em; outline: none; line-height: 1.5em; color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255);"><span style="border: 0px; margin: 0px; padding: 0px; outline: none;"><strong>Haystack 读操作</strong></span></p><p style="white-space: normal; border: 0px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0.8em; outline: none; line-height: 1.5em; color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255);">传到 haystack 读操作的参数包括指针的偏移量，健，备用键，Cookie 以及数据大小。Haystack为数据大小添加头部和尾部的长度，然后根据数据尺寸从文件中读取整个指针。读取操作成功的关键就是作为参数传递的健，备用键，Cookie是否匹配，数据是否通过了校验，并且针没有被删除掉。（见下文）</p><p style="white-space: normal; border: 0px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0.8em; outline: none; line-height: 1.5em; color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255);"><span style="border: 0px; margin: 0px; padding: 0px; outline: none;"><strong>Haystack 删除操作</strong></span></p><p style="white-space: normal; border: 0px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0.8em; outline: none; line-height: 1.5em; color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255);">删除操作比较简单 – 只需要在&nbsp;Haystack 存储的指针字段中的“删除”位标记一下即可。并且，相关的索引记录不会做任何的修改。是最终的应用程序引用到的是一个删除的针。像这样一个读取删除针的操作将会返回一个相应的错误给应用程序。空间对已删除的针不做任何的回收，只有这样，才能使&nbsp;haystack 的空间非常的紧凑。（见下文）</p><p style="white-space: normal; border: 0px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0.8em; outline: none; line-height: 1.5em; color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255);"><span style="border: 0px; margin: 0px; padding: 0px; outline: none;"><strong>照片存储服务器</strong></span></p><p style="white-space: normal; border: 0px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0.8em; outline: none; line-height: 1.5em; color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255);">照片存储服务器负责接受 HTTP 请求，并转换成相应的 Haystack 操作。为了尽量减少服务器检索照片时的I/O操作，该服务器维护着全部 Haystack 中文件索引的缓存。服务器启动时，系统就会将这些索引读到缓存中。由于每个节点都有数百万张照片，必须保证索引的容量不会超过服务器的物理内存。在内存中仅需要保存查找照片所需的少量元数据即可。</p><p style="white-space: normal; border: 0px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0.8em; outline: none; line-height: 1.5em; color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255);">对于用户上传的图片，系统分配一个64位的独立ID，照片接着被缩放成4种不同尺寸，每种尺寸的图像拥有相同的随机 Cookie 和64位的密钥，图片尺寸描述（大，中，小，缩略图）被存在代用key 中。接着上传服务器通知照片存储服务器将这些资料连同图片存储到 haystack 中。</p><p style="white-space: normal; border: 0px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0.8em; outline: none; line-height: 1.5em; color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255);">每张图片的索引缓存包含以下数据：</p><p><img src="http://img.my.csdn.net/uploads/201212/19/1355912673_4060.jpg" alt="" style="border: none; max-width: 100%; color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"/><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"/></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px; line-height: 19.5px;"><span style="border: 0px; margin: 0px; padding: 0px; outline: none;"><span style="border: 0px; margin: 0px; padding: 0px; outline: none;"></span></span></span></p><p style="white-space: normal; border: 0px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0.8em; outline: none; line-height: 1.5em; color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255);">由于Google的开源 sparse hash data 结构对于每个条目只有2bit的开销，所以Haystack使用它来保证内存中的索引缓存尽可能小。</p><p style="white-space: normal; border: 0px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0.8em; outline: none; line-height: 1.5em; color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255);"><span style="border: 0px; margin: 0px; padding: 0px; outline: none;"><strong>照片存 储的写/修改操作</strong></span></p><p style="white-space: normal; border: 0px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0.8em; outline: none; line-height: 1.5em; color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255);">写操作将照片数据写到 Haystack 存储并更新内存中的索引。如果该索引记录中包含了相同的键，那么这是一次对现有的照片进行修改的操作。并且只要修改索引记录中的偏移来反应新图像在haystack存储文件的位置。照片存储始终假定，如果有重复的图像（图像具有相同的键），有较大的偏移量的那个存储是有效的。</p><p style="white-space: normal; border: 0px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0.8em; outline: none; line-height: 1.5em; color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255);"><span style="border: 0px; margin: 0px; padding: 0px; outline: none;"><strong>照片存储的读操作</strong></span></p><p style="white-space: normal; border: 0px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0.8em; outline: none; line-height: 1.5em; color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255);">传递给一个读操作的参包括Haystack ID，照片的 Key, 尺寸以及 Cookie。服务器事先在缓存中按照照片的Key和所需文件的偏移进行查找。如果找到了它，并向haystack发出读取词图像的请求。按照上面说的，haystack的删除操作并不更新它的索引记录，因此添加到内存中的索引可以包含以前删除的照片的内容。当阅读以前的删除的照片失败后，系统将在内存的索引中色绘制词图片的偏移量为0.</p><p style="white-space: normal; border: 0px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0.8em; outline: none; line-height: 1.5em; color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255);"><span style="border: 0px; margin: 0px; padding: 0px; outline: none;"><strong>照片存储的删除操作</strong></span></p><p style="white-space: normal; border: 0px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0.8em; outline: none; line-height: 1.5em; color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255);">通知 Haystack 执行删除操作之后，内存中的索引缓存会被更新，将偏移量设置为0，表示照片已被删除。</p><p style="white-space: normal; border: 0px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0.8em; outline: none; line-height: 1.5em; color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255);"><span style="border: 0px; margin: 0px; padding: 0px; outline: none;"><strong>重新整理（压缩）</strong></span></p><p style="white-space: normal; border: 0px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0.8em; outline: none; line-height: 1.5em; color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255);">重新整理（压缩）是一种回收删除和重复的针（针使用相同的Key）的在线操作。它会通过复制针跳过任何重复或删除的条目创建一个新的&nbsp;haystack。一旦此操作完成它就回去替换掉内存中的文件和结构。</p><p style="white-space: normal; border: 0px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0.8em; outline: none; line-height: 1.5em; color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255);"><span style="border: 0px; margin: 0px; padding: 0px; outline: none;"><strong>HTTP 服务器</strong></span></p><p style="white-space: normal; border: 0px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0.8em; outline: none; line-height: 1.5em; color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255);">Http 框架使用的是简单的基于开源的libevent库的 evhttp 服务器。使用多线程，每个线程都可以单独处理一个 HTTP 请求。因为我们的系统消耗大多是I/O操作，HTTP服务器的性能并不很重要。</p><p style="white-space: normal; border: 0px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0.8em; outline: none; line-height: 1.5em; color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255);"><span style="border: 0px; margin: 0px; padding: 0px; outline: none;"><strong>结束语</strong></span></p><p style="white-space: normal; border: 0px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0.8em; outline: none; line-height: 1.5em; color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255);">Haystack 是一个基于 HTTP 的对象存储，包含指向实体数据的指针，该架构消除了文件系统元数据的开销，并实现将全部索引直接存储到缓存，以最小的 I/O 操作实现对照片的存储和读取。</p><p style="white-space: normal; border: 0px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0.8em; outline: none; line-height: 1.5em; color: rgb(64, 64, 64); font-family: Tahoma, Helvetica, Arial, &#39;5b8b4f53&#39;, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255);">本文作者为Facebook的工程师Peter Vajgel, Doug Beaver&nbsp;和 Jason Sobel， 由<a href="http://www.biaodianfu.com/" style="color: rgb(51, 112, 126); text-decoration: none; border: 0px; margin: 0px; padding: 0px; outline: none;">标点符</a>进行翻译。</p><p><br/></p>
+
+					</div>
+
+				</div>
+
+				<div class="otherPage fixed">
+
+					
+
+					<ol class="otherTool fixed">
+
+						<li id="bdshare" class="share bdshare_b bdsharebuttonbox"><a
+							class="bds_more" title="分享" data-cmd="more" href="javascript:;">分享</a></li>
+
+						<li class="close"><a href="javascript:window.close()">关闭</a></li>
+
+					</ol>
+
+				</div>
+
+			</div>
+
+			<div class="reNewsCon wp">
+
+				<div class="reNewsTit">相关新闻文章</div>
+
+				<div class="reNewsBox">
+
+					<ul class="newsList fixed">
+					
+					
+
+						<li class="fixed">
+
+							<div class="info">
+
+								<a href="219.htm" target="_blank"
+									title="">白马服装</span></a>
+
+								<p></p>
+
+							</div>
+
+						</li>
+
+						<li class="fixed">
+
+							<div class="info">
+
+								<a href="251.htm" target="_blank"
+									title="">广东青联</span></a>
+
+								<p></p>
+
+							</div>
+
+						</li>
+
+						<li class="fixed">
+
+							<div class="info">
+
+								<a href="225.htm" target="_blank"
+									title="">babybean亲豆</span></a>
+
+								<p></p>
+
+							</div>
+
+						</li>
+
+						<li class="fixed">
+
+							<div class="info">
+
+								<a href="259.htm" target="_blank"
+									title="">南油集团</span></a>
+
+								<p></p>
+
+							</div>
+
+						</li>
+
+						
+
+
+
+					</ul>
+
+				</div>
+
+				<a href="news" class="readMore">查看更多>></a>
+
+			</div>
+
+		</div>
+
+
+
+		<script>
+
+	window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+
+	</script>
+
+
+
+
+
+	</div>
+
+
+
+
+
+	<ul class="indexFloatCon">
+
+		<li><a href="javascript:;" class="indexGoTop" title="返回顶部"></a></li>
+
+		<li><a target="_blank"
+			href="http://wpa.qq.com/msgrd?v=3&uin=2355767030&site=qq&menu=yes"
+			title="点击咨询" class="online">在线服务</a></li>
+
+		<li class="wenti"><a href="news"></a>
+
+			<dl class="wentiCon fixed">
+
+				<dt>
+					<a href="news.html">更多></a><span>常见问题</span>
+				</dt>
+
+
+Expression index is undefined on line 200, column 9 in view.ftl.
+The problematic instruction:
+----------
+==> list index as news [on line 200, column 2 in view.ftl]
+----------
+
+Java backtrace for programmers:
+----------
+freemarker.core.InvalidReferenceException: Expression index is undefined on line 200, column 9 in view.ftl.
+	at freemarker.core.TemplateObject.assertNonNull(TemplateObject.java:124)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:93)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.process(Environment.java:176)
+	at freemarker.template.Template.process(Template.java:232)
+	at com.utils.FreemarkerUtils.geneHtmlFile(FreemarkerUtils.java:50)
+	at com.liu.data.access.impl.NewsAccessImpl.list(NewsAccessImpl.java:62)
+	at com.listen.SysListener.setupContextVer2(SysListener.java:46)
+	at com.listen.SysListener.contextInitialized(SysListener.java:31)
+	at org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized(ContextHandler.java:764)
+	at org.eclipse.jetty.servlet.ServletContextHandler.callContextInitialized(ServletContextHandler.java:406)
+	at org.eclipse.jetty.server.handler.ContextHandler.startContext(ContextHandler.java:756)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:242)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1221)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:699)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:454)
+	at org.mortbay.jetty.plugin.JettyWebAppContext.doStart(JettyWebAppContext.java:256)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at org.eclipse.jetty.server.handler.HandlerCollection.doStart(HandlerCollection.java:224)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.doStart(ContextHandlerCollection.java:167)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at org.eclipse.jetty.server.handler.HandlerCollection.doStart(HandlerCollection.java:224)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:90)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:262)
+	at org.mortbay.jetty.plugin.JettyServer.doStart(JettyServer.java:65)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at org.mortbay.jetty.plugin.AbstractJettyMojo.startJetty(AbstractJettyMojo.java:511)
+	at org.mortbay.jetty.plugin.AbstractJettyMojo.execute(AbstractJettyMojo.java:364)
+	at org.mortbay.jetty.plugin.JettyRunMojo.execute(JettyRunMojo.java:516)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:101)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:209)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:84)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:59)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.singleThreadedBuild(LifecycleStarter.java:183)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:161)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:320)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:156)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:537)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:196)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:290)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:230)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:409)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:352)

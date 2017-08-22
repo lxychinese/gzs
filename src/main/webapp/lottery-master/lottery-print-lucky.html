@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>中奖名单</title>
+	<link rel="stylesheet" href="css/lottery.bass.css">
+	<link rel="stylesheet" href="css/lottery.lucky.css" media="not print">
+	<link rel="stylesheet" href="css/lottery.print.css" media="print">
+</head>
+<body>
+<div class="boundary">
+	<section>
+		<h1>中奖名单</h1>
+		<table>
+			<tr class="title">
+				<th>奖项</th>
+				<th>姓名</th>
+				<th>编号</th>
+			</tr>
+		</table>
+	</section>
+</div>
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="js/lottery.js"></script>
+<script type="text/javascript" src="js/lottery.localStorage.js"></script>
+<script>
+	$(function(){
+		loadLucky();
+	});
+	var loadLucky = function(){
+		var table = $('table');
+		table.find('tr:not(.title)').remove();
+		reading('grand',1,table);
+		reading('first',3,table);
+		reading('second',6,table);
+		reading('third',120,table);
+		
+	};
+	var reading = function(type,timer,obj){
+		var award;
+		if(type == 'grand'){
+			award = '特等奖';
+		}else if(type == 'first'){
+			award = '一等奖';
+		}else if(type == 'second'){
+			award = '二等奖';
+		}else if(type == 'third'){
+			award = '三等奖';
+		}
+		for(var i=0;i<timer;i++){
+			var people = lottery.localStorage.get(type+'_'+i);
+			if(people == ''){return true;}
+			people = people.split(",");
+			// if(i == 0){
+			// 	obj.append(
+			// 	'<tr>'
+			// 	+'<td class="pt10">'+award+'</td>'
+			// 	+'<td class="pt10">'+people[1]+'</td>'
+			// 	+'<td class="pt10">'+people[0]+'</td>'
+			// 	+'</tr>'
+			// 	);
+			// }else{
+				obj.append(
+				'<tr>'
+				+'<td>'+award+'</td>'
+				+'<td>'+people[1]+'</td>'
+				+'<td>'+people[0]+'</td>'
+				+'</tr>'
+				);
+			// }
+			
+		}
+	}
+</script>
+</body>
+</html>

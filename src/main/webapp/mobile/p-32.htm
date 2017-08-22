@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>垄上工作室-网站建设高端品牌-广州网站建设-企业网站建设</title>
+
+<meta name="keywords" content="网站建设，网页设计，广州网站建设，深圳网站建设，企业网站建设，垄上工作室，手机网站，微信营销、APP开发、扎根垄上" />
+<meta name="description" content="垄上工作室专注网站建设及信息化咨询服务，提供完善的网站建设、移动端应用、企业微信大战略、3D虚拟仿真等一系列企业互联网解决方案，知名客户有欧派、索菲亚、王老吉、PICC、海天味业、珠江钢琴、例外服饰、广百集团、轻工集团、广州发展集团。" />
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+
+<!--<meta name="format-detection" content="telephone=no">-->
+
+<link rel="stylesheet" href="/templates\default\style_m\style.css">
+
+<link rel="stylesheet" href="/templates\default\style_m\media.css">
+
+<script src="/templates\default\js\jquery-2.1.1.min.js"></script>
+
+<script src="/templates\default\js\touch-0.2.14.min.js"></script>
+
+<script src="/templates\default\js\TouchSlide.1.1.js"></script>
+
+<script src="/templates\default\js\common.js"></script> 
+<script src="/templates\default\js\load.js"></script> 
+</head>
+<body>
+
+  <div class="menuCon" id="menuCon">
+
+        <ul class="nav fixed">
+
+            <li><a href="index.htm"><i></i>垄上首页</a></li>
+
+            <li><a href="anli.htm"><i></i>经典案例</a></li>
+
+            <li><a href="kehu.htm"><i></i>知名客户</a></li>
+
+            <li><a href="contact.htm"><i></i>联系我们</a></li>
+
+            <li><a href="web.htm"><i></i>网站建设</a></li>
+
+            <li><a href="m.htm"><i></i>移动端</a></li>
+
+            <li><a href="wei.htm"><i></i>微定制</a></li>
+
+            <li><a href="3d.htm"><i></i>虚拟仿真</a></li>
+
+            <li><a href="n.htm"><i></i>最新动态</a></li>
+
+
+            <li><a href="service.htm"><i></i>服务流程</a></li>
+
+
+        </ul>
+
+      
+
+    </div>
+   
+<header class="fixed">
+	<a href="n.htm" class="goBack"></a>
+	<a href="javascript:;" class="goBack" id="goBackBtn"></a>
+     <h1>新闻详细</h1>
+     <a href="javascript:;" class="headerMenu" id="headerMenu"></a>
+     <a href="javascript:;" class="headerClose" id="closeBtn"></a>
+ </header>
+<section class="bgfd">
+    <h2>Code First vs WSDL Frist</h2>
+    <p>日期：2015-07-25&nbsp;&nbsp;&nbsp;来源：<a href="index.htm">垄上工作室</a></p>
+</section>
+<article class="bgfd">
+<p><span style="font-size: 14px;"><span style="color: rgb(51, 51, 51); font-family: Arial; line-height: 26px; background-color: rgb(255, 255, 255);">如果要构建一个Web Services，CXF提供了两种构建方式一个是Code First，另一个WSDL First。</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"/><span style="color: rgb(51, 51, 51); font-family: Arial; line-height: 26px; background-color: rgb(255, 255, 255);">那什么是Code First，什么又是WSDL First呢？&nbsp;</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"/><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"/><span style="color: rgb(51, 51, 51); font-family: Arial; line-height: 26px; background-color: rgb(255, 255, 255);">大家知道，如果我们要将一个服务发布一个WebService，我们需要定义这个服务所支持的方法，以及调用这些方法所提供的参数并将其转化成为WSDL，供其它的客户端调用。Code First是第一代的WebService开发工具所提供的构建WebService的一种方式。以Java为例，我们可以通过Interface定义一组Web服务所提供的方法，Code First就是通过获取这个Interface的信息构建出Web Services 所需要的信息，并在这些信息的基础上生成WSDL。</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"/><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"/><span style="color: rgb(51, 51, 51); font-family: Arial; line-height: 26px; background-color: rgb(255, 255, 255);">而WSDL First就是通过WSDL文件，生成相关的Aritifacts，例如有相关的接口以及实现的代码框架等，这CORBA开发一样，先使用IDL描述我们的CORBA服务，通过IDL2XXX生成相关的接口和实现框架（屏蔽了网络传输中Marshal和Unmarshal的操作）。</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"/><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"/><span style="color: rgb(51, 51, 51); font-family: Arial; line-height: 26px; background-color: rgb(255, 255, 255);">这两种构建Web Services各有特点，适合在不同的场景。</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"/><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"/><span style="color: rgb(51, 51, 51); font-family: Arial; line-height: 26px; background-color: rgb(255, 255, 255);">接触过WSDL的朋友应该都有这样的感觉，WSDL虽然是用XML来进行描述的，但是如果让你在不借助任何工具的情况下写一个正确的WSDL，或者是改正一个错误的WSDL是很难的。Code First可以说是为我们提供了一个不错的选择。</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"/><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"/><span style="color: rgb(51, 51, 51); font-family: Arial; line-height: 26px; background-color: rgb(255, 255, 255);">但是Web Services的Best Practies并不推荐Code First这一Web Services的构建方式。原因是什么呢？</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"/><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"/><span style="color: rgb(51, 51, 51); font-family: Arial; line-height: 26px; background-color: rgb(255, 255, 255);">这是因为我们在使用Code First构建方式时很少考虑到Web Services之间的交互是以文档方式进行（这样可以大大提高Web Services的互交互性），如果是使用Code First来构建WSDL信息，在描述描述交互信息的XML Schema都是以我们的Code中定义的类型信息来生成的，这样就可能会暴露一些比较细粒度的信息。同时大家知道不同的语言（C＋＋，Java， C＃，PHP）对XML Schema映射是各不相同的，如果我们Code中定义的类型很特殊，就可能产生出一个不能互操作的现象。</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"/><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"/><span style="color: rgb(51, 51, 51); font-family: Arial; line-height: 26px; background-color: rgb(255, 255, 255);">所以Best Practies建议你在创建Web Services从交互的消息Schema入手，构建一个中间层来提供一个比较粗粒度的描述，这样可以比较好的解决Web Services的互交互问题。&nbsp;</span></span></p>
+</article>
+<div class="share bgfd fixed">
+    <span>分享</span>
+    <div class="bdsharebuttonbox">
+        <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+        <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+        <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+        <a href="#" class="bds_more" data-cmd="more"></a>
+    </div>
+    <script>
+        window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+    </script>
+</div>
+
+
+<script type="text/javascript">
+	$('article').imagesLoaded( function() {
+		var wh = $(window).height();
+		var bh = $('body').height();
+		if (bh<wh) {
+			$('body').height(wh);
+		};
+	});
+</script>
+    
+
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+@page {
+	size: A4 portrait;
+	margin: 2.1cm 1.9cm;
+}
+body{
+	margin:0;
+	color:#333;
+	font-family:Helvetica, sans-serif;
+	font-size: 12px;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: none;
+	-webkit-print-color-adjust: exact;
+}
+h1, h2, h3, h4, h5, h6, p, ul, ol,div { margin: 0; padding: 0; }
+h1, h2, h3, h4, h5, h6 { font-weight: normal; font-size: inherit; }
+ul, ol { list-style-type: none; }
+p, ul, ol {
+	text-align: justify;
+	text-justify: inter-ideograph;
+	line-height: 1.7em;
+}
+/* 清浮动 */
+.clear{ clear: both; height: 0; overflow: hidden; }
+.clearfix:after {
+	display: block;
+	overflow: hidden;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+	content: '.';
+}
+/* 内容边界 */
+.boundary { margin: 0 20px; clear: both; }
+/* 章节 */
+section{
+	padding-top:20px;
+	color:#2e3033;
+	h1{
+		font-size: 34px;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+}
+table{
+	border-collapse: separate;border-spacing: 0;
+	font-size: 16px;text-align: center;
+	width:100%;
+	th{
+		font-weight: bold;
+		font-size: 24px;
+		border-bottom: 2px solid #e9ebee;
+		line-height: 34px;
+	}
+	td{
+		line-height: 30px;
+	}
+}

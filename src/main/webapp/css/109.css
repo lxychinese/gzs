@@ -1,0 +1,283 @@
+.appointment_form {
+	height: auto;
+	width: 1155px;
+	margin: 0px auto;
+	margin-top: 25px;
+	background-color: white;
+}
+
+.form_title {
+	width: 1155px;
+	font-size: 25px;
+	text-align: center;
+	color: white;
+	height: 80px;
+	background-image: url(../images/title_bg.jpg);
+	line-height: 70px;
+}
+
+.appointment_form form {
+	height: auto;
+	width: 1016px;
+	background-color: #e4e4e4;
+	margin: 0px auto;
+}
+
+.appointment_form form table {
+	height: auto;
+	width: auto;
+	margin: 0px auto;
+	padding: 10px 0px
+}
+
+.appointment_form form table td {
+	height: auto;
+	padding: 10px 0px;
+}
+
+.td1 {
+	font-size: 18px;
+	color: #a6a6a6;
+	width: 120px;
+	letter-spacing: 22px;
+}
+
+.td2 {
+	width: 500px;
+}
+
+.td2 input {
+	height: 40px;
+	line-height: 40px;
+	border: #e3e3e3 1px solid;
+	width: 480px;
+	text-indent: 8px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+
+.td3 {
+	font-size: 18px;
+	color: #df525d;
+	width: 20px;
+}
+
+.td4 {
+	font-size: 18px;
+	color: #a6a6a6;
+	width: 120px;
+	letter-spacing: 2px;
+}
+
+.td5 textarea {
+	height: 80px;
+	line-height: 30px;
+	border: #e3e3e3 1px solid;
+	width: 540px;
+	resize: none;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	text-indent: 8px;
+}
+
+.submit_btn {
+	height: 50px !important;
+	line-height: 50px !important;
+	width: 480px;
+	background-color: #df525d;
+	font-size: 20px !important;
+	font-family: "Microsoft YaHei", Î¢ÈíÑÅºÚ£¬Verdana, Geneva, sans-serif;
+	color: white;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	border: 0 !important
+}
+
+.introduce {
+	width: auto;
+	height: auto;
+	margin: 0px auto;
+	overflow: hidden;
+}
+
+.img_pro1 {
+	width: 100%;
+	text-align: center;
+}
+
+.pro1_div {
+	width: auto;
+	margin: 0px auto;
+	height: auto;
+}
+
+.pro1_div img {
+	width: 100%;
+	height: auto;
+}
+
+.img_pro2 {
+	width: 100%;
+	text-align: center;
+}
+
+.pro2_div {
+	width: auto;
+	margin: 0px auto;
+	height: auto;
+}
+
+.pro2_div img {
+	width: 100%;
+	height: auto;
+}
+
+.img_pro3 {
+	width: 100%;
+	text-align: center;
+}
+
+.pro3_div {
+	width: auto;
+	margin: 0px auto;
+	height: auto;
+}
+
+.pro3_div img {
+	width: 100%;
+	height: auto;
+}
+
+.img_pro4 {
+	width: 100%;
+	text-align: center;
+}
+
+.introduce {
+	width: auto;
+	height: auto;
+	margin: 0px auto;
+	overflow: hidden;
+}
+
+.pro4_div {
+	width: auto;
+	margin: 0px auto;
+	height: auto;
+}
+
+.pro4_div img {
+	width: 100%;
+	height: auto;
+}
+
+.img_pro5 {
+	width: 100%;
+	text-align: center;
+}
+
+.pro5_div {
+	width: auto;
+	margin: 0px auto;
+	height: auto;
+}
+
+.pro5_div img {
+	width: 100%;
+	height: auto;
+}
+
+.img_pro6 {
+	width: 100%;
+	text-align: center;
+}
+
+.pro6_div {
+	width: auto;
+	margin: 0px auto;
+	height: auto;
+}
+
+.pro6_div img {
+	width: 100%;
+	height: auto;
+}
+
+.appointment_num {
+	width: 1155px;
+	height: auto;
+	margin-top: 5px;
+}
+
+.quan {
+	float: left;
+	height: 41px;
+	width: 41px;
+	margin-top: 20px;
+}
+
+.num_title {
+	font-size: 25px;
+	font-weight: 500;
+	width: 850px;
+	text-align: center;
+	height: 91px;
+	line-height: 87px;
+	color: #df525d;
+	margin: 0px auto;
+}
+
+.num_title span {
+	color: #ffc32a
+}
+
+
+.bg_1 {
+	background-image: url(../images/other/pro_02.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 774px;
+}
+
+.bg_2 {
+	background-image: url(../images/other/pro_06.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 1247px;
+}
+
+.bg_3 {
+	background-image: url(../images/other/pro_03.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 605px;
+}
+
+.bg_4 {
+	background-image: url(../images/other/pro_04.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 679px;
+}
+
+.bg_5 {
+	background-image: url(../images/other/pro_05.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 687px;
+}
+
+.bg_6 {
+	background-image: url(../images/other/pro_07.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 553px;
+}
+
+.tbp {
+	font-family: Î¢ÈíÑÅºÚ, ËÎÌå;
+	font-weight: bold;
+	font-size: 1.5em;
+	color: #f00;
+}
+

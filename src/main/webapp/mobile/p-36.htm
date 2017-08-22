@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>垄上工作室-网站建设高端品牌-广州网站建设-企业网站建设</title>
+
+<meta name="keywords" content="网站建设，网页设计，广州网站建设，深圳网站建设，企业网站建设，垄上工作室，手机网站，微信营销、APP开发、扎根垄上" />
+<meta name="description" content="垄上工作室专注网站建设及信息化咨询服务，提供完善的网站建设、移动端应用、企业微信大战略、3D虚拟仿真等一系列企业互联网解决方案，知名客户有欧派、索菲亚、王老吉、PICC、海天味业、珠江钢琴、例外服饰、广百集团、轻工集团、广州发展集团。" />
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+
+<!--<meta name="format-detection" content="telephone=no">-->
+
+<link rel="stylesheet" href="/templates\default\style_m\style.css">
+
+<link rel="stylesheet" href="/templates\default\style_m\media.css">
+
+<script src="/templates\default\js\jquery-2.1.1.min.js"></script>
+
+<script src="/templates\default\js\touch-0.2.14.min.js"></script>
+
+<script src="/templates\default\js\TouchSlide.1.1.js"></script>
+
+<script src="/templates\default\js\common.js"></script> 
+<script src="/templates\default\js\load.js"></script> 
+</head>
+<body>
+
+  <div class="menuCon" id="menuCon">
+
+        <ul class="nav fixed">
+
+            <li><a href="index.htm"><i></i>垄上首页</a></li>
+
+            <li><a href="anli.htm"><i></i>经典案例</a></li>
+
+            <li><a href="kehu.htm"><i></i>知名客户</a></li>
+
+            <li><a href="contact.htm"><i></i>联系我们</a></li>
+
+            <li><a href="web.htm"><i></i>网站建设</a></li>
+
+            <li><a href="m.htm"><i></i>移动端</a></li>
+
+            <li><a href="wei.htm"><i></i>微定制</a></li>
+
+            <li><a href="3d.htm"><i></i>虚拟仿真</a></li>
+
+            <li><a href="n.htm"><i></i>最新动态</a></li>
+
+
+            <li><a href="service.htm"><i></i>服务流程</a></li>
+
+
+        </ul>
+
+      
+
+    </div>
+   
+<header class="fixed">
+	<a href="n.htm" class="goBack"></a>
+	<a href="javascript:;" class="goBack" id="goBackBtn"></a>
+     <h1>新闻详细</h1>
+     <a href="javascript:;" class="headerMenu" id="headerMenu"></a>
+     <a href="javascript:;" class="headerClose" id="closeBtn"></a>
+ </header>
+<section class="bgfd">
+    <h2>Resource及其子类的分析</h2>
+    <p>日期：2015-07-25&nbsp;&nbsp;&nbsp;来源：<a href="index.htm">垄上工作室</a></p>
+</section>
+<article class="bgfd">
+<p><span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; background-color: rgb(255, 255, 255);">Resource 是一个抽象类。</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; line-height: 21px; background-color: rgb(255, 255, 255);"/><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; line-height: 21px; background-color: rgb(255, 255, 255);"/><span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; background-color: rgb(255, 255, 255);">是基础的资源类，对外露暴出统一的REST接口。Resource封装了Context、Request和Response，完成从REST概念向超文本概念的转换。</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; line-height: 21px; background-color: rgb(255, 255, 255);"/><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; line-height: 21px; background-color: rgb(255, 255, 255);"/><span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; background-color: rgb(255, 255, 255);">从前面说过的Compoent、Application、Services、Filter、Router到后面会讲的Finder，都是在REST层面的概念，Resource是REST到HTML的转换界面，是REST的终端(EndPoint)。</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; line-height: 21px; background-color: rgb(255, 255, 255);"/><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; line-height: 21px; background-color: rgb(255, 255, 255);"/></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="line-height: 21px;">从Component到Resource，经过Application、Services、Filter、Route、Finder,都是调用Uniform的handle()方法，从设计模式上看，很像装饰者模式。</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="line-height: 21px;">Services提供了多种可以配置的服务，可以根据需要增加；Filter、Router和Finder也可以根据需要进行系统行为的修改。这种类似装饰者模式的设计，提供了灵活的复用和扩展空间。这个Restlet框架核心就是这个装饰者模式，装饰的对象就是Resource。</span></p><p><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; line-height: 21px; background-color: rgb(255, 255, 255);"/></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="line-height: 21px;"><strong><span style="color: rgb(0, 153, 0);">一、Resource的生命周期</span></strong></span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="line-height: 21px;">Resource有一个清晰的生命周期：<br/></span></p><p><span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; background-color: rgb(255, 255, 255);">首先，Resource子类的实例被创建。</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; line-height: 21px; background-color: rgb(255, 255, 255);"/><span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; background-color: rgb(255, 255, 255);">然后，调用init(Context, Request, Response)方法。</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; line-height: 21px; background-color: rgb(255, 255, 255);"/><span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; background-color: rgb(255, 255, 255);">再然后是doInit() 为子类提供一些定制行为。</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; line-height: 21px; background-color: rgb(255, 255, 255);"/><span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; background-color: rgb(255, 255, 255);">上面由Resource定义的方法执行完毕后，开始执行统一的 handle() 方法。在ClientResource和ServerResource中对handle()方法有不同的实现。</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; line-height: 21px; background-color: rgb(255, 255, 255);"/><span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; background-color: rgb(255, 255, 255);">最后，在release() 方法调用之前先调用 doRelease() 方法，这个方法也是Resource定义的抽象方法，目的是给子类提供一些操作的扩展。</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; line-height: 21px; background-color: rgb(255, 255, 255);"/><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; line-height: 21px; background-color: rgb(255, 255, 255);"/><span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; background-color: rgb(255, 255, 255);">当出现错误和异常情况，可以通过覆写&nbsp;&nbsp;doCatch(Throwable) 完成错误和异常的捕获和处理。</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; line-height: 21px; background-color: rgb(255, 255, 255);"/><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; line-height: 21px; background-color: rgb(255, 255, 255);"/></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><br style="line-height: 21px;"/></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><strong><span style="color: rgb(0, 102, 0);">二、<span style="line-height: 21px;">ServerResource</span></span></strong></p><p><span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; background-color: rgb(255, 255, 255);">ServerResource是Resource的子类，是服务器端的基础资源类，封装了Request和Response。</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; line-height: 21px; background-color: rgb(255, 255, 255);"/><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; line-height: 21px; background-color: rgb(255, 255, 255);"/><span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; background-color: rgb(255, 255, 255);">在两种情况下，ServerResource 的生命周期是由Finder来管理的：</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; line-height: 21px; background-color: rgb(255, 255, 255);"/><span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; background-color: rgb(255, 255, 255);">1、一种是创建子类的时候，由Finder提供的create()方法直接创建的；</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; line-height: 21px; background-color: rgb(255, 255, 255);"/><span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; background-color: rgb(255, 255, 255);">2、一种是创建的子类，关联组件的时候，通过 Filter.setNext() 或者Router.attach() 设置到Filter或者Router 上的。</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; line-height: 21px; background-color: rgb(255, 255, 255);"/><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; line-height: 21px; background-color: rgb(255, 255, 255);"/><span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; background-color: rgb(255, 255, 255);">ServerResource的handle()方法，是REST向HTML开始转换的地方。</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; line-height: 21px; background-color: rgb(255, 255, 255);"/><span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; background-color: rgb(255, 255, 255);">1、 判断 isConditional() 和 isNegotiated() 来决定 doConditionalHandle(), doNegotiatedHandle() 和 doHandle() 哪个方法被执行。</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; line-height: 21px; background-color: rgb(255, 255, 255);"/><span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; background-color: rgb(255, 255, 255);">2、在执行过程中，任何的 ResourceException 的出现，都会记录到当前的线程环境中并通过 setStatus(Status, Throwable, String)设置状态，为statusService处理提供状态。</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; line-height: 21px; background-color: rgb(255, 255, 255);"/><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; line-height: 21px; background-color: rgb(255, 255, 255);"/><span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; background-color: rgb(255, 255, 255);"><strong><span style="color: rgb(0, 153, 0);">三、doConditionalHandle(), doNegotiatedHandle() 和 doHandle()的判断过程</span></strong></span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; line-height: 21px; background-color: rgb(255, 255, 255);"/></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="line-height: 21px;"><br/></span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="line-height: 21px;">1、isConditional()是判断请求中是否包含以下内容：</span></p><p><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; line-height: 21px; background-color: rgb(255, 255, 255);"/><span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; background-color: rgb(255, 255, 255);">If-Match</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; line-height: 21px; background-color: rgb(255, 255, 255);"/><span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; background-color: rgb(255, 255, 255);">If-Modified-Since</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; line-height: 21px; background-color: rgb(255, 255, 255);"/><span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; background-color: rgb(255, 255, 255);">If-None-Match</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; line-height: 21px; background-color: rgb(255, 255, 255);"/><span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; background-color: rgb(255, 255, 255);">If-Range</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; line-height: 21px; background-color: rgb(255, 255, 255);"/><span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; background-color: rgb(255, 255, 255);">If-Unmodified-Since</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; line-height: 21px; background-color: rgb(255, 255, 255);"/><span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; background-color: rgb(255, 255, 255);">如果没有，则执行下一个判断isNegotiated() 。</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; white-space: normal; line-height: 21px; background-color: rgb(255, 255, 255);"/></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);">2、<span style="line-height: 21px;">isNegotiated() 判断调用的方法是否需要参数，如果不需要就直接跳过，执行 doHandle()。</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="line-height: 21px;">3、&nbsp;doHandle()</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="line-height: 21px;">从doHanlde()这里，调用对应http method的方法，put()、get()、post()、delete()、head()、options()以及其他自定义的方法。</span></p><p><br/></p>
+</article>
+<div class="share bgfd fixed">
+    <span>分享</span>
+    <div class="bdsharebuttonbox">
+        <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+        <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+        <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+        <a href="#" class="bds_more" data-cmd="more"></a>
+    </div>
+    <script>
+        window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+    </script>
+</div>
+
+
+<script type="text/javascript">
+	$('article').imagesLoaded( function() {
+		var wh = $(window).height();
+		var bh = $('body').height();
+		if (bh<wh) {
+			$('body').height(wh);
+		};
+	});
+</script>
+    
+
+
+</body>
+</html>

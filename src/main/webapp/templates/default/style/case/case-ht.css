@@ -1,0 +1,191 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*case-ht*/
+.caseht {
+	font-family: "微软雅黑";
+}
+.caseht_floor1 {
+	background: url(../..\images\case\ht\htbj.jpg) repeat-x 0 0;
+	height: 692px;
+}
+.htwd {
+	margin: 0 auto;
+	width: 1000px;
+}
+.htlogo {
+	text-align: center;
+	padding-top: 54px;
+}
+.htlogo img {
+	margin-right: 21px;
+}
+.caseht_floor2 {
+	background: url(../..\images\case\ht\ht_img2.jpg) no-repeat center top;
+	height: 701px;
+	position: relative;
+	overflow: hidden;
+}
+.htext {
+	font-size: 14px;
+	font-family: "微软雅黑";
+	line-height: 25px;
+	position: absolute;
+	z-index: 100;
+}
+.text1 {
+	color: #bf1912;
+	width: 280px;
+	top: 272px;
+	left: 0;
+	margin-left: -350px;
+}
+.caseht_floor3 {
+	background: url(../..\images\case\ht\ht_img3.jpg) no-repeat center top;
+	height: 581px;
+	position: relative;
+	overflow: hidden;
+}
+.text2 {
+	color: #1a5101;
+	width: 280px;
+	bottom: 58px;
+	right: 0;
+	margin-right: -452px;
+}
+.caseht_floor4 {
+	background: url(../..\images\case\ht\ht_img4.jpg) no-repeat center top;
+	height: 690px;
+	position: relative;
+	overflow: hidden;
+}
+.text3 {
+	color: #fff;
+	right: 0;
+	width: 300px;
+	height: 268px;
+	top: 229px;
+	margin-right: -452px;
+	background: #9e3600;
+}
+.text3 h3 {
+	text-align: center;
+	font-size: 20px;
+	height: 60px;
+	line-height: 60px;
+	text-transform: uppercase;
+}
+.textsp {
+	font-size: 25px;
+	margin: 0 45px 27px;
+	background: url(../..\images\case\ht\htdian.jpg) repeat-x left center;
+	text-align: center;
+}
+.textsp span {
+	display: inline-block;
+	padding: 0 7px;
+	background: #9e3600;
+}
+.text3 p {
+	padding: 0 23px;
+}
+.caseht_floor5 {
+	background: url(../..\images\case\ht\ht_img5.jpg) no-repeat center top;
+	height: 734px;
+}
+.htshowtit {
+	text-align: center;
+	color: #7e591b;
+	font-size: 30px;
+	padding-top: 53px;
+}
+.htshowtit h3 {
+	font-size: 30px;
+	text-transform: uppercase;
+}
+.htshowtit p {
+	margin-top: -7px;
+}
+/*fullSlide*/
+.fullSlide {
+	width: 565px;
+	position: relative;
+	margin: 70px auto 0;
+}
+.fullSlide .bd {
+	margin: 0 auto;
+	position: relative;
+	z-index: 0;
+	overflow: hidden;
+}
+.fullSlide .bd ul {
+	width: 100% !important;
+}
+.fullSlide .bd li {
+	width: 100% !important;
+	height: 359px;
+	overflow: hidden;
+	text-align: center;
+        text-indent: -99em;
+}
+.fullSlide .hd {
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	margin-top: 61px;
+}
+.fullSlide .hd ul {
+	text-align: center;
+	padding-top: 5px;
+}
+.fullSlide .hd ul li {
+	cursor: pointer;
+	display: inline-block;
+*display:inline;
+	zoom: 1;
+	width: 23px;
+	height: 22px;
+	margin: 5px;
+	background: url(../..\images\case\ht\ht_circle.png) no-repeat 0 0;
+	overflow: hidden;
+	line-height: 9999px;
+}
+.fullSlide .hd ul .on {
+	background-position: -33px 0;
+}
+.y_fd {
+	-webkit-animation: fadeInDown 1s .2s ease both;
+	-moz-animation: fadeInDown 1s .2s ease both;
+	animation: fadeInDown 1s .2s ease both;
+}
+@-webkit-keyframes fadeInDown {
+0% {
+opacity: 0;
+-webkit-transform: translateY(-120px);
+}
+ 100% {
+opacity: 1;
+-webkit-transform: translateY(0);
+}
+}
+@-moz-keyframes fadeInDown {
+0% {
+opacity: 0;
+-moz-transform: translateY(-120px);
+}
+ 100% {
+opacity: 1;
+-moz-transform: translateY(0);
+}
+}
+@keyframes fadeInDown {
+0% {
+opacity: 0;
+transform: translateY(-120px);
+}
+ 100% {
+opacity: 1;
+transform: translateY(0);
+}
+}

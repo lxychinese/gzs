@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>抽奖系统</title>
+	<link rel="stylesheet" href="css/lottery.bass.css">
+	<link rel="stylesheet" href="css/lottery.main.css">
+</head>
+<body>
+	<div class="lottery" pos="right">
+		<section class="first" style="display: none;">
+			<div class="title">
+				<img src="images/title-1-right.png" alt="奖项名称" style="width:220px;">
+			</div>
+			<div class="lucky">
+				<ul class="lucky-list clearfix">
+					
+				</ul>
+			</div>
+		</section>
+		<section class="second" style="margin-top:48px;display: none;">
+			<div class="title">
+				<img src="images/title-2-right.png" alt="奖项名称" style="width:220px;">
+			</div>
+			<div class="lucky">
+				<ul class="lucky-list clearfix">
+					
+				</ul>
+			</div>
+		</section>
+		<div class="bg">
+			<section class="bgarea"></section>
+		</div>
+	</div>
+
+
+
+	<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="js/lottery.common.js"></script>
+	<script type="text/javascript" src="js/lottery.js"></script>
+	<script type="text/javascript" src="js/lottery.localStorage.js"></script>
+	<script>
+		var showFirst = function(timer){
+			var ul = $('.first').find('.lucky-list'), people;
+			ul.find('li').remove();
+			for(var i=0;i<timer;i++){
+				people = lottery.localStorage.get('first_'+i);
+				people = people.split(",");
+				ul.prepend(
+					'<li>'
+					+'<img src="images/img-border1.png" alt="">'
+					+'<div class="person_image">'
+						+'<div class="hexagon hexagon1">'
+							+'<div class="hexagon-in1">'
+								+'<div class="hexagon-in2">'
+									+'<img src="'+people[2]+'" alt="">'
+								+'</div>'
+							+'</div>'
+						+'</div>'
+					+'</div>'
+					+'<div class="name">'+people[1]+'</div>'
+					+'</li>'
+				);
+			}
+			$('.first').fadeIn(1000);
+		};
+		var showSecond = function(timer){
+			var ul = $('.second').find('.lucky-list'), people;
+			ul.find('li').remove();
+			for(var i=0;i<timer;i++){
+				people = lottery.localStorage.get('second_'+i);
+				people = people.split(",");
+				ul.prepend(
+					'<li>'
+					+'<img src="images/img-border1.png" alt="">'
+					+'<div class="person_image">'
+						+'<div class="hexagon hexagon1">'
+							+'<div class="hexagon-in1">'
+								+'<div class="hexagon-in2">'
+									+'<img src="'+people[2]+'" alt="">'
+								+'</div>'
+							+'</div>'
+						+'</div>'
+					+'</div>'
+					+'<div class="name">'+people[1]+'</div>'
+					+'</li>'
+				);
+			}
+			$('.second').fadeIn(1000);
+		};
+	</script>
+</body>
+</html>

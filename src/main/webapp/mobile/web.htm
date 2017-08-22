@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>网站建设-网站建设-网站建设高端品牌-广州网站建设-企业网站建设</title>
+<meta name="keywords" content="网站建设，网页设计，广州网站建设，深圳网站建设，企业网站建设，垄上工作室，uweb，手机网站，微信营销、APP开发、虚拟仿真" />
+<meta name="description" content="垄上工作室成立于2001年，专注网站建设及信息化咨询服务，提供完善的网站建设、移动端应用、企业微信大战略、3D虚拟仿真等一系列企业互联网解决方案，知名客户有欧派、索菲亚、王老吉、PICC、海天味业、珠江钢琴、例外服饰、广百集团、轻工集团、广州发展集团。" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="copyright" content="Copyright 2015-2020 - www.uweb.net.cn Lee">
+<meta name="Author" content="垄上工作室 www.uweb.net.cn Lee">
+<!--<meta name="format-detection" content="telephone=no">-->
+<link rel="stylesheet" href="/templates/default/style_m/style.css">
+<link rel="stylesheet" href="/templates/default/style_m/media.css">
+<script src="/templates/default/js/jquery-2.1.1.min.js"></script>
+<script src="/templates/default/js/touch-0.2.14.min.js"></script>
+<script src="/templates/default/js/TouchSlide.1.1.js"></script>
+<script src="/templates/default/js/common.js"></script> 
+</head>
+<body>
+<header class="fixed">
+<a href="contact.htm" class="goPhone"></a>
+	<a href="javascript:;" class="goBack" id="goBackBtn"></a>
+     <h1>网站建设</h1>
+     <a href="javascript:;" class="headerMenu" id="headerMenu"></a>
+     <a href="javascript:;" class="headerClose" id="closeBtn"></a>
+ </header>
+    
+<script src="/templates/default/js/jquery.imagesloaded.js"></script>
+
+<ul class="fastList fixed" id="fastList">
+    <li class="on"><a href="javascript:;">品牌</a></li>
+    <li><a href="javascript:;">官方</a></li>
+    <li><a href="javascript:;">企业</a></li>
+    <li><a href="javascript:;">商城</a></li>
+    <li><a href="javascript:;">信息</a></li>
+</ul>
+
+<ul class="buildList" id="buildList">
+    <li id="b1">
+        <img src="/templates/default/images_m/build1.jpg">
+        <a href="anli.htm" class="more">相关案例></a>
+    </li>
+    <li id="b2">
+        <img src="/templates/default/images_m/build2.jpg">
+        <a href="anli.htm" class="more">相关案例></a>
+    </li>
+    <li id="b3">
+        <img src="/templates/default/images_m/build3.jpg">
+        <a href="anli.htm" class="more">相关案例></a>
+    </li>
+    <li id="b4">
+        <img src="/templates/default/images_m/build4.jpg">
+        <a href="anli.htm" class="more">相关案例></a>
+    </li>
+    <li id="b5">
+        <img src="/templates/default/images_m/build5.jpg">
+        <a href="anli.htm" class="more">相关案例></a>
+    </li>
+</ul>
+    
+ <script>
+    $(function() {
+        $('#buildList').imagesLoaded()
+            .done(function(instance) {
+                var b1t, b2t, b3t, b4t, b5t,
+                    dh = $(document).height(),
+                    wh = $(window).height();
+                    hh = $('header').innerHeight();
+                console.log('所有图片加载完成');
+
+                b1t = $('#b1').position().top;
+                b2t = $('#b2').position().top - 50;
+                b3t = $('#b3').position().top - 60;
+                b4t = $('#b4').position().top - 60;
+                b5t = $('#b5').position().top - 30;
+
+                var arr = [hh, 50, 60, 60, 30];
+
+                $('#fastList li').each(function() {
+                    var i = $(this).index() + 1;
+                    var distance = Math.ceil($('#b' + i).position().top) - arr[i - 1];
+
+                    $(this).click(function() {
+                        $('html,body').animate({
+                            scrollTop: distance
+                        });
+                    });
+                });
+
+                document.addEventListener('scroll', function() {
+                    var st = $(window).scrollTop();
+                    var aa = st + wh;
+                    if (st <= b2t) {
+                        $('.fastList li').eq(0).addClass('on').siblings().removeClass('on');
+                    };
+                    if (st <= b3t && st > b2t) {
+                        $('.fastList li').eq(1).addClass('on').siblings().removeClass('on');
+                    };
+                    if (st <= b4t && st > b3t) {
+                        $('.fastList li').eq(2).addClass('on').siblings().removeClass('on');
+                    };
+                    if (st <= b5t && st > b4t) {
+                        $('.fastList li').eq(3).addClass('on').siblings().removeClass('on');
+                    };
+                    if (aa >= dh - 50) {
+                        $('.fastList li').eq(4).addClass('on').siblings().removeClass('on');
+                    }
+                }, false);
+            });
+    })
+    </script>
+    
+
+
+
+</body>
+</html>

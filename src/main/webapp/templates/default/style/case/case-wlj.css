@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*case*/
+.wd12{ margin:0 auto; width:1200px;}
+.cz{animation:z1 3s;}
+/*fullSlide*/
+.fullSlide {
+	height:503px;
+	width:1003px;
+	position: relative;
+	padding-top:182px;
+}
+.fullSlide .bd {
+	margin:0 auto;
+	position: relative;
+	z-index: 0;
+	overflow: hidden;
+}
+.fullSlide .bd ul {
+	width:896px;
+	margin:42px 0 0 65px;
+}
+.fullSlide .bd li {
+	width: 896px;
+	height:503px;
+	overflow: hidden;
+	text-align: center;
+	text-indent:-9999px;
+}
+.fullSlide .prev,.fullSlide .next { width: 45px; height: 45px; position: absolute; top:263px; z-index: 10; cursor: pointer; text-indent: -9999px; }
+.fullSlide .prev{ left: 92px; background:url(../..\images\case\wlj\wprev.png) no-repeat 0 0;}
+.fullSlide .next { right: 86px; background:url(../..\images\case\wlj\wnext.png) no-repeat 0 0;}
+.fullSlide .prev:hover,.fullSlide .next:hover { filter:alpha(opacity=50) !important;opacity:0.5 !important;  }
+
+.y_fd {
+	-webkit-animation: fadeInDown 1s .2s ease both;
+	-moz-animation: fadeInDown 1s .2s ease both;
+	animation: fadeInDown 1s .2s ease both;
+	display:block !important;
+}
+@-webkit-keyframes fadeInDown {
+0% {
+opacity: 0;
+-webkit-transform: translateY(-200px);
+}
+ 100% {
+opacity: 1;
+-webkit-transform: translateY(0);
+}
+}
+@-moz-keyframes fadeInDown {
+0% {
+opacity: 0;
+-moz-transform: translateY(-200px);
+}
+ 100% {
+opacity: 1;
+-moz-transform: translateY(0);
+}
+}
+@keyframes fadeInDown {
+0% {
+opacity: 0;
+transform: translateY(-200px);
+}
+ 100% {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+
+@keyframes z1 {
+ 0% {
+transform:scale(0.1);
+}
+100% {
+transform:scale(1);
+}
+}
+@-webkit-keyframes z1 {
+ 0% {
+-webkit-transform:scale(0.1);
+}
+ 100% {
+-webkit-transform:scale(1);
+}
+}
+}

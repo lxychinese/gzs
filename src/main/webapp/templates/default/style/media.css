@@ -1,0 +1,41 @@
+@media screen and (max-width: 1024px){
+	.wp,.footer .footerLeft,.indexBanner .hd,.honorList{ width: 100%;}
+	.logo{ margin-left: 10px;}
+	.headerContact ol,.nav{ margin-right: 10px;}
+	.indexPro dl{ width: 213px;}
+	#web{ min-width: 0;}
+	.indexAboutInfo{ width: 772px;}
+	.indexAboutList{ width: 370px;}
+	.btmContact dt{ margin-right: 0;}
+	.btmContact dd{ width: 400px;}
+	.footer .copyRight{ float: left; width: 100%; text-align: left;}
+	.footer .copyRight ul{ float: left;}
+	.box-3d .wordBox { width: 395px;}
+	.wfBox .dot{ width: 96px; height: 96px; background-size: 100% 100%;}
+	.wfBox .topCir,.wfBox .bottomCir{ width: 96px; height: 48px; background-size: 100% 100%;}
+	.wfBox .icon{ background-size: 100% 100% !important;}
+	.wfBox .dot2{ left: 120px;}
+	.wfBox .dot3{ left: 240px;}
+	.wfBox .dot4{ left: 360px;}
+	.wfBox .dot5{ left: 480px;}
+	.wfBox .dot6{ left: 600px;}
+	.wfBox .dot7{ left: 720px;}
+	.wfBox .dot8{ left: 840px;}
+	.aboutNewsList li{ width: 293px; margin: 0 0 13px 7px;}
+	.acCardBox:first-child{ margin-left: 0;}
+	.acCardBox{ width: 470px;}
+	.wfBox .dot1 .icon{ width: 20px; height: 24px; margin-top: 18px;}
+	.wfBox .dot2 .icon{ width: 27px; height: 24px; margin-top: 18px;}
+	.wfBox .dot3 .icon{ width: 30px; height: 25px; margin-top: 17px;}
+	.wfBox .dot4 .icon{ width: 30px; height: 30px; margin-top: 12px;}
+	.wfBox .dot5 .icon{ width: 38px; height: 28px; margin-top: 14px;}
+	.wfBox .dot6 .icon{ width: 21px; height: 27px; margin-top: 15px;}
+	.wfBox .dot7 .icon{ width: 31px; height: 27px; margin-top: 15px;}
+	.wfBox .dot8 .icon{ width: 24px; height: 25px; margin-top: 17px;}
+	.wfBox .line{ background-size: 100% auto; top: 74px; left: 40px; width: 853px;}
+	.jobBox{ width: 100%; box-sizing:border-box;}
+	.newsBox .newsList li,.reNewsBox .newsList li{ width: 450px;}
+	.newsBox .newsSlide,.reNewsBox .newsSlide{ width: 490px;}
+	.newsBox .newsSlide .bd,.reNewsBox .newsSlide .bd{ height: 220px; overflow: hidden;}
+	.newsBox.even .newsSlide{ right: 8px;}
+}

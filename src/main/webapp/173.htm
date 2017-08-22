@@ -1,0 +1,292 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>垄上工作室-网站建设高端品牌-广州网站建设-企业网站建设</title>
+
+
+
+<link rel="stylesheet" href="/templates/default/style/style.css" />
+
+<link rel="stylesheet" href="/templates/default/style/media.css" />
+
+
+
+<script type="text/javascript" src="/templates\default\script\jquery1.72.js"></script>
+
+<script type="text/javascript" src="/templates\default\script\respond.min.js"></script>
+
+<script type="text/javascript" src="/templates\default\script\jquery.SuperSlide2.11.js"></script>
+
+<script type="text/javascript" src="/templates\default\script\jquery.lavalamp.min.js"></script>
+
+<script type="text/javascript" src="/templates\default\script\jquery.imagesloaded.js"></script>
+
+<script type="text/javascript" src="/templates\default\script\jquery.wookmark.min.js"></script>
+
+<script type="text/javascript" src="/templates\default\script\jquery.easing.1.3.min.js"></script>
+
+<script type="text/javascript" src="/templates\default\script\script.js"></script>
+<script src="//cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+<!--[if IE 6]>
+
+        <script type="text/javascript" src="/templates\default\script\DD_PNG.js" ></script>
+
+        <script type="text/javascript">
+
+                DD_belatedPNG.fix('div, ul, img, li, input , a');
+
+        </script>
+
+<![endif]--> 
+
+</head>
+
+<body>
+
+	<div id="web">
+
+
+
+
+
+
+
+		<div class="newsBanner">
+			<ul class="newsMenu fixed">
+				<li rel="18"><a href="#">公司新闻</a></li>
+				<li rel="19"><a href="#">项目动态</a></li>
+				<li rel="20"><a href="#">杂记</a></li>
+
+			</ul>
+		</div>
+		<script>
+    (function ($) {
+        var tid=20;
+         $(".newsMenu li").each(function(ii){  
+             if($(".newsMenu li").eq(ii).attr("rel")==tid)
+             {
+                   $(".newsMenu li").removeClass("on");
+                   $(".newsMenu li").eq(ii).addClass("on");
+             }
+         }); 
+    })(jQuery);
+</script>
+
+
+
+		<div class="newsCon">
+
+			<div class="newsInfoCon wp">
+
+				<div class="newsInfoBox">
+
+					<div class="closeBtn">
+						<a href="javascript:window.close()">关闭</a>
+					</div>
+
+					<h1>	Code First vs WSDL Frist</h1>
+
+					<div class="time">
+						发布日期：2015-07-25&nbsp;&nbsp;&nbsp;浏览次数：
+						&nbsp;&nbsp;&nbsp;来源：<a href="" title="查看来源">广州网站建设</a>
+					</div>
+
+					<div class="article">
+
+						<p><span style="font-size: 14px;"><span style="color: rgb(51, 51, 51); font-family: Arial; line-height: 26px; background-color: rgb(255, 255, 255);">如果要构建一个Web Services，CXF提供了两种构建方式一个是Code First，另一个WSDL First。</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"/><span style="color: rgb(51, 51, 51); font-family: Arial; line-height: 26px; background-color: rgb(255, 255, 255);">那什么是Code First，什么又是WSDL First呢？&nbsp;</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"/><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"/><span style="color: rgb(51, 51, 51); font-family: Arial; line-height: 26px; background-color: rgb(255, 255, 255);">大家知道，如果我们要将一个服务发布一个WebService，我们需要定义这个服务所支持的方法，以及调用这些方法所提供的参数并将其转化成为WSDL，供其它的客户端调用。Code First是第一代的WebService开发工具所提供的构建WebService的一种方式。以Java为例，我们可以通过Interface定义一组Web服务所提供的方法，Code First就是通过获取这个Interface的信息构建出Web Services 所需要的信息，并在这些信息的基础上生成WSDL。</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"/><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"/><span style="color: rgb(51, 51, 51); font-family: Arial; line-height: 26px; background-color: rgb(255, 255, 255);">而WSDL First就是通过WSDL文件，生成相关的Aritifacts，例如有相关的接口以及实现的代码框架等，这CORBA开发一样，先使用IDL描述我们的CORBA服务，通过IDL2XXX生成相关的接口和实现框架（屏蔽了网络传输中Marshal和Unmarshal的操作）。</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"/><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"/><span style="color: rgb(51, 51, 51); font-family: Arial; line-height: 26px; background-color: rgb(255, 255, 255);">这两种构建Web Services各有特点，适合在不同的场景。</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"/><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"/><span style="color: rgb(51, 51, 51); font-family: Arial; line-height: 26px; background-color: rgb(255, 255, 255);">接触过WSDL的朋友应该都有这样的感觉，WSDL虽然是用XML来进行描述的，但是如果让你在不借助任何工具的情况下写一个正确的WSDL，或者是改正一个错误的WSDL是很难的。Code First可以说是为我们提供了一个不错的选择。</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"/><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"/><span style="color: rgb(51, 51, 51); font-family: Arial; line-height: 26px; background-color: rgb(255, 255, 255);">但是Web Services的Best Practies并不推荐Code First这一Web Services的构建方式。原因是什么呢？</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"/><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"/><span style="color: rgb(51, 51, 51); font-family: Arial; line-height: 26px; background-color: rgb(255, 255, 255);">这是因为我们在使用Code First构建方式时很少考虑到Web Services之间的交互是以文档方式进行（这样可以大大提高Web Services的互交互性），如果是使用Code First来构建WSDL信息，在描述描述交互信息的XML Schema都是以我们的Code中定义的类型信息来生成的，这样就可能会暴露一些比较细粒度的信息。同时大家知道不同的语言（C＋＋，Java， C＃，PHP）对XML Schema映射是各不相同的，如果我们Code中定义的类型很特殊，就可能产生出一个不能互操作的现象。</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"/><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"/><span style="color: rgb(51, 51, 51); font-family: Arial; line-height: 26px; background-color: rgb(255, 255, 255);">所以Best Practies建议你在创建Web Services从交互的消息Schema入手，构建一个中间层来提供一个比较粗粒度的描述，这样可以比较好的解决Web Services的互交互问题。&nbsp;</span></span></p>
+
+					</div>
+
+				</div>
+
+				<div class="otherPage fixed">
+
+					<ol class="pageList">
+
+						<li>上一篇：<a href="2852.html">什么是微网站？与手机网站、app之间有什么区别？</a></li>
+
+						<li>下一篇：<a href="2847.html">网页内容排版对SEO优化有何影响？</a></li>
+
+					</ol>
+
+					<ol class="otherTool fixed">
+
+						<li id="bdshare" class="share bdshare_b bdsharebuttonbox"><a
+							class="bds_more" title="分享" data-cmd="more" href="javascript:;">分享</a></li>
+
+						<li class="close"><a href="javascript:window.close()">关闭</a></li>
+
+					</ol>
+
+				</div>
+
+			</div>
+
+			<div class="reNewsCon wp">
+
+				<div class="reNewsTit">相关新闻文章</div>
+
+				<div class="reNewsBox">
+
+					<ul class="newsList fixed">
+					
+					
+
+						<li class="fixed">
+
+							<div class="info">
+
+								<a href="162.htm" target="_blank"
+									title="">微信企业号开发:主动发送消息</span></a>
+
+								<p>微信企业号开发之发送消息</p>
+
+							</div>
+
+						</li>
+
+						<li class="fixed">
+
+							<div class="info">
+
+								<a href="211.htm" target="_blank"
+									title="">微信JS SDK Demo</span></a>
+
+								<p>微信JS-SDK 分享到朋友圈 分享给朋友 分享到QQ 拍照或从手机相册中选图</p>
+
+							</div>
+
+						</li>
+
+						<li class="fixed">
+
+							<div class="info">
+
+								<a href="179.htm" target="_blank"
+									title="">SpringBeanRouter分析</span></a>
+
+								<p>SpringBeanRouter原理深入研究</p>
+
+							</div>
+
+						</li>
+
+						<li class="fixed">
+
+							<div class="info">
+
+								<a href="188.htm" target="_blank"
+									title=""> jQuery选择器全解</span></a>
+
+								<p>javascript原来可以这么简单</p>
+
+							</div>
+
+						</li>
+
+						
+
+
+
+					</ul>
+
+				</div>
+
+				<a href="news" class="readMore">查看更多>></a>
+
+			</div>
+
+		</div>
+
+
+
+		<script>
+
+	window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+
+	</script>
+
+
+
+
+
+	</div>
+
+
+
+
+
+	<ul class="indexFloatCon">
+
+		<li><a href="javascript:;" class="indexGoTop" title="返回顶部"></a></li>
+
+		<li><a target="_blank"
+			href="http://wpa.qq.com/msgrd?v=3&uin=2355767030&site=qq&menu=yes"
+			title="点击咨询" class="online">在线服务</a></li>
+
+		<li class="wenti"><a href="news"></a>
+
+			<dl class="wentiCon fixed">
+
+				<dt>
+					<a href="news.html">更多></a><span>常见问题</span>
+				</dt>
+
+				<dd>
+					<a href="208.htm" target="_blank">· 天猫双11前端分享系列（四）</a>
+				</dd>
+
+				<dd>
+					<a href="205.htm" target="_blank">· 天猫双11前端分享系列（一）</a>
+				</dd>
+
+				<dd>
+					<a href="203.htm" target="_blank">· socket简单运用</a>
+				</dd>
+
+				<dd>
+					<a href="201.htm" target="_blank">· 正则表达式小用法</a>
+				</dd>
+
+				<dd>
+					<a href="199.htm" target="_blank">· 数据库事务隔离级别 </a>
+				</dd>
+
+				<dd>
+					<a href="191.htm" target="_blank">· Facebook图片存储架构的学习</a>
+				</dd>
+
+
+			</dl></li>
+
+		<li class="ewmLi"><a href="javascript:;" class="erweima"></a>
+
+			<div class="ewmCon fixed">
+
+				<div class="ewm">
+					<img src="/templates\default\images\erweima.jpg"><p>关注</p>
+				</div>
+
+				<div class="ewm">
+					<img src="/templates\default\images\weim.jpg"><p>手机站</p>
+				</div>
+
+			</div></li>
+
+	</ul>
+
+
+
+	<span class="pdisplay"><script type="text/javascript"> var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa1a6296ef1286432ec2f1f459385026f' type='text/javascript'%3E%3C/script%3E")) </script></span>
+
+</body>
+
+</html>

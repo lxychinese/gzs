@@ -1,0 +1,71 @@
+/*page*/
+.page{padding: 15px 0 14px 0;text-align: center;width: 850px;margin: 0 auto;}
+#PageList{overflow: hidden;display: inline-block;}
+#PageList li.PreviousPage .this{background-color: #e6002e;color: #fff;}
+#PageList li{float: left;margin: 0 6px;text-align: center;}
+#PageList li a{font-size: 14px;padding: 13px 17px;display: block;transition: all 0.2s ease-in-out;-webkit-transition: all 0.2s ease-in-out;-o-transition: all 0.2s ease-in-out;-moz-transition: all 0.2s ease-in-out;border: 1px solid #e6e6e6;color: #c9c9c9;}
+#PageList li a:hover,#PageList li.this a{background: #e6002e;color: #fff;}
+
+#PageList li.TotalPages{font-size: 0;display: none;}
+#PageList li.PreviousPage a,#PageList li.NextPage a{background: no-repeat center;font-size: 14px;color: #c9c9c9;}
+#PageList li.PreviousPage a:hover,#PageList li.NextPage a:hover{background: #e6002e;color: #fff;}
+
+
+.type-in{width: 100%;margin: 0 auto;}
+.location{padding: 40px 0;color: #666666;font-size: 12px;}
+.location a{color: #666666;}
+.type-list-in-tit{text-align: center;color: #666666;font-size: 14px;float: left;padding:18px 0px;border-right: 1px solid #dfdfdf;border-bottom: 1px solid #dfdfdf;width: 10%;}
+.type-list-in-con{float: left;width:90% ;padding:1px 0px 0px 0px;border-bottom: 1px solid #dfdfdf;}
+.type-list-in-con ul{padding: 0px 10px 0 10px;height: 100px;line-height: 100px;}
+.type-list-in-con ul li{float: left;}
+.type-list-in-con ul li a{color: #666666;font-size: 12px;display: block;padding: 0 25px;}
+.type-list-in-tit img{width:30%;height: 30px;display: block;margin: 0 auto 15px auto;}
+.type-list-in{border: 1px solid #dfdfdf;font-size: 0;border-bottom:none;}
+.type-list-in .this a{color:red}
+.height-nr{margin: 25px auto 0 auto;border-bottom: 1px solid #DFDFDF;}
+.height-nr-in{margin: 0 auto;}
+
+.height-nr-in .imgbox img {
+	display:block;
+    width: 100%;
+    height: 283px;
+}
+.height-nr-in ul li{float: left; margin-right:1px;margin-bottom: 45px}
+.height-nr-in ul li a{color: #666666;font-size: 14px;}
+.height-nr-in .imgbox{width: 100%;height: 283px;}
+.height-nr-info-name{float: left;}
+.height-nr-info-num{float: right;}
+.height-nr-info{padding: 25px 0;}
+.heart-icon{width: 19px;height: 19px;display: inline-block;background-image: url(../images/height6.png);background-repeat: no-repeat;vertical-align: middle;}
+
+
+
+
+/*无缝滚动*/
+.pic_content{width: 1125px;overflow: hidden;height: 210px;font-size: 0;margin-left: 40px;height: 210px;position: relative;}
+.vr-list-nr{width: 8888px;overflow: hidden;height: 210px;font-size: 0;position: relative;}
+.vr-list{position: relative;}
+.vr-prev{position: absolute;top: 28px;left: 0;z-index: 99;cursor: pointer;}
+.vr-next{position: absolute;top: 28px;right: 0;z-index: 99;cursor: pointer;}
+
+/*悬停效果*/
+.fuwu-con .fuwu-img > img{transition: .1s transform;transform: translateZ(0);/* hack */}
+.f-news-img img{transition: .1s transform;transform: translateZ(0);/* hack */}
+.fuwu-img:hover ,.f-news-img:hover{z-index: 1;}
+.fuwu-img:hover > img{transform: scale(1.2, 1.2);transition: .3s transform;-webkit-transform: scale(1.2, 1.2);-webkit-transition: .3s transform;-moz-transform: scale(1.2, 1.2);-moz-transition: .3s transform;-o-transform: scale(1.2, 1.2);-o-transition: .3s transform;}
+.f-news-img:hover > img{transform: scale(1.1, 1.1);transition: .3s transform;-webkit-transform: scale(1.2, 1.2);-webkit-transition: .3s transform;-moz-transform: scale(1.2, 1.2);-moz-transition: .3s transform;-o-transform: scale(1.2, 1.2);-o-transition: .3s transform;}
+.f-news-con h2 a:hover{color: #e6002e;}
+.f-case1-nr ul li:hover .f-case1-com{color: #e6002e;}
+.f-case1-nr ul li:hover .f-case1-num{background-color: #e6002e;}
+.type-list-in-con ul li a:hover{color: #e6002e;}
+.fuwu-car-name a:hover{background:#e6002e;color:#fff;transition: all 0.8s ease-in-out;-webkit-transition: all 0.8s ease-in-out;-moz-transition: all 0.8s ease-in-out;-o-transition: all 0.8s ease-in-out;}
+
+/*蒙版*/
+.mengban{width: 381px;height: 283px;background-color: #000000\9;
+				filter:alpha(opacity=80);background: rgba(0,0,0,0.6);position: absolute;top: 0;left: 0;display: none;}
+.height-nr-in .imgbox{position: relative;}
+.mengban-info{color: #fff;height: 85px;position: absolute;top: 50%;margin-top: -43px;left: 0; text-align: center;width: 100%;}
+.mengban-info p{margin-bottom: 15px;}
+
+
+

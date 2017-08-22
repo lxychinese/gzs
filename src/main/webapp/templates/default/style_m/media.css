@@ -1,0 +1,88 @@
+/* 鍝嶅簲寮忎粠杩欓噷寮€濮�  */
+/*public*/
+
+/* 1024px */
+@media screen and (width: 1024px){
+	.wxBox li:nth-child(1){ background-size: auto 50%;}
+	.bigMenu li a{ padding: 9% 0 0 36.57534%;}
+	.bigMenu li:nth-child(1),
+	.bigMenu li:nth-child(2),
+	.bigMenu li:nth-child(3),
+	.bigMenu li:nth-child(4){ background-size: 26.06849% auto;}
+	.indexNewsList li img{ width: 16%;}
+	.simList li.diy{ background-position: 93% bottom; background-size: 40% auto;}
+	.simList li.view{ background-position: 93% bottom; background-size: 35% auto;}
+	.simList li.vir{ background-position: 93% bottom; background-size: 45% auto;}
+	.guideBox{ width: 25%;}
+	.casePage li{ height: 90px; line-height: 90px;}
+	.casePage li a{  background-size: auto 30px;}
+	.wxBox .wxIconBox .icon:nth-child(2n){ background-position: 62% top;}
+}
+
+/* 768px */
+@media screen and (width: 768px){
+	.simList li.diy{ background-position: center bottom; background-size: 60% auto;}
+	.guideBox{ width: 30%;}
+	.casePage li{ height: 90px; line-height: 90px;}
+	.casePage li a{  background-size: auto 30px;}
+}
+
+/* 540px */
+@media screen and (max-width : 639px){
+
+	html, body, button, input, select, textarea, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, input, button {
+	    font: normal 105.46875% 'Microsoft YaHei', Arial, "\5b8b\4f53", tahoma;
+	}
+	.nav li a i{ width: 68px; height: 68px; margin-left: -34px; background-position: 0 -68px;}
+	
+}
+
+/* 480px */
+@media screen and (max-width : 539px){
+
+	html, body, button, input, select, textarea, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, input, button {
+	    font: normal 93.75% 'Microsoft YaHei', Arial, "\5b8b\4f53", tahoma;
+	}
+
+	.nav{ margin-bottom: 50px;}
+
+	.nav li a i{ width: 60px; height: 60px; margin-left: -30px; background-position: 0 -60px;}
+
+
+}
+
+/* 360px */
+@media screen and (max-width : 479px){
+	
+	html, body, button, input, select, textarea, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, input, button {
+	    font: normal 62.5% 'Microsoft YaHei', Arial, "\5b8b\4f53", tahoma;
+	}
+	.indexTit h4{ padding: 0;}
+	.guideBox{  -webkit-transform: translate(-50%, -100%);  transform: translate(-50%, -100%);}
+
+	.nav li a i{ width: 40px; height: 40px; margin-left: -20px; background-position: 0 -40px;}
+	
+
+}
+
+/* iphone6 plus */
+@media screen and (width: 414px){
+	.appList dl dd a{ width: 9rem; font-size: 1.2rem; width: 9rem; height: 2.5rem; line-height: 2.3rem;}
+	.wxBox .wxIconBox .icon i{ height: 5rem;}
+}
+
+/* iphone6 */
+@media screen and (width: 375px){
+	.wxBox .wxIconBox .icon i{ height: 5rem;}
+}
+
+/* 320 */
+@media screen and (width: 320px){
+	.casePage li.prev a{ text-indent: 28%;}
+	.casePage li.next a{ text-indent: 7%;}
+
+	/* 0731 */
+	.indexkh .intro a { font-size: 1rem;}
+}
+
+

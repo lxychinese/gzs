@@ -1,0 +1,280 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>垄上工作室-网站建设高端品牌-广州网站建设-企业网站建设</title>
+<meta name="keywords" content="网站建设，网页设计，广州网站建设，深圳网站建设，企业网站建设，垄上工作室，手机网站，微信营销、APP开发、扎根垄上" />
+<meta name="description" content="垄上工作室专注网站建设及信息化咨询服务，提供完善的网站建设、移动端应用、企业微信大战略、3D虚拟仿真等一系列企业互联网解决方案，知名客户有欧派、索菲亚、王老吉、PICC、海天味业、珠江钢琴、例外服饰、广百集团、轻工集团、广州发展集团。" />
+
+
+<link rel="stylesheet" href="/templates/default/style/style.css" />
+
+<link rel="stylesheet" href="/templates/default/style/media.css" />
+
+
+
+<script type="text/javascript" src="/templates\default\script\jquery1.72.js"></script>
+
+<script type="text/javascript" src="/templates\default\script\respond.min.js"></script>
+
+<script type="text/javascript" src="/templates\default\script\jquery.SuperSlide2.11.js"></script>
+
+<script type="text/javascript" src="/templates\default\script\jquery.lavalamp.min.js"></script>
+
+<script type="text/javascript" src="/templates\default\script\jquery.imagesloaded.js"></script>
+
+<script type="text/javascript" src="/templates\default\script\jquery.wookmark.min.js"></script>
+
+<script type="text/javascript" src="/templates\default\script\jquery.easing.1.3.min.js"></script>
+
+<script type="text/javascript" src="/templates\default\script\script.js"></script>
+
+</head>
+
+<body>
+
+	<div id="web">
+
+		<div class="newsBanner">
+			<ul class="newsMenu fixed">
+				<li rel="18"><a href="#">公司新闻</a></li>
+				<li rel="19"><a href="#">项目动态</a></li>
+				<li rel="20"><a href="#">杂记</a></li>
+
+			</ul>
+		</div>
+		<script>
+    (function ($) {
+        var tid=20;
+         $(".newsMenu li").each(function(ii){  
+             if($(".newsMenu li").eq(ii).attr("rel")==tid)
+             {
+                   $(".newsMenu li").removeClass("on");
+                   $(".newsMenu li").eq(ii).addClass("on");
+             }
+         }); 
+    })(jQuery);
+</script>
+
+
+
+		<div class="newsCon">
+
+			<div class="newsInfoCon wp">
+
+				<div class="newsInfoBox">
+
+					<div class="closeBtn">
+						<a href="javascript:window.close()">关闭</a>
+					</div>
+
+					<h1>	alfresco集群负载均衡配置</h1>
+
+					<div class="time">
+						发布日期：2015-07-25&nbsp;&nbsp;&nbsp;浏览次数：
+						&nbsp;&nbsp;&nbsp;来源：<a href="index.htm" title="查看来源">垄上工作室</a>
+					</div>
+
+					<div class="article">
+
+						<p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">机器两台：<br/>A机器：172.16.48.26：用于Alfresco服务器（集群节点1）<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 用于数据库服务器、文件服务器（共享）、</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><br/><span style="font-size: 12px;">B机器：172.16.48.27：用于Alfresco服务器（集群节点2）<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 负载均衡服务器</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">&nbsp;</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">&nbsp;</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;"><strong>第一步：创建共用数据库</strong><br/>在A机器：172.16.48.26 上安装MySQL，建立名为alfresco的数据库；<br/>#create database alfresco&nbsp;<br/>#grant all privileges on alfresco.* to&nbsp;</span><a target="_blank" href="mailto:root@'%'" style="color: rgb(51, 102, 153); text-decoration: underline; font-size: 12px;"><span style="font-size: 12px;">root@&#39;%&#39;</span></a><span style="font-size: 12px;">&nbsp;identified by &#39;alfresco&#39;</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">&nbsp;</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;"><strong>第二步：创建共享目录</strong><br/>在A机器：172.16.48.26上建立可写的共享目录 /alfresco；<br/>在/下创建目录 alfresco<br/>#mkdir /alfresco</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">&nbsp;</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;"><strong>第三步：设置共享目录</strong><br/>在A机器：172.16.48.26 上安装Samba，修改/etc/samba/smb.conf，增加以下内容</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">security = user<br/>[alfresco]<br/>comment = alfresco data &amp; log<br/>path = /alfresco<br/>public = yes<br/>writable = yes<br/>write list = @root</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><br/><span style="font-size: 12px;"><strong>第四步：建立Samba用户<br/></strong>在A机器：172.16.48.26建立Samba用户root<br/>#smbpasswd -a root</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><br/><span style="font-size: 12px;"><strong>第五步：建立共享<br/></strong>在B机器：172.16.48.27上创建/alfresco目录并挂载A机器的 共享目录//172.16.48.26/alfresco<br/># mount -t smbfs -o username=root,password=alfresco //172.16.48.26/alfresco /alfresco</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">&nbsp;</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;"><strong>第六步：安装tomcat并修改配置<br/></strong>A机器：172.16.48.26 上安装tomcat，并修改conf/server.xml<br/>&lt;Connector port=&quot;8080&quot;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; maxThreads=&quot;20000&quot;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; emptySessionPath=&quot;true&quot;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; protocol=&quot;org.apache.coyote.http11.Http11NioProtocol&quot;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; enableLookups=&quot;false&quot;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; redirectPort=&quot;8443&quot;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; connectionTimeout=&quot;20000&quot;&nbsp;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; disableUploadTimeout=&quot;true&quot; /&gt;</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">&nbsp;&lt;Engine name=&quot;Catalina&quot;&nbsp; defaultHost=&quot;localhost&quot;&nbsp; jvmRoute=&quot;tomcat1&quot;&gt;</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><br/><span style="font-size: 12px;">在B机器：172.16.48.27 上安装tomcat，并修改conf/server.xml，内容同上，然后将jvmRoute改为tomcat2；</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><br/><span style="font-size: 12px;"><strong>第七步：部署alfersco</strong></span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">将alfresco.war分别拷贝到A机器：172.16.48.26和B机器：172.16.48.27的webapps目录下，并解压缩到alfresco目录<br/>#jar -xf alfresco.war</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">&nbsp;</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;"><strong>第八步：修改alfresco配置</strong></span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">分别对两台机器的alfresco的配置做修改</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">&nbsp;</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">1、修改WEB-INF/classes/alfresco/repository.properties文件</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">dir.root=./alfresco_data<br/>db.name=alfresco<br/>db.url=jdbc:mysql://172.16.48.26:3306/${db.name}<br/>db.username=root<br/>db.password=alfresco</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">&nbsp;</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">2、拷贝extension目录(在repository项目的config中)下的内容分别到172.16.48.26和172.16.48.27的WEB-INF/classes/alfresco/extension目录下，<br/>包括：<br/>custom-hibernate-dialect.properties<br/>custom-repository-context.xml<br/>custom-repository.properties<br/>ehcache-custom.xml<br/>replicating-content-services-context.xml<br/>以及自己定义的content的配置</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">&nbsp;</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">3、修改custom-hibernate-dialect.properties文件<br/>hibernate.dialect=org.hibernate.dialect.MySQLInnoDBDialect</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">&nbsp;</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">4、修改custom-repository.properties文件</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">dir.root=./alfresco_data<br/>index.recovery.mode=AUTO<br/>index.tracking.cronExpression=0/5 * * * * ?<br/>index.tracking.reindexLagMs=10000</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">db.driver=org.gjt.mm.mysql.Driver<br/>db.name=alfresco<br/>db.url=jdbc:mysql://172.16.48.26:3306/${db.name}<br/>db.username=root<br/>db.password=alfresco</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">&nbsp;</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">5、修改ehcache-custom.xml文件<br/>&lt;cacheManagerPeerListenerFactory class=&quot;net.sf.ehcache.distribution.RMICacheManagerPeerListenerFactory&quot;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; properties=&quot;port=40001, socketTimeoutMillis=300000&quot;/&gt;</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">&nbsp;</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">6、修改replicating-content-services-context.xml文件<br/>&lt;bean id=&quot;localDriveContentStore&quot; class=&quot;org.alfresco.repo.content.filestore.FileContentStore&quot;&gt;<br/>&nbsp;&nbsp;&nbsp; &lt;constructor-arg&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;value&gt;./alfresco_data/contentstore&lt;/value&gt;<br/>&nbsp;&nbsp;&nbsp; &lt;/constructor-arg&gt;<br/>&lt;/bean&gt;<br/>&lt;bean id=&quot;networkContentStore&quot; class=&quot;org.alfresco.repo.content.filestore.FileContentStore&quot;&gt;<br/>&nbsp;&nbsp;&nbsp; &lt;constructor-arg&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;value&gt;/alfresco/contentstore&lt;/value&gt;<br/>&nbsp;&nbsp;&nbsp; &lt;/constructor-arg&gt;<br/>&lt;/bean&gt;</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">&nbsp;</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;"><strong>第九步：启动tomcat<br/></strong></span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">修改172.16.48.26的bin/catalina.sh文件，启动tomcat<br/>export JAVA_OPTS=&#39;-Xms512m -Xmx2048m -XX:MaxPermSize=512m -server&#39;<br/>#./bin/startup.sh</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">&nbsp;</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">修改172.16.48.27的bin/catalina.sh文件，内容同上，启动tomcat；</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">&nbsp;</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;"><strong>第十步：安装文件服务器</strong></span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">&nbsp;</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">在172.16.48.26上安装apache httpd server到目录/usr/local/apache目录下，<br/>拷贝从apache网站找到的 mod_jk.so到modules目录下</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">&nbsp;</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">修改conf/httpd.conf<br/>LoadModule jk_module modules/mod_jk.so<br/>JkWorkersFile conf/workers.properties<br/>JkLogFile logs/mod_jk.log<br/>JkLogLevel info<br/>JkMount /* loadBalancer<br/>JkMount /jkstatus status</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">Include conf/extra/httpd-mpm.conf<br/>Include conf/extra/httpd-default.conf</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">&nbsp;</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">添加文件conf/workers.properties<br/>worker.list=tomcat1, tomcat2, loadBalancer, status</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">worker.tomcat1.port=8009<br/>worker.tomcat1.host=172.16.48.26<br/>worker.tomcat1.type=ajp13</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">worker.tomcat2.port=8009<br/>worker.tomcat2.host=172.16.48.27<br/>worker.tomcat2.type=ajp13</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">worker.loadBalancer.type=lb<br/>worker.loadBalancer.balance_workers=tomcat1, tomcat2<br/>worker.loadbalancer.sticky_session=true<br/>worker.loadbalancer.sticky_session_force=false<br/>worker.status.type=status</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">&nbsp;</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">修改conf/extra/httpd-default.conf文件<br/>Timeout 300<br/>KeepAlive On<br/>MaxKeepAliveRequests 0<br/>KeepAliveTimeout 300</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">&nbsp;</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">修改conf/extra/httpd-mpm.conf文件<br/>&lt;IfModule mpm_prefork_module&gt;<br/>&nbsp;&nbsp;&nbsp; StartServers 5<br/>&nbsp;&nbsp;&nbsp; MinSpareServers 5<br/>&nbsp;&nbsp;&nbsp; MaxSpareServers 10<br/>&nbsp;&nbsp;&nbsp; ServerLimit 4096<br/>&nbsp;&nbsp;&nbsp; MaxClients 2048<br/>&nbsp;&nbsp;&nbsp; MaxRequestsPerChild 0<br/>&lt;/IfModule&gt;</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">&lt;IfModule mpm_winnt_module&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp; ThreadsPerChild 1024<br/>&nbsp;&nbsp;&nbsp;&nbsp; MaxRequestsPerChild 0<br/>&lt;/IfModule&gt;</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">&nbsp;</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">启动apache httpd server</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">&nbsp;</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;"><strong>第十一步：测试</strong></span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">在A机器创建用户test</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">使用test用户创建文件 file1.txt</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">在B机器使用test用户搜索 file1；</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">&nbsp;</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">在B机器使用test用户创建文件 file2.txt</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">在A机器使用test用户搜索 file2；</span></p><p><br/></p>
+
+					</div>
+
+				</div>
+
+				<div class="otherPage fixed">
+
+					
+
+					<ol class="otherTool fixed">
+
+						<li id="bdshare" class="share bdshare_b bdsharebuttonbox"><a
+							class="bds_more" title="分享" data-cmd="more" href="javascript:;">分享</a></li>
+
+						<li class="close"><a href="javascript:window.close()">关闭</a></li>
+
+					</ol>
+
+				</div>
+
+			</div>
+
+			<div class="reNewsCon wp">
+
+				<div class="reNewsTit">相关推荐</div>
+
+				<div class="reNewsBox">
+
+					<ul class="newsList fixed">
+					
+					
+
+						<li class="fixed">
+
+							<div class="info">
+
+								<a href="p-30.htm" target="_blank"
+									title=""> Eclipse的版本和代号有什么不同</span></a>
+
+								<p>Eclipse项目拥有不同的发布周期</p>
+
+							</div>
+
+						</li>
+
+						<li class="fixed">
+
+							<div class="info">
+
+								<a href="p-31.htm" target="_blank"
+									title="">Eclipse 插件功能研究</span></a>
+
+								<p>Eclipse插件的高级应用</p>
+
+							</div>
+
+						</li>
+
+						<li class="fixed">
+
+							<div class="info">
+
+								<a href="p-63.htm" target="_blank"
+									title="">如何成为一个JavaScript 大牛？</span></a>
+
+								<p>JavaScript已成为全球公认最复杂的语言。</p>
+
+							</div>
+
+						</li>
+
+						<li class="fixed">
+
+							<div class="info">
+
+								<a href="p-61.htm" target="_blank"
+									title="">天猫双11前端分享系列（四）</span></a>
+
+								<p>大规模 Node.js 应用</p>
+
+							</div>
+
+						</li>
+
+						
+
+
+
+					</ul>
+
+				</div>
+
+				<a href="news" class="readMore">查看更多>></a>
+
+			</div>
+
+		</div>
+
+
+
+		<script>
+
+	window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+
+	</script>
+
+
+
+
+
+	</div>
+
+
+
+
+
+	<ul class="indexFloatCon">
+
+		<li><a href="javascript:;" class="indexGoTop" title="返回顶部"></a></li>
+
+		<li><a target="_blank"
+			href="http://wpa.qq.com/msgrd?v=3&uin=41794983&site=qq&menu=yes"
+			title="点击咨询" class="online">在线服务</a></li>
+
+		<li class="wenti"><a href="news"></a>
+
+			<dl class="wentiCon fixed">
+
+				<dt>
+					<a href="#">更多></a><span>常见问题</span>
+				</dt>
+
+
+Expression index is undefined on line 181, column 9 in pro.ftl.
+The problematic instruction:
+----------
+==> list index as news [on line 181, column 2 in pro.ftl]
+----------
+
+Java backtrace for programmers:
+----------
+freemarker.core.InvalidReferenceException: Expression index is undefined on line 181, column 9 in pro.ftl.
+	at freemarker.core.TemplateObject.assertNonNull(TemplateObject.java:124)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:93)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.process(Environment.java:176)
+	at freemarker.template.Template.process(Template.java:232)
+	at com.utils.FreemarkerUtils.geneHtmlFile(FreemarkerUtils.java:50)
+	at com.liu.data.access.impl.ProductAccessImpl.list(ProductAccessImpl.java:54)
+	at com.listen.SysListener.setupContextVer2(SysListener.java:34)
+	at com.listen.SysListener.contextInitialized(SysListener.java:19)
+	at org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized(ContextHandler.java:764)
+	at org.eclipse.jetty.servlet.ServletContextHandler.callContextInitialized(ServletContextHandler.java:406)
+	at org.eclipse.jetty.server.handler.ContextHandler.startContext(ContextHandler.java:756)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:242)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1221)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:699)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:454)
+	at org.mortbay.jetty.plugin.JettyWebAppContext.doStart(JettyWebAppContext.java:256)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at org.eclipse.jetty.server.handler.HandlerCollection.doStart(HandlerCollection.java:224)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.doStart(ContextHandlerCollection.java:167)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at org.eclipse.jetty.server.handler.HandlerCollection.doStart(HandlerCollection.java:224)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:90)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:262)
+	at org.mortbay.jetty.plugin.JettyServer.doStart(JettyServer.java:65)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at org.mortbay.jetty.plugin.AbstractJettyMojo.startJetty(AbstractJettyMojo.java:511)
+	at org.mortbay.jetty.plugin.AbstractJettyMojo.execute(AbstractJettyMojo.java:364)
+	at org.mortbay.jetty.plugin.JettyRunMojo.execute(JettyRunMojo.java:516)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:101)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:209)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:84)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:59)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.singleThreadedBuild(LifecycleStarter.java:183)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:161)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:320)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:156)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:537)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:196)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:290)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:230)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:409)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:352)

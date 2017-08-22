@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<meta name="format-detection" content="telephone=no" />
+<title>公告详情</title>
+<script>
+(function (doc, win) {
+    var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+            var clientWidth = docEl.clientWidth;
+            if (!clientWidth) return;
+            if( clientWidth > 600 ){
+            	docEl.style.fontSize = 12 + 'px';
+            }else{
+            	docEl.style.fontSize = 10 * (clientWidth / 320) + 'px';
+            }
+        };
+    // Abort if browser does not support addEventListener
+    if (!doc.addEventListener) return;
+    win.addEventListener(resizeEvt, recalc, false);
+    doc.addEventListener('DOMContentLoaded', recalc, false);
+})(document, window);
+</script>
+<link rel="stylesheet" rev="stylesheet" type="text/css"href="css/mobile.css" />
+<link rel="stylesheet" rev="stylesheet" type="text/css"href="css/layer.css" />
+</head>
+<body ontouchstart="">
+  <div id="noticeContent"><p style="margin-top: 16px;">本平台仅提供信息交流，请大家自行辨别真伪</p><p style="margin-top: 16px;"><strong><span style="background-color: rgb(255, 0, 0); color: rgb(255, 255, 255);">如要求付订金很可能是骗子</span></strong></p><p style="margin-top: 16px;">上车前请您核对车主身份信息</p><p><strong><span style="background-color: rgb(0, 112, 192); color: rgb(255, 255, 255);">司机：</span></strong>&nbsp;</p><p>1.要确认好拼车人信息。详细记录拼车者姓名、年龄、身份证、个人及家庭联系方式等，最好有认识的人一起拼车。</p><p>2.与乘客约好出发时间，出发前1天最好给乘客通一次电话提醒对方。</p><p>3.要明确拼车所需的费用。尤其是一旦发生交通违章造成罚款的分担，以及车辆发生问题所带来的维修费用的承担。</p><p>4.要和乘客明确是上车前支付还是上车后支付，还应明确额外费用的支付方式。</p><p>5.合理规划时间，总路程不宜超过十小时，不走夜路。 不要疲劳驾驶，同时保管好个人财物。</p><p>6.车主和同车人应分别将了解到的对方信息发送给至少一名亲友，以备出现问题后联系使用，并有意让对方知道这个情况。</p><p>7.事先确定好关于吸烟等细节的规则,特别是有女性和小孩在场的时候。</p><p>8.签协议和买保险是非常有必要的。</p><p><strong><span style="background-color: rgb(0, 112, 192); color: rgb(255, 255, 255);">乘客：</span></strong>&nbsp;</p><p>1.拼车者最好是熟悉的。与陌生人拼车时，要注意预防骗子或劫车者，车主和乘车人有必要互相了解对方的真实身份及联系方式。</p><p>2.车主和同车人应分别将了解到的对方信息发送给至少一名亲友，以备出现问题后联系使用，并有意让对方知道这个情况。</p><p>3.搭车人应事先了解驾驶员的技术水平、所用车型。关键是有无跑长途的经历。</p><p>4.要和乘客明确是上车前支付还是上车后支付，还应明确额外费用的支付方式。</p><p>5.总路程不宜超过10小时，不走夜路。避免心急赶路和疲劳驾驶，合理安排休息。</p><p>6.车主对于没有驾驶过所乘车型的同车人，尽量不要让其参与驾驶。</p><p>7.不要在途中向同车不熟悉的人炫耀自己的或者所携带财物 情况。</p><p>8.女性车主或乘车人应有熟悉的男性成年亲友相伴。</p><p>9.事先确定好关于吸烟等细节的规则,特别是有女性和小孩在场的时候 。</p><p>10.签协议和买保险是非常有必要的。</p></div>
+  <script src="../static/js/vue.js?20170109001"></script>
+  <script src="../static/js/jquery.js?20170109001"></script>
+  <script src="../static/js/layer.js?20170109001"></script>
+  <script src="../static/js/noticeContent.js?20170109001"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+.add-mengban{position: absolute;top: 0;left: 0;background:#E6002D;opacity:0.9;display:none;z-index: 101;height:482px;text-align: center;padding: 0 40px;padding-top: 50%;}
+.add-color{color: #fff;font-size: 14px;}
+.add-mengban .case-pdian1{text-align: left;margin-top: 35px;}
+.new-li a{display: block;}
+.new-li a:hover p{color: #E6002D;}
+.add-text{float: left;width: 100%;}
+.add-text-info{font-size: 14px;display: block;padding: 10px 10px;color: #999999;float: left;}
+.add-left{float: left;}
+.new-righta{margin-left: 0;}
+.new-righta{float: right;}
+.add-last{width: 100% !important;}
+.fixed_add{position: fixed;left: 1%;top: 42%;z-index: 9999;}
+.add-chart{display: block;background-image: url(../img/add111.png);background-repeat: no-repeat;width: 31px;height: 31px;margin: 0 auto 5px auto;}
+.add-num{display: block;background-image: url(../img/add2.png);background-repeat: no-repeat;width: 34px;height: 33px;margin: 0 auto 5px auto;}
+.add-top{display: block;background-image: url(../img/add3.png);background-repeat: no-repeat;width: 32px;height: 20px;margin: 0 auto 5px auto;}
+.fixed_add ul .this{background-color: #E6002D;text-align: center;padding: 10px;}
+.fixed_add ul li{background-color: #fff;text-align: center;padding: 10px;margin-bottom: 1px;width:48px;}
+.fixed_add ul .this a{color: #fff;font-size: 12px;display: block;text-align: center;}
+.fixed_add ul li a{color: #666;font-size: 12px;display: block;text-align: center;}
+.fixed_add ul li:hover a{color: #fff;}
+.fixed_add ul li:hover{background-color: #E6002D;}
+.fixed_add ul li:hover .add-chart{background-image: url(../img/add1.png);}
+.fixed_add ul li:hover .add-num{background-image: url(../img/add333.png);}
+.fixed_add ul li:hover .add-top{background-image: url(../img/add22.png);}
+.add-jisunji{position: relative;}
+
+
+/*ny*/
+.ny{margin-top: 35px;}
+.ny-in,.ny-content{width: 1200px;margin: 0 auto;}
+.ny-about{float: left;}
+.ny-about a{display: block;width: 399px;background-color: #ececec;color: #666666;font-size: 18px;text-align: center;padding: 35px 0;border-right: 1px solid #fff;}
+.ny-in .this a,.ny-about a:hover{background-color: #e6002e;color: #fff;}
+.ny-tit{font-size: 26px;color: #666666;font-weight: normal;padding: 52px 0;border-bottom: 1px solid #d9d9d9;}
+.ny-nr{padding: 0px 0;line-height: 2em;*line-height: 2em;}
+.ny-nr p{color: #000000;font-size: 14px;}
+.ny-sj{text-indent: 20px;}
+
+.jsq_form input{outline:none;}
+.ikjJsq { overflow: hidden;width: 340px; height: 198px; background-color: rgb(242, 242, 242); }
+.jsq_form{overflow: hidden;background-color: rgb(242, 242, 242);width:340px;height:198px;}
+.jsq_form p{margin: 0px auto ; position: relative; width: 298px; height: 34px; line-height: 34px;margin-top:10px;}
+#ikjJsqP{margin: 0px auto 10px; position: relative; width: 298px; height: 34px; line-height: 34px; color: rgb(153, 153, 153); text-align: center; background-color: rgb(221, 221, 221);font-size: 12px;}
+.jsq_form  p button{display: block; float: left; cursor: pointer; border: none; width: 149px; line-height: 34px;padding:0;margin:0; }
+.jsq_input  input{display: block; float: left; cursor: pointer; border: none; width: 149px; line-height: 34px;padding:0;margin:0;color:#ffffff;}
+.jsq_in1{background-color: #eb8b19;}
+.jsq_in2{background-color:rgb(153, 153, 153);}
+#jusuaninput{display: block; border: 1px solid rgb(221, 221, 221); font-family: Î¢ÈíÑÅºÚ; width: 298px; height: 34px; line-height: 34px; padding: 0px 20px; box-sizing: border-box; margin: 0px;}
+
+.jsq_box{width: 340px; height: 260px;background-color: rgb(242, 242, 242);position: relative;position: absolute; top: 0px; left:75px; display: none;}

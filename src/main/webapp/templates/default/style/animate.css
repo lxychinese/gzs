@@ -1,0 +1,456 @@
+/* 动画 */
+/* 旋转晃动 */
+
+.rotateShack {
+    -webkit-animation: rs 1s ease;
+    animation: rs 1s ease;
+}
+@keyframes rs {
+    0%, 50%, 100% {
+        transform: rotate(0);
+    }
+    25%, 75% {
+        transform: rotate(-15deg);
+    }
+}
+@-webkit-keyframes rs {
+    0%, 50%, 100% {
+        -webkit-transform: rotate(0);
+    }
+    25%, 75% {
+        -webkit-transform: rotate(-15deg);
+    }
+}
+/* 从左往右淡入 */
+
+.ltr {
+    -webkit-animation: ltr 1s ease forwards;
+    animation: ltr 1s ease forwards;
+}
+@keyframes ltr {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@-webkit-keyframes ltr {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-30px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+/* 从右往左淡入 */
+
+.rtl {
+    animation-name: rtl;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    -webkit-animation-name: rtl;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: ease;
+}
+.wikirtl {
+    -webkit-animation-name: rtl;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: forwards;
+}
+@keyframes rtl {
+    0% {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@-webkit-keyframes rtl {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(30px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+/* 3d馆下往上 */
+
+.btt {
+    -webkit-animation: btt 1s ease-in;
+    animation: btt 1s ease-in;
+}
+@keyframes btt {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@-webkit-keyframes btt {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+/* 3d馆上往下 */
+
+.ttb {
+    -webkit-animation: ttb 1s ease-in;
+    animation: ttb 1s ease-in;
+}
+@keyframes ttb {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@-webkit-keyframes ttb {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+/* 3d馆小图标 */
+
+@keyframes icon3d {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(5px);
+    }
+    75% {
+        transform: translateY(-5px);
+    }
+}
+@-webkit-keyframes icon3d {
+    0%, 100% {
+        -webkit-transform: translateY(0);
+    }
+    25% {
+        -webkit-transform: translateY(5px);
+    }
+    75% {
+        -webkit-transform: translateY(-5px);
+    }
+}
+/* 下往上 */
+
+.bottom2top {
+    -webkit-animation: btt .5s ease-out;
+    animation: btt .5s ease-out;
+}
+@keyframes btt {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@-webkit-keyframes btt {
+    0% {
+        -webkit-transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        opacity: 1;
+    }
+}
+/* 项目箭头 */
+
+@keyframes goNextBtn {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(7px);
+    }
+    75% {
+        transform: translateY(-7px);
+    }
+}
+@-webkit-keyframes goNextBtn {
+    0%, 100% {
+        -webkit-transform: translateY(0);
+    }
+    25% {
+        -webkit-transform: translateY(7px);
+    }
+    75% {
+        -webkit-transform: translateY(-7px);
+    }
+}
+/* 网站建设页面动画效果
+** 仅支持chrome
+*/
+
+@-webkit-keyframes woman {
+    0% {
+        -webkit-opacity: 0;
+        -webkit-transform: scale3d(.9, 1, 1) translate3d(170px, 0px, 50px) rotateY(40deg);
+    }
+    100% {
+        -webkit-opacity: 1;
+        -webkit-transform: scale3d(1, 1, 1) translate3d(0, 0px, 10px) rotateY(0);
+    }
+}
+@-webkit-keyframes wikiRTL {
+    0% {
+        -webkit-opacity: 0;
+        -webkit-transform: translateX(30px);
+    }
+    100% {
+        -webkit-opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+@-webkit-keyframes bounceInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-2000px);
+    }
+    60% {
+        -webkit-transform: translateY(30px);
+    }
+    80% {
+        -webkit-transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+.shake {
+    -webkit-animation-name: shake;
+    -webkit-animation-delay: .5s;
+    -webkit-animation-duration: .6s;
+    -webkit-animation-timing-function: linear;
+}
+@-webkit-keyframes shake {
+    0%, 100% {
+        -webkit-transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        -webkit-transform: translateX(-10px);
+    }
+    20%, 40%, 60%, 80% {
+        -webkit-transform: translateX(10px);
+    }
+}
+.wikifadeIn {
+    -webkit-animation-name: wikifadeIn;
+    -webkit-animation-delay: .6s;
+    -webkit-animation-duration: .6s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes wikifadeIn {
+    0% {
+        -webkit-opacity: 0;
+    }
+    100% {
+        -webkit-opacity: 1;
+    }
+}
+@-webkit-keyframes zoomInRightDown {
+    0% {
+        -webkit-opacity: 0;
+        -webkit-transform: scale3d(.1, .1, .1) translate3d(1000px, -500px, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    }
+    60% {
+        -webkit-opacity: 1;
+        -webkit-transform: scale3d(.475, .475, .475) translate3d(0, 0, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    }
+    100% {
+        -webkit-opacity: 1;
+    }
+}
+@-webkit-keyframes shakeLR {
+    0%, 100% {
+        -webkit-transform: rotate(0);
+    }
+    25% {
+        -webkit-transform: rotate(5deg);
+    }
+    75% {
+        -webkit-transform: rotate(-5deg);
+    }
+}
+@-webkit-keyframes wikiLT2RB {
+    0% {
+        -webkit-opacity: 0;
+        -webkit-transform: translate(-600px, -180px);
+    }
+    100% {
+        -webkit-opacity: 1;
+        -webkit-transform: translate(0, 0);
+    }
+}
+.wikiBtT {
+    -webkit-animation-name: wikiBtT;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes wikiBtT {
+    0% {
+        -webkit-opacity: 0;
+        -webkit-transform: translateY(50px);
+    }
+    100% {
+        -webkit-opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+.wikiBtS {
+    -webkit-animation-name: wikiBtS;
+    -webkit-animation-duration: .8s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes wikiBtS {
+    0% {
+        -webkit-opacity: 0;
+        -webkit-transform: scale3d(1.2, 1.2, 1);
+    }
+    100% {
+        -webkit-opacity: 1;
+        -webkit-transform: scale3d(1, 1, 1);
+    }
+}
+.fanL {
+    -webkit-animation-name: fanL;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes fanL {
+    0% {
+        -webkit-transform: rotateY(90deg) skewY(20deg);
+    }
+    100% {
+        -webkit-transform: rotateY(0) skewY(0);
+    }
+}
+.fanR {
+    -webkit-animation-name: fanR;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes fanR {
+    0% {
+        -webkit-transform: rotateY(-90deg) skewY(-20deg);
+    }
+    100% {
+        -webkit-transform: rotateY(0) skewY(0);
+    }
+}
+@-webkit-keyframes wikibounceInDown {
+  0%, 60%, 75%, 90%, 100% {
+    -wekit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    -wekit-opacity: 0;
+    -webkit-transform: translate3d(0, -1000px, 0);
+  }
+
+  60% {
+    -webkit-opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+  }
+
+  100% {
+    -webkit-opacity: 1;
+    -webkit-transform: none;
+  }
+}
+
+.wikibounceInDown {
+  -webkit-animation-name: wikibounceInDown;
+  -webkit-animation-duration: 1s;
+  /*-webkit-animation-delay: 1s;*/
+  -webkit-animation-fill-mode: forwards;
+  /*-webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);*/
+}
+
+.jobbtt {
+    -webkit-animation: btt 1s ease-out;
+    animation: btt 1s ease-out;
+}
+@keyframes btt {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@-webkit-keyframes btt {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes scaleIn {
+    from {
+	    -webkit-opacity: 0;
+	    -webkit-transform: scale3d(2, 2, 2);
+    }
+
+    to {
+	    -webkit-opacity: 1;
+	    -webkit-transform: scale3d(1, 1, 1);
+    }
+}
+
+.scaleIn {
+    -webkit-animation-name: scaleIn;
+}

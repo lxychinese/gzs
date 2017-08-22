@@ -1,0 +1,393 @@
+
+.Se_nav{
+	position: fixed;
+	top:0;
+	left: 0;
+	z-index: 10;
+}
+.carbanner{
+	width: 100%;
+	height: 10.5rem;
+	background-color: pink;
+	overflow: hidden;
+}
+.carbanner img{
+	width: 100%;
+	height: auto;
+}
+.carsearch{
+	width: 100%;
+	height: 5.4rem;
+	padding:1rem;
+	boz-sizing:border-box;
+	box-sizing:border-box;
+	align-items: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.carsearch .carsright{
+	webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+.carsearch input{
+	font-size: 1.4rem;
+	font-family: "寰蒋闆呴粦"
+}
+.carsearch div{
+	height: 100%;
+	line-height: 3.4rem;
+	border-radius: 2px;
+	overflow: hidden;
+}
+.carsleft{
+	width: 40%;
+	overflow: hidden;
+}
+.carsleft input{
+	width: 100%;
+	background-color: #fff;
+	line-height: 2rem;
+	padding:0.7rem 0.4rem;
+	box-szing:border-box;
+}
+.carsright{
+	width: 40%;
+	overflow: hidden;
+	line-height: 3.4rem;
+	margin-left: 5%;
+}
+.carsright input{
+	width: 100%;
+	background-color: #fff;
+	line-height: 2rem;
+	padding:0.7rem 0.4rem;
+	box-szing:border-box;
+}
+.carsbtn{
+	width: 10%;
+	overflow: hidden;
+	line-height: 3.4rem;
+	margin-left: 5%;
+}
+.carsbtn a{
+	width: 100%;
+	line-height: 3.4rem;
+	box-szing:border-box;
+	font-size: 1.4rem;
+	color:#ff5d38;
+}
+.cartag{
+	background-color: #fff;
+	height: 5.4rem;
+	width: 100%;
+}
+.cartag{
+	padding:0.7rem 1rem;
+	box-sizing:border-box;
+}
+.cartagin{
+	width: 100%;
+	height: 100%;
+	align-items: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.cartagin li{
+	width:33.33%;
+	height: 100%;
+	webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    line-height: 4rem;
+    text-align: center;
+    color:#fff;
+    font-size: 1.5rem;
+    border-radius: 2px;
+    overflow: hidden;
+}
+.cartagin li:nth-child(2){
+	margin:0 0.55rem;
+}
+.cartagin li a{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	color:#fff;
+}
+.cartagin .tag01{
+	background-color: #738ffd;
+}
+.cartagin .tag02{
+	background-color: #ffa827;
+}
+.cartagin .tag03{
+	background-color: #ff5d38;
+}
+.carCon{
+	width: 100%;
+	height: auto;
+}
+.carList{
+	width: 100%;
+	height: auto;
+	padding: 1rem 1.5rem 0;
+	box-sizing:border-box;
+	background-color: #fff;
+	margin-top:0.5rem;
+}
+.carlist01 .ctop{
+	display: inline-block;
+	width: 2.2rem;
+	height: 2.2rem;
+	background: url(car-02.png_v=1229)no-repeat -20.1rem -20.5rem;
+	-webkit-background-size: 50rem;
+	background-size: 50rem;
+	vertical-align: -7px;
+	margin-right: 0.3rem;
+}
+.carlist01 .cfp{
+	display: inline-block;
+	width: 5.6rem;
+	height: 2.2rem;
+	background: url(car-02.png_v=1229)no-repeat -23.2rem -20.5rem;
+	-webkit-background-size: 50rem;
+	background-size: 50rem;
+	vertical-align: -7px;
+	margin-right: 0.3rem;
+}
+.carlist01 .carli01{
+	font-size: 1.5rem;
+	color:#333;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-height: 2rem;
+    font-weight: bold;
+}
+.carlist01 .carto{
+	display: inline-block;
+	width: 2rem;
+	height:0.2rem;
+	background: url(car-02.png_v=1229) -40rem -20.5rem;
+	-webkit-background-size: 50rem;
+	background-size: 50rem;
+	vertical-align: 4px;
+	margin:0 0.6rem;
+}
+.carlist01{
+	/*line-height: 2.6rem;*/
+	/*margin-top:17.5px;*/
+}
+.carli02{
+	align-items: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	font-size: 1.3rem;
+	color:#666;
+	/*height: 2.8rem;*/
+	margin-top: 1.0rem;
+}
+.carli02 .carli02L{
+	webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    margin-right: 0.4rem;
+}
+.carli02R i{
+	display: inline-block;
+	width: 1.6rem;
+	height: 1.1rem;
+	background: url(car-02.png_v=1229)no-repeat -36.5rem -20.5rem;
+	-webkit-background-size: 50rem;
+	background-size: 50rem;
+	margin:0 0.4rem;
+}
+.carli02R{
+	color:#999;
+}
+.carli03{
+	color:#666;
+	font-size: 1.3rem;
+    line-height: 2rem;
+    margin-top:1rem;
+}
+.carlist{
+	display: inline-block;
+	width: 100%;
+	height: auto;
+	position: relative;
+	padding-bottom: 1.6rem;
+}
+.carlist:after{
+	content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid #e5e5e5;
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+}
+.carbot1{
+	background-color: #fff;
+	height: 4rem;
+	align-items: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+.carbot1 .carbot1l{
+	webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    font-size: 1.4rem;
+   
+}
+.carbot1 .carbot1lp{
+	color:#ffa827;
+}
+.carbot1 .carbot1k{
+	color:#738ffd;
+}
+
+.carbot1r .cartime{
+	font-size: 1.3rem;
+	color:#999;
+}
+.ctell{
+	/*padding:0.8rem 1.2rem 0.8rem 0.8rem;*/
+	display: inline-block;
+	border:1px solid #666;
+	color:#666;
+	width: 6rem;
+	height: 2.5rem;
+	line-height: 2.5rem;
+	text-align: center;
+}
+.ctell i{
+	display: inline-block;
+	width: 1rem;
+	height: 1.2rem;
+	background: url(car-02.png_v=1229)no-repeat -38.7rem -20.5rem;
+	-webkit-background-size: 50rem;
+	background-size: 50rem;
+	vertical-align: -2px;
+	margin:0 0.4rem;
+}
+.carbot1l{
+	overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+.cartime{
+	margin:0 0.4rem;
+}
+
+.carlist01 .pfc{
+	display: inline-block;
+	width: 5.6rem;
+	height: 2.2rem;
+	background: url(car-02.png_v=1229)no-repeat -29.4rem -20.5rem;
+	-webkit-background-size: 50rem;
+	background-size: 50rem;
+	vertical-align: -7px;
+	margin-right: 0.3rem;
+}
+.carli02L .ctoday{
+	color:#ff5d38;
+	font-weight: bold;
+}
+.carli02L .ctomorrow{
+	color:#738ffd;
+	font-weight: bold;
+}
+.SeMore{
+	font-size: 1.6rem;
+}
+
+.carlist01 .carpass {
+    display: inline-block;
+    width: 5.6rem;
+    height: 2.2rem;
+    background: url(car-02.png_v=1229)no-repeat -42.9rem -20.5rem;
+    -webkit-background-size: 50rem;
+    background-size: 50rem;
+    vertical-align: -7px;
+    margin-right: 0.3rem;
+}
+
+.carlist01 .carlipass01{
+	color:#999;
+}
+.carlist01 .cartopass{
+	display: inline-block;
+    width: 2rem;
+    height: 0.2rem;
+    background: url(car-02.png_v=1229) -40rem -21rem;
+    -webkit-background-size: 50rem;
+    background-size: 50rem;
+    vertical-align: 4px;
+    margin: 0 0.6rem;
+}
+.carlipass02{
+	color:#999;
+}
+.carlipass03{
+	color:#999;
+}
+.carbot1l{
+	color:#999;
+}
+.ctellpass{
+	color:#999;
+	border-color:#999;
+}

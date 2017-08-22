@@ -1,0 +1,798 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>网站建设高端品牌-广州网站建设-企业网站建设</title>
+
+
+
+<link rel="stylesheet" href="/templates/default/style/style.css" />
+
+<link rel="stylesheet" href="/templates/default/style/media.css" />
+
+
+
+<script type="text/javascript" src="/templates\default\script\jquery1.72.js"></script>
+
+<script type="text/javascript" src="/templates\default\script\respond.min.js"></script>
+
+<script type="text/javascript" src="/templates\default\script\jquery.SuperSlide2.11.js"></script>
+
+<script type="text/javascript" src="/templates\default\script\jquery.lavalamp.min.js"></script>
+
+<script type="text/javascript" src="/templates\default\script\jquery.imagesloaded.js"></script>
+
+<script type="text/javascript" src="/templates\default\script\jquery.wookmark.min.js"></script>
+
+<script type="text/javascript" src="/templates\default\script\jquery.easing.1.3.min.js"></script>
+
+<script type="text/javascript" src="/templates\default\script\script.js"></script>
+<script src="//cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+<!--[if IE 6]>
+
+        <script type="text/javascript" src="/templates\default\script\DD_PNG.js" ></script>
+
+        <script type="text/javascript">
+
+                DD_belatedPNG.fix('div, ul, img, li, input , a');
+
+        </script>
+
+<![endif]--> 
+
+</head>
+
+<body>
+
+	<div id="web">
+
+
+
+
+
+
+
+		<div class="newsBanner">
+			<ul class="newsMenu fixed">
+				<li rel="18"><a href="#">公司新闻</a></li>
+				<li rel="19"><a href="#">项目动态</a></li>
+				<li rel="20"><a href="#">杂记</a></li>
+
+			</ul>
+		</div>
+		<script>
+    (function ($) {
+        var tid=20;
+         $(".newsMenu li").each(function(ii){  
+             if($(".newsMenu li").eq(ii).attr("rel")==tid)
+             {
+                   $(".newsMenu li").removeClass("on");
+                   $(".newsMenu li").eq(ii).addClass("on");
+             }
+         }); 
+    })(jQuery);
+</script>
+
+
+
+		<div class="newsCon">
+
+			<div class="newsInfoCon wp">
+
+				<div class="newsInfoBox">
+
+					<div class="closeBtn">
+						<a href="javascript:window.close()">关闭</a>
+					</div>
+
+					<h1>	微信JS SDK Demo</h1>
+
+					<div class="time">
+						发布日期：2016-03-16 14:26&nbsp;&nbsp;&nbsp;浏览次数：
+						&nbsp;&nbsp;&nbsp;来源：<a href="" title="查看来源">广州网站建设</a>
+					</div>
+
+					<div class="article">
+
+						<p style="margin: 10px auto; padding: 0px; color: rgb(51, 51, 51); font-family: verdana, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 25.2px; white-space: normal; background-color: rgb(255, 255, 255);">一、JS部分</p><p><span class="cnblogs_code_copy" style="margin: 0px; padding: 0px 5px 0px 0px; line-height: 1.8;"><a title="复制代码" style="margin: 0px; padding: 0px; border: none !important;"><img src="/ueditor/jsp/upload/image/20160316/1458109510043061200.gif" alt="复制代码" style="margin: 0px; padding: 0px; max-width: 900px; border: none !important;"/></a></span></p><pre style="margin-top: 0px; margin-bottom: 0px; padding: 0px; white-space: pre-wrap; word-wrap: break-word; font-family: &#39;Courier New&#39; !important;">wx.ready(function&nbsp;()&nbsp;{&nbsp;&nbsp;//&nbsp;1&nbsp;判断当前版本是否支持指定&nbsp;JS&nbsp;接口，支持批量判断
+&nbsp;&nbsp;document.querySelector(&#39;#checkJsApi&#39;).onclick&nbsp;=&nbsp;function&nbsp;()&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;wx.checkJsApi({
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;jsApiList:&nbsp;[&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;getNetworkType&#39;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;previewImage&#39;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;success:&nbsp;function&nbsp;(res)&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(JSON.stringify(res));
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;});
+&nbsp;&nbsp;};&nbsp;&nbsp;//&nbsp;2.&nbsp;分享接口
+&nbsp;&nbsp;//&nbsp;2.1&nbsp;监听“分享给朋友”，按钮点击、自定义分享内容及分享结果接口
+&nbsp;&nbsp;document.querySelector(&#39;#onMenuShareAppMessage&#39;).onclick&nbsp;=&nbsp;function&nbsp;()&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;wx.onMenuShareAppMessage({
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title:&nbsp;&#39;互联网之子&nbsp;方倍工作室&#39;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;desc:&nbsp;&#39;在长大的过程中，我才慢慢发现，我身边的所有事，别人跟我说的所有事，那些所谓本来如此，注定如此的事，它们其实没有非得如此，事情是可以改变的。更重要的是，有些事既然错了，那就该做出改变。&#39;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;link:&nbsp;&#39;http://movie.douban.com/subject/25785114/&#39;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;imgUrl:&nbsp;&#39;http://img3.douban.com/view/movie_poster_cover/spst/public/p2166127561.jpg&#39;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;trigger:&nbsp;function&nbsp;(res)&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(&#39;用户点击发送给朋友&#39;);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;success:&nbsp;function&nbsp;(res)&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(&#39;已分享&#39;);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cancel:&nbsp;function&nbsp;(res)&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(&#39;已取消&#39;);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fail:&nbsp;function&nbsp;(res)&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(JSON.stringify(res));
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;});
+&nbsp;&nbsp;&nbsp;&nbsp;alert(&#39;已注册获取“发送给朋友”状态事件&#39;);
+&nbsp;&nbsp;};&nbsp;&nbsp;//&nbsp;2.2&nbsp;监听“分享到朋友圈”按钮点击、自定义分享内容及分享结果接口
+&nbsp;&nbsp;document.querySelector(&#39;#onMenuShareTimeline&#39;).onclick&nbsp;=&nbsp;function&nbsp;()&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;wx.onMenuShareTimeline({
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title:&nbsp;&#39;互联网之子&nbsp;方倍工作室&#39;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;link:&nbsp;&#39;http://movie.douban.com/subject/25785114/&#39;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;imgUrl:&nbsp;&#39;http://img3.douban.com/view/movie_poster_cover/spst/public/p2166127561.jpg&#39;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;trigger:&nbsp;function&nbsp;(res)&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(&#39;用户点击分享到朋友圈&#39;);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;success:&nbsp;function&nbsp;(res)&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(&#39;已分享&#39;);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cancel:&nbsp;function&nbsp;(res)&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(&#39;已取消&#39;);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fail:&nbsp;function&nbsp;(res)&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(JSON.stringify(res));
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;});
+&nbsp;&nbsp;&nbsp;&nbsp;alert(&#39;已注册获取“分享到朋友圈”状态事件&#39;);
+&nbsp;&nbsp;};&nbsp;&nbsp;//&nbsp;2.3&nbsp;监听“分享到QQ”按钮点击、自定义分享内容及分享结果接口
+&nbsp;&nbsp;document.querySelector(&#39;#onMenuShareQQ&#39;).onclick&nbsp;=&nbsp;function&nbsp;()&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;wx.onMenuShareQQ({
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title:&nbsp;&#39;互联网之子&nbsp;方倍工作室&#39;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;desc:&nbsp;&#39;在长大的过程中，我才慢慢发现，我身边的所有事，别人跟我说的所有事，那些所谓本来如此，注定如此的事，它们其实没有非得如此，事情是可以改变的。更重要的是，有些事既然错了，那就该做出改变。&#39;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;link:&nbsp;&#39;http://movie.douban.com/subject/25785114/&#39;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;imgUrl:&nbsp;&#39;http://img3.douban.com/view/movie_poster_cover/spst/public/p2166127561.jpg&#39;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;trigger:&nbsp;function&nbsp;(res)&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(&#39;用户点击分享到QQ&#39;);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;complete:&nbsp;function&nbsp;(res)&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(JSON.stringify(res));
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;success:&nbsp;function&nbsp;(res)&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(&#39;已分享&#39;);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cancel:&nbsp;function&nbsp;(res)&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(&#39;已取消&#39;);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fail:&nbsp;function&nbsp;(res)&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(JSON.stringify(res));
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;});
+&nbsp;&nbsp;&nbsp;&nbsp;alert(&#39;已注册获取“分享到&nbsp;QQ”状态事件&#39;);
+&nbsp;&nbsp;};&nbsp;&nbsp;
+&nbsp;&nbsp;//&nbsp;2.4&nbsp;监听“分享到微博”按钮点击、自定义分享内容及分享结果接口
+&nbsp;&nbsp;document.querySelector(&#39;#onMenuShareWeibo&#39;).onclick&nbsp;=&nbsp;function&nbsp;()&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;wx.onMenuShareWeibo({
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title:&nbsp;&#39;互联网之子&nbsp;方倍工作室&#39;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;desc:&nbsp;&#39;在长大的过程中，我才慢慢发现，我身边的所有事，别人跟我说的所有事，那些所谓本来如此，注定如此的事，它们其实没有非得如此，事情是可以改变的。更重要的是，有些事既然错了，那就该做出改变。&#39;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;link:&nbsp;&#39;http://movie.douban.com/subject/25785114/&#39;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;imgUrl:&nbsp;&#39;http://img3.douban.com/view/movie_poster_cover/spst/public/p2166127561.jpg&#39;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;trigger:&nbsp;function&nbsp;(res)&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(&#39;用户点击分享到微博&#39;);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;complete:&nbsp;function&nbsp;(res)&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(JSON.stringify(res));
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;success:&nbsp;function&nbsp;(res)&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(&#39;已分享&#39;);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cancel:&nbsp;function&nbsp;(res)&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(&#39;已取消&#39;);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fail:&nbsp;function&nbsp;(res)&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(JSON.stringify(res));
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;});
+&nbsp;&nbsp;&nbsp;&nbsp;alert(&#39;已注册获取“分享到微博”状态事件&#39;);
+&nbsp;&nbsp;};&nbsp;&nbsp;//&nbsp;3&nbsp;智能接口
+&nbsp;&nbsp;var&nbsp;voice&nbsp;=&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;localId:&nbsp;&#39;&#39;,
+&nbsp;&nbsp;&nbsp;&nbsp;serverId:&nbsp;&#39;&#39;
+&nbsp;&nbsp;};&nbsp;&nbsp;//&nbsp;3.1&nbsp;识别音频并返回识别结果
+&nbsp;&nbsp;document.querySelector(&#39;#translateVoice&#39;).onclick&nbsp;=&nbsp;function&nbsp;()&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(voice.localId&nbsp;==&nbsp;&#39;&#39;)&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(&#39;请先使用&nbsp;startRecord&nbsp;接口录制一段声音&#39;);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;
+&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;wx.translateVoice({
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;localId:&nbsp;voice.localId,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;complete:&nbsp;function&nbsp;(res)&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(res.hasOwnProperty(&#39;translateResult&#39;))&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(&#39;识别结果：&#39;&nbsp;+&nbsp;res.translateResult);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(&#39;无法识别&#39;);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;});
+&nbsp;&nbsp;};&nbsp;&nbsp;//&nbsp;4&nbsp;音频接口
+&nbsp;&nbsp;//&nbsp;4.2&nbsp;开始录音
+&nbsp;&nbsp;document.querySelector(&#39;#startRecord&#39;).onclick&nbsp;=&nbsp;function&nbsp;()&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;wx.startRecord({
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cancel:&nbsp;function&nbsp;()&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(&#39;用户拒绝授权录音&#39;);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;});
+&nbsp;&nbsp;};&nbsp;&nbsp;//&nbsp;4.3&nbsp;停止录音
+&nbsp;&nbsp;document.querySelector(&#39;#stopRecord&#39;).onclick&nbsp;=&nbsp;function&nbsp;()&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;wx.stopRecord({
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;success:&nbsp;function&nbsp;(res)&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;voice.localId&nbsp;=&nbsp;res.localId;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fail:&nbsp;function&nbsp;(res)&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(JSON.stringify(res));
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;});
+&nbsp;&nbsp;};&nbsp;&nbsp;//&nbsp;4.4&nbsp;监听录音自动停止&nbsp;&nbsp;wx.onVoiceRecordEnd({
+&nbsp;&nbsp;&nbsp;&nbsp;complete:&nbsp;function&nbsp;(res)&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;voice.localId&nbsp;=&nbsp;res.localId;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(&#39;录音时间已超过一分钟&#39;);
+&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;});&nbsp;&nbsp;//&nbsp;4.5&nbsp;播放音频
+&nbsp;&nbsp;document.querySelector(&#39;#playVoice&#39;).onclick&nbsp;=&nbsp;function&nbsp;()&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(voice.localId&nbsp;==&nbsp;&#39;&#39;)&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(&#39;请先使用&nbsp;startRecord&nbsp;接口录制一段声音&#39;);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;
+&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;wx.playVoice({
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;localId:&nbsp;voice.localId
+&nbsp;&nbsp;&nbsp;&nbsp;});
+&nbsp;&nbsp;};&nbsp;&nbsp;//&nbsp;4.6&nbsp;暂停播放音频
+&nbsp;&nbsp;document.querySelector(&#39;#pauseVoice&#39;).onclick&nbsp;=&nbsp;function&nbsp;()&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;wx.pauseVoice({
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;localId:&nbsp;voice.localId
+&nbsp;&nbsp;&nbsp;&nbsp;});
+&nbsp;&nbsp;};&nbsp;&nbsp;//&nbsp;4.7&nbsp;停止播放音频
+&nbsp;&nbsp;document.querySelector(&#39;#stopVoice&#39;).onclick&nbsp;=&nbsp;function&nbsp;()&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;wx.stopVoice({
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;localId:&nbsp;voice.localId
+&nbsp;&nbsp;&nbsp;&nbsp;});
+&nbsp;&nbsp;};&nbsp;&nbsp;//&nbsp;4.8&nbsp;监听录音播放停止&nbsp;&nbsp;wx.onVoicePlayEnd({
+&nbsp;&nbsp;&nbsp;&nbsp;complete:&nbsp;function&nbsp;(res)&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(&#39;录音（&#39;&nbsp;+&nbsp;res.localId&nbsp;+&nbsp;&#39;）播放结束&#39;);
+&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;});&nbsp;&nbsp;//&nbsp;4.8&nbsp;上传语音
+&nbsp;&nbsp;document.querySelector(&#39;#uploadVoice&#39;).onclick&nbsp;=&nbsp;function&nbsp;()&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(voice.localId&nbsp;==&nbsp;&#39;&#39;)&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(&#39;请先使用&nbsp;startRecord&nbsp;接口录制一段声音&#39;);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;
+&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;wx.uploadVoice({
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;localId:&nbsp;voice.localId,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;success:&nbsp;function&nbsp;(res)&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(&#39;上传语音成功，serverId&nbsp;为&#39;&nbsp;+&nbsp;res.serverId);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;voice.serverId&nbsp;=&nbsp;res.serverId;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;});
+&nbsp;&nbsp;};&nbsp;&nbsp;//&nbsp;4.9&nbsp;下载语音
+&nbsp;&nbsp;document.querySelector(&#39;#downloadVoice&#39;).onclick&nbsp;=&nbsp;function&nbsp;()&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(voice.serverId&nbsp;==&nbsp;&#39;&#39;)&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(&#39;请先使用&nbsp;uploadVoice&nbsp;上传声音&#39;);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;
+&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;wx.downloadVoice({
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;serverId:&nbsp;voice.serverId,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;success:&nbsp;function&nbsp;(res)&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(&#39;下载语音成功，localId&nbsp;为&#39;&nbsp;+&nbsp;res.localId);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;voice.localId&nbsp;=&nbsp;res.localId;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;});
+&nbsp;&nbsp;};&nbsp;&nbsp;//&nbsp;5&nbsp;图片接口
+&nbsp;&nbsp;//&nbsp;5.1&nbsp;拍照、本地选图
+&nbsp;&nbsp;var&nbsp;images&nbsp;=&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;localId:&nbsp;[],
+&nbsp;&nbsp;&nbsp;&nbsp;serverId:&nbsp;[]
+&nbsp;&nbsp;};
+&nbsp;&nbsp;document.querySelector(&#39;#chooseImage&#39;).onclick&nbsp;=&nbsp;function&nbsp;()&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;wx.chooseImage({
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;success:&nbsp;function&nbsp;(res)&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;images.localId&nbsp;=&nbsp;res.localIds;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(&#39;已选择&nbsp;&#39;&nbsp;+&nbsp;res.localIds.length&nbsp;+&nbsp;&#39;&nbsp;张图片&#39;);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;});
+&nbsp;&nbsp;};&nbsp;&nbsp;//&nbsp;5.2&nbsp;图片预览
+&nbsp;&nbsp;document.querySelector(&#39;#previewImage&#39;).onclick&nbsp;=&nbsp;function&nbsp;()&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;wx.previewImage({
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;current:&nbsp;&#39;http://img5.douban.com/view/photo/photo/public/p1353993776.jpg&#39;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;urls:&nbsp;[&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;http://img3.douban.com/view/photo/photo/public/p2152117150.jpg&#39;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;http://img5.douban.com/view/photo/photo/public/p1353993776.jpg&#39;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;http://img3.douban.com/view/photo/photo/public/p2152134700.jpg&#39;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]
+&nbsp;&nbsp;&nbsp;&nbsp;});
+&nbsp;&nbsp;};&nbsp;&nbsp;//&nbsp;5.3&nbsp;上传图片
+&nbsp;&nbsp;document.querySelector(&#39;#uploadImage&#39;).onclick&nbsp;=&nbsp;function&nbsp;()&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(images.localId.length&nbsp;==&nbsp;0)&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(&#39;请先使用&nbsp;chooseImage&nbsp;接口选择图片&#39;);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;
+&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;i&nbsp;=&nbsp;0,&nbsp;length&nbsp;=&nbsp;images.localId.length;
+&nbsp;&nbsp;&nbsp;&nbsp;images.serverId&nbsp;=&nbsp;[];&nbsp;&nbsp;&nbsp;&nbsp;function&nbsp;upload()&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wx.uploadImage({
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;localId:&nbsp;images.localId[i],
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;success:&nbsp;function&nbsp;(res)&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i++;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(&#39;已上传：&#39;&nbsp;+&nbsp;i&nbsp;+&nbsp;&#39;/&#39;&nbsp;+&nbsp;length);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;images.serverId.push(res.serverId);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(i&nbsp;&lt;&nbsp;length)&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;upload();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fail:&nbsp;function&nbsp;(res)&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(JSON.stringify(res));
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;});
+&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;upload();
+&nbsp;&nbsp;};&nbsp;&nbsp;//&nbsp;5.4&nbsp;下载图片
+&nbsp;&nbsp;document.querySelector(&#39;#downloadImage&#39;).onclick&nbsp;=&nbsp;function&nbsp;()&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(images.serverId.length&nbsp;===&nbsp;0)&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(&#39;请先使用&nbsp;uploadImage&nbsp;上传图片&#39;);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;
+&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;i&nbsp;=&nbsp;0,&nbsp;length&nbsp;=&nbsp;images.serverId.length;
+&nbsp;&nbsp;&nbsp;&nbsp;images.localId&nbsp;=&nbsp;[];&nbsp;&nbsp;&nbsp;&nbsp;function&nbsp;download()&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wx.downloadImage({
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;serverId:&nbsp;images.serverId[i],
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;success:&nbsp;function&nbsp;(res)&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i++;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(&#39;已下载：&#39;&nbsp;+&nbsp;i&nbsp;+&nbsp;&#39;/&#39;&nbsp;+&nbsp;length);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;images.localId.push(res.localId);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(i&nbsp;&lt;&nbsp;length)&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;download();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;});
+&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;download();
+&nbsp;&nbsp;};&nbsp;&nbsp;//&nbsp;6&nbsp;设备信息接口
+&nbsp;&nbsp;//&nbsp;6.1&nbsp;获取当前网络状态
+&nbsp;&nbsp;document.querySelector(&#39;#getNetworkType&#39;).onclick&nbsp;=&nbsp;function&nbsp;()&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;wx.getNetworkType({
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;success:&nbsp;function&nbsp;(res)&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(res.networkType);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fail:&nbsp;function&nbsp;(res)&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(JSON.stringify(res));
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;});
+&nbsp;&nbsp;};&nbsp;&nbsp;//&nbsp;8&nbsp;界面操作接口
+&nbsp;&nbsp;//&nbsp;8.1&nbsp;隐藏右上角菜单
+&nbsp;&nbsp;document.querySelector(&#39;#hideOptionMenu&#39;).onclick&nbsp;=&nbsp;function&nbsp;()&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;wx.hideOptionMenu();
+&nbsp;&nbsp;};&nbsp;&nbsp;//&nbsp;8.2&nbsp;显示右上角菜单
+&nbsp;&nbsp;document.querySelector(&#39;#showOptionMenu&#39;).onclick&nbsp;=&nbsp;function&nbsp;()&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;wx.showOptionMenu();
+&nbsp;&nbsp;};&nbsp;&nbsp;//&nbsp;8.3&nbsp;批量隐藏菜单项
+&nbsp;&nbsp;document.querySelector(&#39;#hideMenuItems&#39;).onclick&nbsp;=&nbsp;function&nbsp;()&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;wx.hideMenuItems({
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;menuList:&nbsp;[&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;menuItem:readMode&#39;,&nbsp;//&nbsp;阅读模式
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;menuItem:share:timeline&#39;,&nbsp;//&nbsp;分享到朋友圈
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;menuItem:copyUrl&#39;&nbsp;//&nbsp;复制链接&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;success:&nbsp;function&nbsp;(res)&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(&#39;已隐藏“阅读模式”，“分享到朋友圈”，“复制链接”等按钮&#39;);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fail:&nbsp;function&nbsp;(res)&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(JSON.stringify(res));
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;});
+&nbsp;&nbsp;};&nbsp;&nbsp;//&nbsp;8.4&nbsp;批量显示菜单项
+&nbsp;&nbsp;document.querySelector(&#39;#showMenuItems&#39;).onclick&nbsp;=&nbsp;function&nbsp;()&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;wx.showMenuItems({
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;menuList:&nbsp;[&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;menuItem:readMode&#39;,&nbsp;//&nbsp;阅读模式
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;menuItem:share:timeline&#39;,&nbsp;//&nbsp;分享到朋友圈
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;menuItem:copyUrl&#39;&nbsp;//&nbsp;复制链接&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;success:&nbsp;function&nbsp;(res)&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(&#39;已显示“阅读模式”，“分享到朋友圈”，“复制链接”等按钮&#39;);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fail:&nbsp;function&nbsp;(res)&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(JSON.stringify(res));
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;});
+&nbsp;&nbsp;};&nbsp;&nbsp;//&nbsp;8.5&nbsp;隐藏所有非基本菜单项
+&nbsp;&nbsp;document.querySelector(&#39;#hideAllNonBaseMenuItem&#39;).onclick&nbsp;=&nbsp;function&nbsp;()&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;wx.hideAllNonBaseMenuItem({
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;success:&nbsp;function&nbsp;()&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(&#39;已隐藏所有非基本菜单项&#39;);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;});
+&nbsp;&nbsp;};&nbsp;&nbsp;//&nbsp;8.6&nbsp;显示所有被隐藏的非基本菜单项
+&nbsp;&nbsp;document.querySelector(&#39;#showAllNonBaseMenuItem&#39;).onclick&nbsp;=&nbsp;function&nbsp;()&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;wx.showAllNonBaseMenuItem({
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;success:&nbsp;function&nbsp;()&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(&#39;已显示所有非基本菜单项&#39;);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;});
+&nbsp;&nbsp;};&nbsp;&nbsp;//&nbsp;8.7&nbsp;关闭当前窗口
+&nbsp;&nbsp;document.querySelector(&#39;#closeWindow&#39;).onclick&nbsp;=&nbsp;function&nbsp;()&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;wx.closeWindow();
+&nbsp;&nbsp;};&nbsp;&nbsp;//&nbsp;9&nbsp;微信原生接口
+&nbsp;&nbsp;//&nbsp;9.1.1&nbsp;扫描二维码并返回结果
+&nbsp;&nbsp;document.querySelector(&#39;#scanQRCode0&#39;).onclick&nbsp;=&nbsp;function&nbsp;()&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;wx.scanQRCode({
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;desc:&nbsp;&#39;scanQRCode&nbsp;desc&#39;
+&nbsp;&nbsp;&nbsp;&nbsp;});
+&nbsp;&nbsp;};&nbsp;&nbsp;//&nbsp;9.1.2&nbsp;扫描二维码并返回结果
+&nbsp;&nbsp;document.querySelector(&#39;#scanQRCode1&#39;).onclick&nbsp;=&nbsp;function&nbsp;()&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;wx.scanQRCode({
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;needResult:&nbsp;1,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;desc:&nbsp;&#39;scanQRCode&nbsp;desc&#39;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;success:&nbsp;function&nbsp;(res)&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(JSON.stringify(res));
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;});
+&nbsp;&nbsp;};&nbsp;&nbsp;//&nbsp;10&nbsp;微信支付接口
+&nbsp;&nbsp;//&nbsp;10.1&nbsp;发起一个支付请求
+&nbsp;&nbsp;document.querySelector(&#39;#chooseWXPay&#39;).onclick&nbsp;=&nbsp;function&nbsp;()&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;wx.chooseWXPay({
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;timestamp:&nbsp;1414723227,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nonceStr:&nbsp;&#39;noncestr&#39;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;package:&nbsp;&#39;addition=action_id%3dgaby1234%26limit_pay%3d&amp;bank_type=WX&amp;body=innertest&amp;fee_type=1&amp;input_charset=GBK&amp;notify_url=http%3A%2F%2F120.204.206.246%2Fcgi-bin%2Fmmsupport-bin%2Fnotifypay&amp;out_trade_no=1414723227818375338&amp;partner=1900000109&amp;spbill_create_ip=127.0.0.1&amp;total_fee=1&amp;sign=432B647FE95C7BF73BCD177CEECBEF8D&#39;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;paySign:&nbsp;&#39;bd5b1933cda6e9548862944836a9b52e8c9a2b69&#39;
+&nbsp;&nbsp;&nbsp;&nbsp;});
+&nbsp;&nbsp;};&nbsp;&nbsp;//&nbsp;11.3&nbsp;&nbsp;跳转微信商品页
+&nbsp;&nbsp;document.querySelector(&#39;#openProductSpecificView&#39;).onclick&nbsp;=&nbsp;function&nbsp;()&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;wx.openProductSpecificView({
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;productId:&nbsp;&#39;pDF3iY0ptap-mIIPYnsM5n8VtCR0&#39;
+&nbsp;&nbsp;&nbsp;&nbsp;});
+&nbsp;&nbsp;};&nbsp;&nbsp;//&nbsp;12&nbsp;微信卡券接口
+&nbsp;&nbsp;//&nbsp;12.1&nbsp;添加卡券
+&nbsp;&nbsp;document.querySelector(&#39;#addCard&#39;).onclick&nbsp;=&nbsp;function&nbsp;()&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;wx.addCard({
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cardList:&nbsp;[
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cardId:&nbsp;&#39;pDF3iY9tv9zCGCj4jTXFOo1DxHdo&#39;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cardExt:&nbsp;&#39;{&quot;code&quot;:&nbsp;&quot;&quot;,&nbsp;&quot;openid&quot;:&nbsp;&quot;&quot;,&nbsp;&quot;timestamp&quot;:&nbsp;&quot;1418301401&quot;,&nbsp;&quot;signature&quot;:&quot;64e6a7cc85c6e84b726f2d1cbef1b36e9b0f9750&quot;}&#39;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cardId:&nbsp;&#39;pDF3iY9tv9zCGCj4jTXFOo1DxHdo&#39;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cardExt:&nbsp;&#39;{&quot;code&quot;:&nbsp;&quot;&quot;,&nbsp;&quot;openid&quot;:&nbsp;&quot;&quot;,&nbsp;&quot;timestamp&quot;:&nbsp;&quot;1418301401&quot;,&nbsp;&quot;signature&quot;:&quot;64e6a7cc85c6e84b726f2d1cbef1b36e9b0f9750&quot;}&#39;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;success:&nbsp;function&nbsp;(res)&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(&#39;已添加卡券：&#39;&nbsp;+&nbsp;JSON.stringify(res.cardList));
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;});
+&nbsp;&nbsp;};&nbsp;&nbsp;//&nbsp;12.2&nbsp;选择卡券
+&nbsp;&nbsp;document.querySelector(&#39;#chooseCard&#39;).onclick&nbsp;=&nbsp;function&nbsp;()&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;wx.chooseCard({
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cardSign:&nbsp;&#39;97e9c5e58aab3bdf6fd6150e599d7e5806e5cb91&#39;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;timestamp:&nbsp;1417504553,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nonceStr:&nbsp;&#39;k0hGdSXKZEj3Min5&#39;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;success:&nbsp;function&nbsp;(res)&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(&#39;已选择卡券：&#39;&nbsp;+&nbsp;JSON.stringify(res.cardList));
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;});
+&nbsp;&nbsp;};&nbsp;&nbsp;//&nbsp;12.3&nbsp;查看卡券
+&nbsp;&nbsp;document.querySelector(&#39;#openCard&#39;).onclick&nbsp;=&nbsp;function&nbsp;()&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;alert(&#39;您没有该公众号的卡券无法打开卡券。&#39;);
+&nbsp;&nbsp;&nbsp;&nbsp;wx.openCard({
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cardList:&nbsp;[
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]
+&nbsp;&nbsp;&nbsp;&nbsp;});
+&nbsp;&nbsp;};&nbsp;&nbsp;var&nbsp;shareData&nbsp;=&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;title:&nbsp;&#39;方倍工作室&nbsp;微信JS-SDK&nbsp;DEMO&#39;,
+&nbsp;&nbsp;&nbsp;&nbsp;desc:&nbsp;&#39;微信JS-SDK,帮助第三方为用户提供更优质的移动web服务&#39;,
+&nbsp;&nbsp;&nbsp;&nbsp;link:&nbsp;&#39;http://www.cnblogs.com/txw1958/&#39;,
+&nbsp;&nbsp;&nbsp;&nbsp;imgUrl:&nbsp;&#39;http://mmbiz.qpic.cn/mmbiz/icTdbqWNOwNRt8Qia4lv7k3M9J1SKqKCImxJCt7j9rHYicKDI45jRPBxdzdyREWnk0ia0N5TMnMfth7SdxtzMvVgXg/0&#39;
+&nbsp;&nbsp;};
+&nbsp;&nbsp;wx.onMenuShareAppMessage(shareData);
+&nbsp;&nbsp;wx.onMenuShareTimeline(shareData);
+});
+
+wx.error(function&nbsp;(res)&nbsp;{
+&nbsp;&nbsp;alert(res.errMsg);
+});</pre><p><span class="cnblogs_code_copy" style="margin: 0px; padding: 0px 5px 0px 0px; line-height: 1.8;"><a title="复制代码" style="margin: 0px; padding: 0px; border: none !important;"><img src="/ueditor/jsp/upload/image/20160316/1458109510043061200.gif" alt="复制代码" style="margin: 0px; padding: 0px; max-width: 900px; border: none !important;"/></a></span></p><p style="margin: 10px auto; padding: 0px; color: rgb(51, 51, 51); font-family: verdana, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 25.2px; white-space: normal; background-color: rgb(255, 255, 255);">&nbsp;</p><p style="margin: 10px auto; padding: 0px; color: rgb(51, 51, 51); font-family: verdana, Arial, Helvetica, sans-serif; font-size: 14px; line-height: 25.2px; white-space: normal; background-color: rgb(255, 255, 255);">二、HTML调用</p><p><span class="cnblogs_code_copy" style="margin: 0px; padding: 0px 5px 0px 0px; line-height: 1.8;"><a title="复制代码" style="margin: 0px; padding: 0px; border: none !important;"><img src="/ueditor/jsp/upload/image/20160316/1458109510043061200.gif" alt="复制代码" style="margin: 0px; padding: 0px; max-width: 900px; border: none !important;"/></a></span></p><pre style="margin-top: 0px; margin-bottom: 0px; padding: 0px; white-space: pre-wrap; word-wrap: break-word; font-family: &#39;Courier New&#39; !important;">&lt;!DOCTYPE&nbsp;html&gt;&lt;html&gt;&lt;head&gt;
+&nbsp;&nbsp;&lt;meta&nbsp;charset=&quot;utf-8&quot;&gt;
+&nbsp;&nbsp;&lt;title&gt;微信JS-SDK&nbsp;Demo&lt;/title&gt;
+&nbsp;&nbsp;&lt;meta&nbsp;name=&quot;viewport&quot;&nbsp;content=&quot;width=device-width,&nbsp;initial-scale=1,&nbsp;user-scalable=0&quot;&gt;
+&nbsp;&nbsp;&lt;link&nbsp;rel=&quot;stylesheet&quot;&nbsp;href=&quot;http://demo.open.weixin.qq.com/jssdk/css/style.css?ts=1420774989&quot;&gt;&lt;/head&gt;&lt;body&nbsp;ontouchstart=&quot;&quot;&gt;&lt;div&nbsp;class=&quot;wxapi_container&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;wxapi_index_container&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&nbsp;class=&quot;label_box&nbsp;lbox_close&nbsp;wxapi_index_list&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&nbsp;class=&quot;label_item&nbsp;wxapi_index_item&quot;&gt;&lt;a&nbsp;class=&quot;label_inner&quot;&nbsp;href=&quot;#menu-basic&quot;&gt;基础接口&lt;/a&gt;&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&nbsp;class=&quot;label_item&nbsp;wxapi_index_item&quot;&gt;&lt;a&nbsp;class=&quot;label_inner&quot;&nbsp;href=&quot;#menu-share&quot;&gt;分享接口&lt;/a&gt;&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&nbsp;class=&quot;label_item&nbsp;wxapi_index_item&quot;&gt;&lt;a&nbsp;class=&quot;label_inner&quot;&nbsp;href=&quot;#menu-image&quot;&gt;图像接口&lt;/a&gt;&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&nbsp;class=&quot;label_item&nbsp;wxapi_index_item&quot;&gt;&lt;a&nbsp;class=&quot;label_inner&quot;&nbsp;href=&quot;#menu-voice&quot;&gt;音频接口&lt;/a&gt;&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&nbsp;class=&quot;label_item&nbsp;wxapi_index_item&quot;&gt;&lt;a&nbsp;class=&quot;label_inner&quot;&nbsp;href=&quot;#menu-smart&quot;&gt;智能接口&lt;/a&gt;&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&nbsp;class=&quot;label_item&nbsp;wxapi_index_item&quot;&gt;&lt;a&nbsp;class=&quot;label_inner&quot;&nbsp;href=&quot;#menu-device&quot;&gt;设备信息接口&lt;/a&gt;&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&nbsp;class=&quot;label_item&nbsp;wxapi_index_item&quot;&gt;&lt;a&nbsp;class=&quot;label_inner&quot;&nbsp;href=&quot;#menu-location&quot;&gt;地理位置接口&lt;/a&gt;&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&nbsp;class=&quot;label_item&nbsp;wxapi_index_item&quot;&gt;&lt;a&nbsp;class=&quot;label_inner&quot;&nbsp;href=&quot;#menu-webview&quot;&gt;界面操作接口&lt;/a&gt;&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&nbsp;class=&quot;label_item&nbsp;wxapi_index_item&quot;&gt;&lt;a&nbsp;class=&quot;label_inner&quot;&nbsp;href=&quot;#menu-scan&quot;&gt;微信扫一扫接口&lt;/a&gt;&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&nbsp;class=&quot;label_item&nbsp;wxapi_index_item&quot;&gt;&lt;a&nbsp;class=&quot;label_inner&quot;&nbsp;href=&quot;#menu-shopping&quot;&gt;微信小店接口&lt;/a&gt;&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&nbsp;class=&quot;label_item&nbsp;wxapi_index_item&quot;&gt;&lt;a&nbsp;class=&quot;label_inner&quot;&nbsp;href=&quot;#menu-card&quot;&gt;微信卡券接口&lt;/a&gt;&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&nbsp;class=&quot;label_item&nbsp;wxapi_index_item&quot;&gt;&lt;a&nbsp;class=&quot;label_inner&quot;&nbsp;href=&quot;#menu-pay&quot;&gt;微信支付接口&lt;/a&gt;&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;lbox_close&nbsp;wxapi_form&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&nbsp;id=&quot;menu-basic&quot;&gt;基础接口&lt;/h3&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&nbsp;class=&quot;desc&quot;&gt;判断当前客户端是否支持指定JS接口&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&nbsp;class=&quot;btn&nbsp;btn_primary&quot;&nbsp;id=&quot;checkJsApi&quot;&gt;checkJsApi&lt;/button&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&nbsp;id=&quot;menu-share&quot;&gt;分享接口&lt;/h3&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&nbsp;class=&quot;desc&quot;&gt;获取“分享到朋友圈”按钮点击状态及自定义分享内容接口&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&nbsp;class=&quot;btn&nbsp;btn_primary&quot;&nbsp;id=&quot;onMenuShareTimeline&quot;&gt;onMenuShareTimeline&lt;/button&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&nbsp;class=&quot;desc&quot;&gt;获取“分享给朋友”按钮点击状态及自定义分享内容接口&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&nbsp;class=&quot;btn&nbsp;btn_primary&quot;&nbsp;id=&quot;onMenuShareAppMessage&quot;&gt;onMenuShareAppMessage&lt;/button&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&nbsp;class=&quot;desc&quot;&gt;获取“分享到QQ”按钮点击状态及自定义分享内容接口&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&nbsp;class=&quot;btn&nbsp;btn_primary&quot;&nbsp;id=&quot;onMenuShareQQ&quot;&gt;onMenuShareQQ&lt;/button&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&nbsp;class=&quot;desc&quot;&gt;获取“分享到腾讯微博”按钮点击状态及自定义分享内容接口&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&nbsp;class=&quot;btn&nbsp;btn_primary&quot;&nbsp;id=&quot;onMenuShareWeibo&quot;&gt;onMenuShareWeibo&lt;/button&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&nbsp;id=&quot;menu-image&quot;&gt;图像接口&lt;/h3&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&nbsp;class=&quot;desc&quot;&gt;拍照或从手机相册中选图接口&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&nbsp;class=&quot;btn&nbsp;btn_primary&quot;&nbsp;id=&quot;chooseImage&quot;&gt;chooseImage&lt;/button&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&nbsp;class=&quot;desc&quot;&gt;预览图片接口&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&nbsp;class=&quot;btn&nbsp;btn_primary&quot;&nbsp;id=&quot;previewImage&quot;&gt;previewImage&lt;/button&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&nbsp;class=&quot;desc&quot;&gt;上传图片接口&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&nbsp;class=&quot;btn&nbsp;btn_primary&quot;&nbsp;id=&quot;uploadImage&quot;&gt;uploadImage&lt;/button&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&nbsp;class=&quot;desc&quot;&gt;下载图片接口&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&nbsp;class=&quot;btn&nbsp;btn_primary&quot;&nbsp;id=&quot;downloadImage&quot;&gt;downloadImage&lt;/button&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&nbsp;id=&quot;menu-voice&quot;&gt;音频接口&lt;/h3&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&nbsp;class=&quot;desc&quot;&gt;开始录音接口&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&nbsp;class=&quot;btn&nbsp;btn_primary&quot;&nbsp;id=&quot;startRecord&quot;&gt;startRecord&lt;/button&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&nbsp;class=&quot;desc&quot;&gt;停止录音接口&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&nbsp;class=&quot;btn&nbsp;btn_primary&quot;&nbsp;id=&quot;stopRecord&quot;&gt;stopRecord&lt;/button&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&nbsp;class=&quot;desc&quot;&gt;播放语音接口&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&nbsp;class=&quot;btn&nbsp;btn_primary&quot;&nbsp;id=&quot;playVoice&quot;&gt;playVoice&lt;/button&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&nbsp;class=&quot;desc&quot;&gt;暂停播放接口&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&nbsp;class=&quot;btn&nbsp;btn_primary&quot;&nbsp;id=&quot;pauseVoice&quot;&gt;pauseVoice&lt;/button&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&nbsp;class=&quot;desc&quot;&gt;停止播放接口&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&nbsp;class=&quot;btn&nbsp;btn_primary&quot;&nbsp;id=&quot;stopVoice&quot;&gt;stopVoice&lt;/button&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&nbsp;class=&quot;desc&quot;&gt;上传语音接口&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&nbsp;class=&quot;btn&nbsp;btn_primary&quot;&nbsp;id=&quot;uploadVoice&quot;&gt;uploadVoice&lt;/button&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&nbsp;class=&quot;desc&quot;&gt;下载语音接口&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&nbsp;class=&quot;btn&nbsp;btn_primary&quot;&nbsp;id=&quot;downloadVoice&quot;&gt;downloadVoice&lt;/button&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&nbsp;id=&quot;menu-smart&quot;&gt;智能接口&lt;/h3&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&nbsp;class=&quot;desc&quot;&gt;识别音频并返回识别结果接口&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&nbsp;class=&quot;btn&nbsp;btn_primary&quot;&nbsp;id=&quot;translateVoice&quot;&gt;translateVoice&lt;/button&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&nbsp;id=&quot;menu-device&quot;&gt;设备信息接口&lt;/h3&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&nbsp;class=&quot;desc&quot;&gt;获取网络状态接口&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&nbsp;class=&quot;btn&nbsp;btn_primary&quot;&nbsp;id=&quot;getNetworkType&quot;&gt;getNetworkType&lt;/button&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&nbsp;id=&quot;menu-location&quot;&gt;地理位置接口&lt;/h3&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&nbsp;class=&quot;desc&quot;&gt;使用微信内置地图查看位置接口&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&nbsp;class=&quot;btn&nbsp;btn_primary&quot;&nbsp;id=&quot;openLocation&quot;&gt;openLocation&lt;/button&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&nbsp;class=&quot;desc&quot;&gt;获取地理位置接口&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&nbsp;class=&quot;btn&nbsp;btn_primary&quot;&nbsp;id=&quot;getLocation&quot;&gt;getLocation&lt;/button&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&nbsp;id=&quot;menu-webview&quot;&gt;界面操作接口&lt;/h3&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&nbsp;class=&quot;desc&quot;&gt;隐藏右上角菜单接口&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&nbsp;class=&quot;btn&nbsp;btn_primary&quot;&nbsp;id=&quot;hideOptionMenu&quot;&gt;hideOptionMenu&lt;/button&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&nbsp;class=&quot;desc&quot;&gt;显示右上角菜单接口&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&nbsp;class=&quot;btn&nbsp;btn_primary&quot;&nbsp;id=&quot;showOptionMenu&quot;&gt;showOptionMenu&lt;/button&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&nbsp;class=&quot;desc&quot;&gt;关闭当前网页窗口接口&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&nbsp;class=&quot;btn&nbsp;btn_primary&quot;&nbsp;id=&quot;closeWindow&quot;&gt;closeWindow&lt;/button&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&nbsp;class=&quot;desc&quot;&gt;批量隐藏功能按钮接口&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&nbsp;class=&quot;btn&nbsp;btn_primary&quot;&nbsp;id=&quot;hideMenuItems&quot;&gt;hideMenuItems&lt;/button&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&nbsp;class=&quot;desc&quot;&gt;批量显示功能按钮接口&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&nbsp;class=&quot;btn&nbsp;btn_primary&quot;&nbsp;id=&quot;showMenuItems&quot;&gt;showMenuItems&lt;/button&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&nbsp;class=&quot;desc&quot;&gt;隐藏所有非基础按钮接口&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&nbsp;class=&quot;btn&nbsp;btn_primary&quot;&nbsp;id=&quot;hideAllNonBaseMenuItem&quot;&gt;hideAllNonBaseMenuItem&lt;/button&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&nbsp;class=&quot;desc&quot;&gt;显示所有功能按钮接口&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&nbsp;class=&quot;btn&nbsp;btn_primary&quot;&nbsp;id=&quot;showAllNonBaseMenuItem&quot;&gt;showAllNonBaseMenuItem&lt;/button&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&nbsp;id=&quot;menu-scan&quot;&gt;微信扫一扫&lt;/h3&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&nbsp;class=&quot;desc&quot;&gt;调起微信扫一扫接口&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&nbsp;class=&quot;btn&nbsp;btn_primary&quot;&nbsp;id=&quot;scanQRCode0&quot;&gt;scanQRCode(微信处理结果)&lt;/button&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&nbsp;class=&quot;btn&nbsp;btn_primary&quot;&nbsp;id=&quot;scanQRCode1&quot;&gt;scanQRCode(直接返回结果)&lt;/button&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&nbsp;id=&quot;menu-shopping&quot;&gt;微信小店接口&lt;/h3&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&nbsp;class=&quot;desc&quot;&gt;跳转微信商品页接口&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&nbsp;class=&quot;btn&nbsp;btn_primary&quot;&nbsp;id=&quot;openProductSpecificView&quot;&gt;openProductSpecificView&lt;/button&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&nbsp;id=&quot;menu-card&quot;&gt;微信卡券接口&lt;/h3&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&nbsp;class=&quot;desc&quot;&gt;批量添加卡券接口&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&nbsp;class=&quot;btn&nbsp;btn_primary&quot;&nbsp;id=&quot;addCard&quot;&gt;addCard&lt;/button&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&nbsp;class=&quot;desc&quot;&gt;调起适用于门店的卡券列表并获取用户选择列表&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&nbsp;class=&quot;btn&nbsp;btn_primary&quot;&nbsp;id=&quot;chooseCard&quot;&gt;chooseCard&lt;/button&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&nbsp;class=&quot;desc&quot;&gt;查看微信卡包中的卡券接口&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&nbsp;class=&quot;btn&nbsp;btn_primary&quot;&nbsp;id=&quot;openCard&quot;&gt;openCard&lt;/button&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&nbsp;id=&quot;menu-pay&quot;&gt;微信支付接口&lt;/h3&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&nbsp;class=&quot;desc&quot;&gt;发起一个微信支付请求&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&nbsp;class=&quot;btn&nbsp;btn_primary&quot;&nbsp;id=&quot;chooseWXPay&quot;&gt;chooseWXPay&lt;/button&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&lt;/div&gt;&lt;/body&gt;&lt;script&nbsp;src=&quot;http://res.wx.qq.com/open/js/jweixin-1.0.0.js&quot;&gt;&nbsp;&lt;/script&gt;&lt;script&gt;
+&nbsp;&nbsp;wx.config({
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;debug:&nbsp;false,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;appId:&nbsp;&#39;wxf8b4f85f3a794e77&#39;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;timestamp:&nbsp;1420774989,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nonceStr:&nbsp;&#39;2nDgiWM7gCxhL8v0&#39;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;signature:&nbsp;&#39;1f8a6552c1c99991fc8bb4e2a818fe54b2ce7687&#39;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;jsApiList:&nbsp;[&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;checkJsApi&#39;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;onMenuShareTimeline&#39;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;onMenuShareAppMessage&#39;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;onMenuShareQQ&#39;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;onMenuShareWeibo&#39;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;hideMenuItems&#39;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;showMenuItems&#39;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;hideAllNonBaseMenuItem&#39;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;showAllNonBaseMenuItem&#39;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;translateVoice&#39;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;startRecord&#39;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;stopRecord&#39;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;onRecordEnd&#39;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;playVoice&#39;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;pauseVoice&#39;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;stopVoice&#39;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;uploadVoice&#39;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;downloadVoice&#39;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;chooseImage&#39;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;previewImage&#39;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;uploadImage&#39;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;downloadImage&#39;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;getNetworkType&#39;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;openLocation&#39;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;getLocation&#39;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;hideOptionMenu&#39;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;showOptionMenu&#39;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;closeWindow&#39;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;scanQRCode&#39;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;chooseWXPay&#39;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;openProductSpecificView&#39;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;addCard&#39;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;chooseCard&#39;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;openCard&#39;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]
+&nbsp;&nbsp;});&lt;/script&gt;&lt;script&nbsp;src=&quot;http://demo.open.weixin.qq.com/jssdk/js/api-6.1.js?ts=1420774989&quot;&gt;&nbsp;&lt;/script&gt;&lt;/html&gt;</pre><p><span class="cnblogs_code_copy" style="margin: 0px; padding: 0px 5px 0px 0px; line-height: 1.8;"><a title="复制代码" style="margin: 0px; padding: 0px; border: none !important;"><img src="/ueditor/jsp/upload/image/20160316/1458109510043061200.gif" alt="复制代码" style="margin: 0px; padding: 0px; max-width: 900px; border: none !important;"/></a></span></p><p><br/></p>
+
+					</div>
+
+				</div>
+
+				<div class="otherPage fixed">
+
+					
+
+					<ol class="otherTool fixed">
+
+						<li id="bdshare" class="share bdshare_b bdsharebuttonbox"><a
+							class="bds_more" title="分享" data-cmd="more" href="javascript:;">分享</a></li>
+
+						<li class="close"><a href="javascript:window.close()">关闭</a></li>
+
+					</ol>
+
+				</div>
+
+			</div>
+
+			<div class="reNewsCon wp">
+
+				<div class="reNewsTit">相关新闻文章</div>
+
+				<div class="reNewsBox">
+
+					<ul class="newsList fixed">
+					
+					
+
+						<li class="fixed">
+
+							<div class="info">
+
+								<a href="240.htm" target="_blank"
+									title="">白马服装</span></a>
+
+								<p></p>
+
+							</div>
+
+						</li>
+
+						<li class="fixed">
+
+							<div class="info">
+
+								<a href="228.htm" target="_blank"
+									title="">靓家居</span></a>
+
+								<p></p>
+
+							</div>
+
+						</li>
+
+						<li class="fixed">
+
+							<div class="info">
+
+								<a href="251.htm" target="_blank"
+									title="">广东青联</span></a>
+
+								<p></p>
+
+							</div>
+
+						</li>
+
+						<li class="fixed">
+
+							<div class="info">
+
+								<a href="250.htm" target="_blank"
+									title="">易福诺</span></a>
+
+								<p></p>
+
+							</div>
+
+						</li>
+
+						
+
+
+
+					</ul>
+
+				</div>
+
+				<a href="news" class="readMore">查看更多>></a>
+
+			</div>
+
+		</div>
+
+
+
+		<script>
+
+	window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+
+	</script>
+
+
+
+
+
+	</div>
+
+
+
+
+
+	<ul class="indexFloatCon">
+
+		<li><a href="javascript:;" class="indexGoTop" title="返回顶部"></a></li>
+
+		<li><a target="_blank"
+			href="http://wpa.qq.com/msgrd?v=3&uin=2355767030&site=qq&menu=yes"
+			title="点击咨询" class="online">在线服务</a></li>
+
+		<li class="wenti"><a href="news"></a>
+
+			<dl class="wentiCon fixed">
+
+				<dt>
+					<a href="news.html">更多></a><span>常见问题</span>
+				</dt>
+
+
+Expression index is undefined on line 200, column 9 in view.ftl.
+The problematic instruction:
+----------
+==> list index as news [on line 200, column 2 in view.ftl]
+----------
+
+Java backtrace for programmers:
+----------
+freemarker.core.InvalidReferenceException: Expression index is undefined on line 200, column 9 in view.ftl.
+	at freemarker.core.TemplateObject.assertNonNull(TemplateObject.java:124)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:93)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.MixedContent.accept(MixedContent.java:92)
+	at freemarker.core.Environment.visit(Environment.java:196)
+	at freemarker.core.Environment.process(Environment.java:176)
+	at freemarker.template.Template.process(Template.java:232)
+	at com.utils.FreemarkerUtils.geneHtmlFile(FreemarkerUtils.java:50)
+	at com.liu.data.access.impl.NewsAccessImpl.list(NewsAccessImpl.java:62)
+	at com.listen.SysListener.setupContextVer2(SysListener.java:46)
+	at com.listen.SysListener.contextInitialized(SysListener.java:31)
+	at org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized(ContextHandler.java:764)
+	at org.eclipse.jetty.servlet.ServletContextHandler.callContextInitialized(ServletContextHandler.java:406)
+	at org.eclipse.jetty.server.handler.ContextHandler.startContext(ContextHandler.java:756)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:242)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1221)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:699)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:454)
+	at org.mortbay.jetty.plugin.JettyWebAppContext.doStart(JettyWebAppContext.java:256)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at org.eclipse.jetty.server.handler.HandlerCollection.doStart(HandlerCollection.java:224)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.doStart(ContextHandlerCollection.java:167)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at org.eclipse.jetty.server.handler.HandlerCollection.doStart(HandlerCollection.java:224)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:90)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:262)
+	at org.mortbay.jetty.plugin.JettyServer.doStart(JettyServer.java:65)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at org.mortbay.jetty.plugin.AbstractJettyMojo.startJetty(AbstractJettyMojo.java:511)
+	at org.mortbay.jetty.plugin.AbstractJettyMojo.execute(AbstractJettyMojo.java:364)
+	at org.mortbay.jetty.plugin.JettyRunMojo.execute(JettyRunMojo.java:516)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:101)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:209)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:84)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:59)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.singleThreadedBuild(LifecycleStarter.java:183)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:161)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:320)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:156)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:537)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:196)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:290)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:230)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:409)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:352)

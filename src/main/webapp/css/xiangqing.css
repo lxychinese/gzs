@@ -1,0 +1,39 @@
+.xiangqing{padding: 20px 0;color: #666666;margin-bottom: 40px;}
+.xq_position{font-size: 12px;line-height: 40px;}
+.xq_left{width:46%;float: left;}
+.xq_left img{width: 100%;}
+.xq_bigimg{width: 100%;height:400px;}
+.xq_list{width:100%;height:65px;margin-top: 5px;}
+.xq_btn_pre{width:20px;height:65px;border: 1px solid #dfdfdf;float: left;line-height:65px;margin-right:16px;}
+.xq_btn_next{width:20px;height: 65px;border: 1px solid #dfdfdf;float: right;line-height:65px;}
+.xq_imgcont{width:400px;height: 65px;position:relative;float: left;overflow: hidden;}
+.xq_imgcont ul{width:3000px;position:absolute;}
+.xq_imgcont ul li{float: left;margin-right:12px;}
+.xq_imgcont ul li img{width:93px;height:67px;}
+
+.xq_right p{border-bottom: 1px dashed #dfdfdf;position: relative;padding-left: 30px;}
+.xq_right p img{position: absolute;top: 20px;left: 0px;}
+.xq_right{width:52%;padding-left:2%;float: right;line-height:61px;font-size: 15px;}
+.xq_right .xq_rp{font-size: 23px;border-bottom: 1px solid #666666;line-height: 70px;padding-left:0px;margin-bottom: 4px;}
+.xq_right .xq_star{margin-left: -3px;margin-top: 2px;}
+.xq_rimg{border-top: 1px solid #dfdfdf;margin-top:20px;padding-top: 30px;}
+.xq_rspan{padding:20px 0;}
+.xq_rspan a{float: left;padding:5px 60px 5px 100px;border-radius: 10px;color: #ffffff;font-size: 16px;margin-right: 10px;text-align: center;position: relative;}
+.xq_rspan a img{width: 30px;height: 27px;position: absolute;left: 55px;top: 24px;}
+.xq_aone{background-color: #cc0d1d}
+.xq_atwo{background-color: #f86600}
+.xq_rspan .xq_atwo img{margin-top: -3px;}
+.xq_bottom{width:100%;font-size: 14px;height:auto;margin-bottom: 20px;}
+.xq_bleft{width:238px;margin-right:12px;float: left;border:1px solid #dfdfdf;}
+.xq_btop{width:94%;padding-left:6%;}
+.xq_btop p{line-height: 60px;}
+.xq_bbott{border-top:1px solid #dfdfdf;text-align: center;padding:20px 0px;}
+.xq_bbott li p{line-height: 50px;}
+
+
+.xq_bright{width:100%;float:right;height: auto;}
+.xq_br_top{margin-bottom: 30px;}
+.xq_br_top li{display:block;text-align: center;height: 60px;line-height: 60px;float: left;padding: 0px 30px;border-right:1px solid #dfdfdf;}
+.xq_br_top li a{color:#666666;}
+.xq_br_top .this,.xq_br_top .this a{color: #ffffff;background-color: #cc0d1d}
+.xq_br_bottom img{width: 100%;} 

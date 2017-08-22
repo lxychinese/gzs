@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>微信大战略-微信大战略-网站建设高端品牌-广州网站建设-企业网站建设</title>
+<meta name="keywords" content="网站建设，网页设计，广州网站建设，深圳网站建设，企业网站建设，垄上工作室，uweb，手机网站，微信营销、APP开发、虚拟仿真" />
+<meta name="description" content="垄上工作室成立于2001年，专注网站建设及信息化咨询服务，提供完善的网站建设、移动端应用、企业微信大战略、3D虚拟仿真等一系列企业互联网解决方案，知名客户有欧派、索菲亚、王老吉、PICC、海天味业、珠江钢琴、例外服饰、广百集团、轻工集团、广州发展集团。" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="copyright" content="Copyright 2015-2020 - www.uweb.net.cn Lee">
+<meta name="Author" content="垄上工作室 www.uweb.net.cn Lee">
+<!--<meta name="format-detection" content="telephone=no">-->
+<link rel="stylesheet" href="/templates/default/style_m/style.css">
+<link rel="stylesheet" href="/templates/default/style_m/media.css">
+<script src="/templates/default/js/jquery-2.1.1.min.js"></script>
+<script src="/templates/default/js/touch-0.2.14.min.js"></script>
+<script src="/templates/default/js/TouchSlide.1.1.js"></script>
+<script src="/templates/default/js/common.js"></script> 
+</head>
+<body>
+  
+      <div class="menuCon" id="menuCon">
+
+        <ul class="nav fixed">
+
+            <li><a href="index.htm"><i></i>垄上首页</a></li>
+
+            <li><a href="anli.htm"><i></i>经典案例</a></li>
+
+            <li><a href="kehu.htm"><i></i>知名客户</a></li>
+
+            <li><a href="contact.htm"><i></i>联系我们</a></li>
+
+            <li><a href="web.htm"><i></i>网站建设</a></li>
+
+            <li><a href="m.htm"><i></i>移动端</a></li>
+
+            <li><a href="wei.htm"><i></i>微定制</a></li>
+
+            <li><a href="3d.htm"><i></i>虚拟仿真</a></li>
+
+            <li><a href="n.htm"><i></i>最新动态</a></li>
+
+
+            <li><a href="service.htm"><i></i>服务流程</a></li>
+
+
+        </ul>
+
+      
+
+    </div>
+<header class="fixed">
+  <a href="contact.htm" class="goPhone"></a>
+     <a href="javascript:;" class="goBack" id="goBackBtn"></a>
+     <h1>微信大战略</h1>
+     <a href="javascript:;" class="headerMenu" id="headerMenu"></a>
+     <a href="javascript:;" class="headerClose" id="closeBtn"></a>
+ </header>
+<ul class="wxBox" id="wxBox">
+    <li id="wx1">
+        <b>微信大战略</b>
+        <p>企业微信整体解决方案</p>
+        <img src="/templates/default/images_wx/bg1.png">
+        <span class="arrow"></span>
+    </li>
+    <li id="wx2">
+        <b>重磅来袭 全新体验</b>
+        <div class="fixed">
+            <div class="icon i1">微网站</div>
+            <div class="icon i2">微商城</div>
+            <div class="icon i3">微社区</div>
+            <div class="icon i4">微活动</div>
+            <div class="icon i5">微办公</div>
+            <div class="icon i6">微信CRM</div>
+            <div class="icon i7">微信支付</div>
+            <div class="icon i8">微信客服</div>
+        </div>
+    </li>
+</ul>
+
+    <div class="wxCase">
+        <h6>微信大战略案例</h6>
+        <ul class="caseList fixed">
+                            <li><a href="#"><img src="/upfile/2015/04/08/20150408112144_706.jpg" alt="索菲亚衣柜"><p><span>【手机站】</span>索菲亚衣柜</p></a></li>
+                                <li><a href="#"><img src="/upfile/2015/03/27/20150327173530_460.jpg" alt="白马服装"><p><span>【微信】</span>白马服装</p></a></li>
+                                <li><a href="#"><img src="/upfile/2015/04/08/20150408110153_472.jpg" alt="黄埔军校"><p><span>【微信】</span>黄埔军校</p></a></li>
+                                <li><a href="#"><img src="/upfile/2015/03/27/20150327150040_587.jpg" alt="百果园"><p><span>【微信】</span>百果园</p></a></li>
+                                <li><a href="#"><img src="/upfile/2015/03/27/20150327145055_449.jpg" alt="奈瑞儿"><p><span>【微官网】</span>奈瑞儿</p></a></li>
+                                <li><a href="#"><img src="/upfile/2015/03/27/20150327144921_886.jpg" alt="ibos"><p><span>【微信办公】</span>ibos</p></a></li>
+                                <li><a href="#"><img src="/upfile/2015/03/26/20150326171748_242.jpg" alt="靓家居"><p><span>【电子商务】</span>靓家居</p></a></li>
+                
+        </ul>
+    </div>
+    
+<script type="text/javascript">
+    var wh = $(window).height();
+    var sh = $('#wx2').innerHeight();
+
+    $('#wxBox li').first().innerHeight(wh);
+
+    var wx2top = $('#wx2').position().top;
+
+    touch.on('#wx1','touchstart',function(e){
+        e.preventDefault();
+    });
+
+    touch.on('#wx1','swipeup',function(e){
+        $('body,html').stop(true,true).animate({scrollTop:wx2top},600);
+    });
+
+    touch.on('#wx1', 'swipedown', function(event) {
+        $('body,html').stop(true,true).animate({scrollTop:0},600);
+    });
+</script>   
+
+
+
+</body>
+</html>

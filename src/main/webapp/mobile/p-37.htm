@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>垄上工作室-网站建设高端品牌-广州网站建设-企业网站建设</title>
+
+<meta name="keywords" content="网站建设，网页设计，广州网站建设，深圳网站建设，企业网站建设，垄上工作室，手机网站，微信营销、APP开发、扎根垄上" />
+<meta name="description" content="垄上工作室专注网站建设及信息化咨询服务，提供完善的网站建设、移动端应用、企业微信大战略、3D虚拟仿真等一系列企业互联网解决方案，知名客户有欧派、索菲亚、王老吉、PICC、海天味业、珠江钢琴、例外服饰、广百集团、轻工集团、广州发展集团。" />
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+
+<!--<meta name="format-detection" content="telephone=no">-->
+
+<link rel="stylesheet" href="/templates\default\style_m\style.css">
+
+<link rel="stylesheet" href="/templates\default\style_m\media.css">
+
+<script src="/templates\default\js\jquery-2.1.1.min.js"></script>
+
+<script src="/templates\default\js\touch-0.2.14.min.js"></script>
+
+<script src="/templates\default\js\TouchSlide.1.1.js"></script>
+
+<script src="/templates\default\js\common.js"></script> 
+<script src="/templates\default\js\load.js"></script> 
+</head>
+<body>
+
+  <div class="menuCon" id="menuCon">
+
+        <ul class="nav fixed">
+
+            <li><a href="index.htm"><i></i>垄上首页</a></li>
+
+            <li><a href="anli.htm"><i></i>经典案例</a></li>
+
+            <li><a href="kehu.htm"><i></i>知名客户</a></li>
+
+            <li><a href="contact.htm"><i></i>联系我们</a></li>
+
+            <li><a href="web.htm"><i></i>网站建设</a></li>
+
+            <li><a href="m.htm"><i></i>移动端</a></li>
+
+            <li><a href="wei.htm"><i></i>微定制</a></li>
+
+            <li><a href="3d.htm"><i></i>虚拟仿真</a></li>
+
+            <li><a href="n.htm"><i></i>最新动态</a></li>
+
+
+            <li><a href="service.htm"><i></i>服务流程</a></li>
+
+
+        </ul>
+
+      
+
+    </div>
+   
+<header class="fixed">
+	<a href="n.htm" class="goBack"></a>
+	<a href="javascript:;" class="goBack" id="goBackBtn"></a>
+     <h1>新闻详细</h1>
+     <a href="javascript:;" class="headerMenu" id="headerMenu"></a>
+     <a href="javascript:;" class="headerClose" id="closeBtn"></a>
+ </header>
+<section class="bgfd">
+    <h2>Finder 及其子类的分析</h2>
+    <p>日期：2015-07-25&nbsp;&nbsp;&nbsp;来源：<a href="index.htm">垄上工作室</a></p>
+</section>
+<article class="bgfd">
+<p><span style="font-size: 12px;">Finder&nbsp;能够找到目标ServerResource并有效地处理请求。</span></p><p><span style="font-size: 12px;">&nbsp;</span></p><p><span style="font-size: 12px;"><strong><span style="font-size: 12px; color: rgb(0, 102, 0);">一、Finder管理着ServerResource子类的整个生命周期</span></strong></span></p><p><span style="font-size: 12px;">&nbsp;</span></p><p><span style="font-size: 12px;">Finder默认的实现是通过getTargetClass()获得保存在Finder类的属性targetClass中的ServerResource的子类的名字。</span></p><p><span style="font-size: 12px;">首先Finder实例化ServerResource的子类的实例，然后调用&nbsp;ServerResource.init(Context,&nbsp;Request,&nbsp;Response)方法。</span></p><p><span style="font-size: 12px;">实例创建成功后，ServerResource.handle()进行请求处理。</span></p><p><span style="font-size: 12px;">请求处理结束后，调用&nbsp;ServerResource.release()&nbsp;释放资源。</span></p><p><span style="font-size: 12px;">Finder默认的实现，对于每次请求都要重新创建相应ServerResource的子类。</span></p><p><span style="font-size: 12px;">&nbsp;</span></p><p><span style="font-size: 12px;">在请求进入handle()方法，Finder先查找ServerResource子类的名字，然后实例化这个类，并顺序调用这个类的init()、handle()和release()方法。</span></p><p><span style="font-size: 12px;">Finder&nbsp;将ServerResource子类的名称保存在属性&nbsp;targetClass&nbsp;中，这个属性的类型是&nbsp;Class&nbsp;,因此每个Finder实例只能保存一个对应的&nbsp;ServerResource的子类名称。所以，一个Finder的实例或者Finder子类的实例对应一个&nbsp;ServerResource的子类的实例，即&nbsp;Finder&nbsp;与&nbsp;ServerResource是一对一&nbsp;的关系。</span></p><p><span style="font-size: 12px;">&nbsp;</span></p><p><span style="font-size: 12px;"><strong><span style="font-size: 12px; color: rgb(0, 102, 0);">二、SpringBeanFinder</span></strong></span></p><p><span style="font-size: 12px;">SpringFinder是Finder的子类，SpringBeanFinder是SpringFinder的子类。</span></p><p><span style="font-size: 12px;">SpringBeanFinder实现了Spring的 BeanFactoryAware 和&nbsp;ApplicationContextAware 接口，利用Spring实现目标类的实例化。</span></p><p><span style="font-size: 12px;">与Finder的默认实现相比，配置和灵活性增强。SpringBeanFinder中通过保存beanName完成ServerResource子类实例的查找。</span></p><p><br/></p>
+</article>
+<div class="share bgfd fixed">
+    <span>分享</span>
+    <div class="bdsharebuttonbox">
+        <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+        <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+        <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+        <a href="#" class="bds_more" data-cmd="more"></a>
+    </div>
+    <script>
+        window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+    </script>
+</div>
+
+
+<script type="text/javascript">
+	$('article').imagesLoaded( function() {
+		var wh = $(window).height();
+		var bh = $('body').height();
+		if (bh<wh) {
+			$('body').height(wh);
+		};
+	});
+</script>
+    
+
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>抽奖系统</title>
+	<link rel="stylesheet" href="css/lottery.bass.css">
+	<link rel="stylesheet" href="css/lottery.main.css">
+</head>
+<body>
+	<div class="lottery">
+		<section class="third">
+			<div class="title">
+				<img src="images/title-3-left.png" alt="奖项名称" style="width:220px">
+			</div>
+			<div class="lucky">
+				<ul class="lucky-list clearfix"></ul>
+			</div>
+		</section>
+		
+		<div class="bg">
+			<section class="bgarea"></section>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="js/lottery.common.js"></script>
+	<script type="text/javascript" src="js/lottery.js"></script>
+	<script type="text/javascript" src="js/lottery.localStorage.js"></script>
+	<script>
+		var showThird = function(timer,total){
+			var ul = $('.third').find('.lucky-list'), uli, people;
+			uli = ul.find('li');
+			if(uli.length >= 120){
+				ul.find('li').remove();
+			}
+			var i = timer*(total-1);
+			for(i;i<timer*total;i++){
+				people = lottery.localStorage.get('third_'+i);
+				people = people.split(",");
+				ul.prepend('<li>'+people[1]+'</li>');
+			}
+			$('.third').show();
+		};
+		</script>	
+</body>
+</html>

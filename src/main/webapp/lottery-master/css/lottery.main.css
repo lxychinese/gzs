@@ -1,0 +1,289 @@
+/* 初始化背景图 */
+.bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+.bgarea {
+  width: 3800px;
+  min-height: 600px;
+  background: url(../images/bg.png) no-repeat;
+  background-size: 100% 100%;
+}
+.lottery {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.lottery .title {
+  text-align: center;
+  margin: 30px 0 20px 0;
+}
+.lottery .title img {
+  width: 380px;
+}
+.grand {
+  /* 候选区 */
+}
+.grand .candidate {
+  width: 380;
+  margin: 0 auto;
+}
+.grand .candidate li {
+  width: 380px;
+  position: relative;
+}
+.grand .candidate li img {
+  width: 100%;
+}
+.grand .candidate li .person_image {
+  position: absolute;
+  top: 29px;
+  left: 36px;
+  width: 300px;
+  height: 256px;
+}
+.grand .candidate li .hexagon1,
+.grand .candidate li .hexagon-in2 img {
+  width: 300px;
+  height: 256px;
+}
+.grand .candidate li .name {
+  margin: -19px 0 0 66px;
+  width: 238px;
+  height: 48px;
+  line-height: 48px;
+  background: url(../images/name-border.png) no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+}
+.first,
+.second {
+  /* 候选区 */
+}
+.first .candidate,
+.third .candidate,
+.second .candidate {
+  margin: 0 auto;
+}
+.first .lucky-list li,
+.second .lucky-list li {
+  position: relative;
+  width: 160px;
+  float: left;
+}
+.first .lucky-list li img,
+.second .lucky-list li img {
+  width: 100%;
+}
+.first .lucky-list li .person_image,
+.second .lucky-list li .person_image {
+  position: absolute;
+  top: 17px;
+  left: 10px;
+  width: 140px;
+  height: 100px;
+}
+.first .lucky-list li .hexagon1,
+.second .lucky-list li .hexagon1,
+.first .lucky-list li .hexagon-in2 img,
+.second .lucky-list li .hexagon-in2 img {
+  width: 140px;
+  height: 100px;
+}
+.first .lucky-list li .name,
+.second .lucky-list li .name {
+  margin: -12px 0 0 18px;
+  width: 122px;
+  height: 32px;
+  line-height: 32px;
+  background: url(../images/name-border.png) no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+}
+/* 一等奖 */
+.first {
+  /* 候选区 */
+  /* 获奖区 */
+}
+.first .candidate {
+  width: 960px;
+  margin-top: 60px;
+}
+.first .candidate li {
+  position: relative;
+  float: left;
+  width: 320px;
+  margin-top: 20px;
+}
+.first .candidate li img {
+  width: 100%;
+}
+.first .candidate li .person_image {
+  position: absolute;
+  top: 26px;
+  left: 32px;
+  width: 250px;
+  height: 210px;
+}
+.first .candidate li .hexagon1,
+.first .candidate li .hexagon-in2 img {
+  width: 250px;
+  height: 210px;
+}
+.first .candidate li .name {
+  margin: -18px 0 0 50px;
+  width: 212px;
+  height: 40px;
+  line-height: 40px;
+  background: url(../images/name-border.png) no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+}
+.first .lucky {
+  width: 480px;
+  margin: 0 auto;
+}
+/* 二等奖 */
+.second {
+  /* 候选区 */
+  /* 获奖区 */
+}
+.second .candidate {
+  width: 720px;
+}
+.second .candidate li {
+  position: relative;
+  float: left;
+  width: 240px;
+  margin-top: 10px;
+}
+.second .candidate li img {
+  width: 100%;
+}
+.second .candidate li .person_image {
+  position: absolute;
+  top: 21px;
+  left: 17px;
+  width: 200px;
+  height: 160px;
+}
+.second .candidate li .hexagon1,
+.second .candidate li .hexagon-in2 img {
+  width: 200px;
+  height: 160px;
+}
+.second .candidate li .name {
+  margin: -15px 0 0 42px;
+  width: 150px;
+  height: 36px;
+  line-height: 36px;
+  background: url(../images/name-border.png) no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+}
+.second .lucky {
+  width: 960px;
+  margin: 0 auto;
+}
+/* 三等奖 */
+.third {
+  /* 候选区 */
+  /* 获奖区 */
+}
+.third .candidate {
+  width: 720px;
+}
+.third .candidate li {
+  position: relative;
+  float: left;
+  width: 240px;
+  margin-top: 10px;
+}
+.third .candidate li img {
+  width: 100%;
+}
+.third .candidate li .person_image {
+  position: absolute;
+  top: 21px;
+  left: 17px;
+  width: 200px;
+  height: 160px;
+}
+.third .candidate li .hexagon1,
+.third .candidate li .hexagon-in2 img {
+  width: 200px;
+  height: 160px;
+}
+.third .candidate li .name {
+  margin: -15px 0 0 42px;
+  width: 150px;
+  height: 36px;
+  line-height: 36px;
+  background: url(../images/name-border.png) no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+}
+.third .lucky {
+  width: 960px;
+  margin: 0 auto;
+}
+
+
+
+/* css截取正六边形 */
+.person_image {
+  width: 110px;
+  height: 70px;
+  margin: 0 auto;
+}
+.hexagon {
+  overflow: hidden;
+  visibility: hidden;
+  -webkit-transform: rotate(120deg);
+  -moz-transform: rotate(120deg);
+  -o-transform: rotate(120deg);
+  transform: rotate(120deg);
+}
+.hexagon1 {
+  width: 110px;
+  height: 70px;
+  margin: 0 auto;
+}
+.hexagon-in1 {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: rotate(-60deg);
+  -moz-transform: rotate(-60deg);
+  -o-transform: rotate(-60deg);
+  transform: rotate(-60deg);
+}
+.hexagon-in2 {
+  width: 100%;
+  height: 100%;
+  visibility: visible;
+  -webkit-transform: rotate(-60deg);
+  -moz-transform: rotate(-60deg);
+  -o-transform: rotate(-60deg);
+  transform: rotate(-60deg);
+}
+.hexagon-in2 img {
+  width: 110px;
+  height: 70px;
+}
+/* END  css截取正六边形 */

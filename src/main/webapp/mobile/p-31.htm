@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>垄上工作室-网站建设高端品牌-广州网站建设-企业网站建设</title>
+
+<meta name="keywords" content="网站建设，网页设计，广州网站建设，深圳网站建设，企业网站建设，垄上工作室，手机网站，微信营销、APP开发、扎根垄上" />
+<meta name="description" content="垄上工作室专注网站建设及信息化咨询服务，提供完善的网站建设、移动端应用、企业微信大战略、3D虚拟仿真等一系列企业互联网解决方案，知名客户有欧派、索菲亚、王老吉、PICC、海天味业、珠江钢琴、例外服饰、广百集团、轻工集团、广州发展集团。" />
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+
+<!--<meta name="format-detection" content="telephone=no">-->
+
+<link rel="stylesheet" href="/templates\default\style_m\style.css">
+
+<link rel="stylesheet" href="/templates\default\style_m\media.css">
+
+<script src="/templates\default\js\jquery-2.1.1.min.js"></script>
+
+<script src="/templates\default\js\touch-0.2.14.min.js"></script>
+
+<script src="/templates\default\js\TouchSlide.1.1.js"></script>
+
+<script src="/templates\default\js\common.js"></script> 
+<script src="/templates\default\js\load.js"></script> 
+</head>
+<body>
+
+  <div class="menuCon" id="menuCon">
+
+        <ul class="nav fixed">
+
+            <li><a href="index.htm"><i></i>垄上首页</a></li>
+
+            <li><a href="anli.htm"><i></i>经典案例</a></li>
+
+            <li><a href="kehu.htm"><i></i>知名客户</a></li>
+
+            <li><a href="contact.htm"><i></i>联系我们</a></li>
+
+            <li><a href="web.htm"><i></i>网站建设</a></li>
+
+            <li><a href="m.htm"><i></i>移动端</a></li>
+
+            <li><a href="wei.htm"><i></i>微定制</a></li>
+
+            <li><a href="3d.htm"><i></i>虚拟仿真</a></li>
+
+            <li><a href="n.htm"><i></i>最新动态</a></li>
+
+
+            <li><a href="service.htm"><i></i>服务流程</a></li>
+
+
+        </ul>
+
+      
+
+    </div>
+   
+<header class="fixed">
+	<a href="n.htm" class="goBack"></a>
+	<a href="javascript:;" class="goBack" id="goBackBtn"></a>
+     <h1>新闻详细</h1>
+     <a href="javascript:;" class="headerMenu" id="headerMenu"></a>
+     <a href="javascript:;" class="headerClose" id="closeBtn"></a>
+ </header>
+<section class="bgfd">
+    <h2>Eclipse 插件功能研究</h2>
+    <p>日期：2015-07-25&nbsp;&nbsp;&nbsp;来源：<a href="index.htm">垄上工作室</a></p>
+</section>
+<article class="bgfd">
+<p><span style="font-size: 12px;"></span></p><p class="content"><span style="font-size: 12px;">在整个 Java 开发人员社区，Eclipse 因为行业领先的 Java Development Tools (JDT) 而广为人知。但 Eclipse 构建目的在于促进插件的使用，而且在这一方面，它获得了惊人的成功。探索已经构建到 Eclipse 插件中的一些能力，比如使用 Ruby 等其他语言编程，或者是使用 OpenLaszlo 等环境构建交互式多媒体。</span></p><p class="content"><span style="font-size: 12px;"><strong>简介</strong></span></p><p class="content"><span style="font-size: 12px;">越来越多的 Java 开发人员已经开始欣赏 Eclipse 的 JDT 提供的生产率和质量收益。Eclipse 对编写 Java 代码的支持真是棒极了。它的 Java 编辑器提供了语法高亮显示、格式化、折叠、内容辅助、代码模板等许多功能，我们大多数人都无法想像离开它们会怎么样。它不断增长的可用重构和代码生成功能集合允许您在更高的级别上操作代码，并自动化通常的代码密集型任务和易错任务。而且，在开发完代码并使用 JDT 对编写和执行 JUnit 测试的内置支持对代码进行单元测试之后，可以使用 Eclipse 的一流 Java 调试器调试在运行时遇到的任何问题。</span></p><p class="content"><span style="font-size: 12px;">除了 JDT 之外，Eclipse SDK —— 最流行的 Eclipse.org 下载 —— 还包含 Plug-in Development Environment (PDE)。PDE 使用特定功能扩展了 JDT 以构建 Eclipse 插件 —— 基于 Eclipse 的应用程序的基本构造块。事实上，使用由 Eclipse 本身提供的工具能够超越 Java 开发，可扩展现有 Eclipse 应用程序，或者甚至创建全新的应用程序。</span></p><p class="content"><span style="font-size: 12px;"><strong>所有插件的汇总</strong></span></p><p class="content"><span style="font-size: 12px;">如果曾经使用过 Eclipse，可能会遇到术语 “插件”。在架构上，Eclipse 由一个小运行时层构成，其中包含许多功能模块或 Eclipse 术语中所谓的 “插件”。插件是在 Eclipse 应用程序中提供所有功能的组件。它们通过其 API 一起协作来交付最终结果。在 Eclipse 中，甚至最基础的功能，比如查找和启动安装的插件，都封装在插件中。</span></p><p class="content"><span style="font-size: 12px;">为了扩展现有 Eclipse 功能或在其上进行构建，插件将具体的扩展 贡献给由其他插件暴露的扩展点。通常，插件专注于特定区域的责任，并通过一个或多个扩展点的方式将其他责任指派给其他插件。例如，一个插件允许您可视地并行比较两个文件的内容，但它不会关心如何读取这些文件甚至如何解释这些文件的结构;这是其他插件的工作。比较两个文件时，该插件首先检查是否有另一个插件可以解释这些文件的结构。如果找到一个，它就会向找到的插件询问有关文件结构的信息，并在比较过程中使用该信息。</span></p><p class="content"><span style="font-size: 12px;">可以看到，模块化架构为 Eclipse 提供了巨大的灵活性，并提供了一个可以支持原设计者没有预料到的大量应用程序的平台。</span></p><p class="content"><span style="font-size: 12px;"><strong>安装 Eclipse 插件</strong></span></p><p class="content"><span style="font-size: 12px;">上网查找新插件时，可能会发现它们以可下载档案 —— zip 或 JAR 文件的形式存在。插件的发布者应该提供安装说明。通常，以 JAR 文件发布的独立插件可以直接保存到 Eclipse 安装(eclipse 目录)中的插件目录中。在一些情况下，多个插件可能打包在一起，档案文件可能将它们放在一个插件目录下。如果是这种情况，则必须将档案文件解压到您的 eclipse 目录中。在安装新插件之后，必须重新启动工作台以便更改生效。</span></p><p class="content"><span style="font-size: 12px;">注意:重新启动 Eclipse 工作台 (eclipse -clean) 时，确保将 -clean 添加到命令行中。这将确保您的 Eclipse 插件配置是最新的。</span></p><p class="content"><span style="font-size: 12px;">多个插件还可以发布为一个特性(feature)。Eclipse Update Manager 是工作台的一部分，它使用特性概念作为分组相关插件的方式，以便于安装和配置。在这种情况下，您将注意到的惟一差别就是发布的档案文件中包含除插件目录之外的特性目录。</span></p><p class="content"><span style="font-size: 12px;">Update Manager 是一个功能强大的工具，用于管理 Eclipse 配置并使之保持最新。有关如何使用 Update Manager 的详细信息，请参阅 Eclipse Help 中的 Workbench User Guide &gt; Tasks &gt; Updating features with the update manager。</span></p><p class="content"><span style="font-size: 12px;"><strong>万能 IDE</strong></span></p><p class="content"><span style="font-size: 12px;">最初发行时，Eclipse 被吹捧为一个万能的工具集成平台，并附带有一组功能丰富的 Java 开发工具。它的愿望是开发工具行业领头人能够采用 Eclipse 作为最佳血统工具的底层平台。</span></p><p class="content"><span style="font-size: 12px;">最终，Eclipse 已经履行了它的承诺。可用 Eclipse IDE 插件和甚至整个开发套件的数目在不断增长。Eclipse Foundation 独自监督了许多用其他编程语言和平台扩展原始 Eclipse IDE 的项目的开发。越来越多的公司开始加入 Eclipse Foundation，越来越多的新项目被创建和贡献。</span></p><p class="content"><span style="font-size: 12px;">Enterprise Java 和 Web Application Development</span></p><p class="content"><span style="font-size: 12px;">虽然开发 J2EE 应用程序通常需要 Java 编程，但也需要其他技术。因此，构建企业级软件需要全新的工具集。</span></p><p class="content"><span style="font-size: 12px;">Eclipse Foundation 自己管理 Web Tools Project (WTP)，后者试图提供用于开发 J2EE Web 应用程序的工具和工具框架。虽然许多基于 Eclipse 的 J2EE 开发套件在商业市场上出现的时间并不长，但 WTP 相对而言仍是一个新来者。它实际上是以下三个子项目的组合:Web Standard Tools (WST)、J2EE Standard Tools (JST) 和 Java Server Faces (JSF) Tools。</span></p><p class="content"><span style="font-size: 12px;">WST 为许多 Web 标准提供了功能丰富的编辑器，这些标准有 HTML、XML、CSS、JavaScript、SVG、XML Schema、XSLT、SOAP、WSDL、SQL，等等。它还支持在一系列 HTTP 服务器上部署和监控 Web 工件。</span></p><p class="content"><span style="font-size: 12px;">JST 扩展了该功能集合，支持功能完整的多层 J2EE 应用程序的开发。使用 JST，可以创建使用 JSP 和 servlet 的动态 Web 应用程序，以及 EJB 组件和 Web 服务。还可以编辑所有组件的部署描述符，并在许多受支持的 J2EE 应用程序服务器上的工作台中直接测试运行您的应用程序。</span></p><p class="content"><span style="font-size: 12px;">JSF Tools 旨在添加对开发基于 JSF 的 Web 应用程序的支持。它是只具有一个已发布里程碑的新子项目，但已经计划将其包括在 WTP V1.5 发行版中。</span></p><p class="content"><span style="font-size: 12px;">许多商业软件开发套件可用于支持 J2EE 应用程序的创建。IBM? Rational? Application Developer for WebSphere? 覆盖了企业软件开发生命周期的几个阶段，其中包括 J2EE 应用程序的设计、开发、测试、部署和配置管理。</span></p><p class="content"><span style="font-size: 12px;">为了支持动态 Web 应用程序的创建，BEA 的 Workshop Studio 利用其正在申请专利的 AppXRay 技术，来跟踪和验证应用程序的状态。它还包括 Hibernate-to-EJB3 ORM 映射工作台和对 Spring 框架的支持。</span></p><p class="content"><span style="font-size: 12px;">MyEclipse IDE 由 Genuitec 开发，是大型开发套件的低成本备选项。它提供了一组完整的针对开放源码技术(比如 Spring、Hibernate、Tapestry 和 Struts)的 J2EE 开发工具。</span></p><p class="content"><span style="font-size: 12px;"><strong>桌面应用程序开发</strong></span></p><p class="content"><span style="font-size: 12px;">Java 在桌面上的复兴在极大程度上归结于 Eclipse。在还没有成为独占的 Java 桌面平台时，Eclipse 似乎已经促进了 Java 平台本身的改进，并致力于对 Java 作为桌面应用程序可视平台的重新评估。</span></p><p class="content"><span style="font-size: 12px;">虽然可以(事实上是许多人的首选)直接在 Java 中创建接口，但使用合适的可视 UI 开发工具可以获得大的生产率收益。Eclipse 空间在一段时间里(至少不是作为 Open-Source 项目时)不存在这种工具的事实被许多人认为是在更大比例上采用 Eclipse 作为富客户机应用程序平台的一个障碍。</span></p><p class="content"><span style="font-size: 12px;">Visual Editor 项目的创建目的在于为 GUI 构建器提供框架，但还包括了功能完整的 SWT 和 Swing UI 构建器。Visual Editor 允许程序员使用流行的拖放技术快速有效地创建基于 SWT 和 Swing 的用户接口。尽管这种方法将手工编程从 UI 开发中解放出来，但程序员不必牺牲对结果代码的控制。没有依赖一些外部 UI 描述符文件，Visual Editor 实际上使用 Java 代码作为其 UI 定义格式。也就是说，它解析现有的 Java 用户接口创建代码，并基于开发人员的可视编辑动作对其进行修改或生成新的代码。</span></p><p class="content"><span style="font-size: 12px;">许多商业产品的目标是简化 UI 开发。Instantiations 的 WindowBuilder 是这一领域的先驱。除了 Visual Editor 提供的基本功能之外，它还支持高级功能，比如 Eclipse Forms API。Matisse4Eclipse 是 MyEclipse IDE 的一部分，是它实际上将 Sun Microsystems 的 Project Matisse Swing UI 构建器引入到 Eclipse 平台中。</span></p><p class="content"><span style="font-size: 12px;"><strong>其他平台和编程语言</strong></span></p><p class="content"><span style="font-size: 12px;">忠于它作为万能工具集成平台的使命，Eclipse 支持使用非 Java 语言的编程语言进行软件开发。Eclipse Foundation 自己管理 C/C++ Development Tools 项目 (CDT)，旨在为 C/C++ 开发人员提供一个在功能和能力上不低于 Java 开发人员所使用环境的环境。目前，CDT 提供了一个 C/C++ 源代码编辑器，具有语法高亮显示、内容辅助、代码完成、基于 GDB 的编辑器、C/C++ 应用程序启动器、搜索引擎、Makefile 构建器和其他许多功能。</span></p><p class="content"><span style="font-size: 12px;">由 Eclipse.org 管理的其他编程语言项目包括遗留语言，比如 COBOL 和 Fortran(项目 Photran)，但还有现代语言和编程技术，比如 AspectJ(它将面向方面编程引入 Java 技术中)、Web Services Business Process Execution Language (WS-BPEL)、Laszlo IDE(Laszlo 是用于开发和交付富 Internet 应用程序的开放源码平台)和 Lepido(Apache Cocoon Web 应用程序框架的工具)。创建用于开发 Ajax 应用程序 (Rich Ajax Platform) 的最佳血统工具的广泛倡议也正在被提出，新批准的 Eclipse PHP IDE 项目的最新宣告意味着对流行 PHP 脚本语言的鼎力支持也在规划中。</span></p><p class="content"><span style="font-size: 12px;">对其他语言的支持可从第三方提供商获得。Omondo UML 提供了一个 Unified Modeling Language (UML) 建模工具集，与 JDT 良好集成。但是，因为 UML 独立于编程语言，它可用于不一定包括 Java 技术的项目中。PyDev 项目是 Python 编程语言的开放源码开发工具集。xored 软件在其 TruStudio Professional(它的 TruStudio Foundation 注册在 EPL 之下)中提供了对 Python 编程的商业支持。另一个开放源码项目 Ruby Development Tools (RDT) 提供了使用 Ruby 编程的完整工具集。最后，您可以在 ANTLR Studio 的帮助下设计您自己的编程语言或特定于域的语言，ANTLR Studio 允许您基于 ANTLR 框架创建上下文自由的语法定义。ANTLR Studio 是由 Placid Systems 开发的商业产品。</span></p><p class="content"><span style="font-size: 12px;"><strong>核心工具和技术</strong></span></p><p class="content"><span style="font-size: 12px;">Eclipse 社区的一个重要部分是用作其他产品或开发工具的基础或补充的软件。虽然您不可能下载并使用这些插件作为最终用户工具，但它们使其他人可以基于通用标准创建高质量的软件，或者增加现有产品的功能。</span></p><p class="content"><span style="font-size: 12px;">在该类别中，Eclipse Foundation 宿主着几个项目。Eclipse Modeling Framework (EMF) 是支持自动代码生成的软件建模框架。它用于其他许多获益于模型驱动软件开发的项目中。尽管 EMF 只使用了 UML 工具的一个子集，但 UML2 项目将其扩展以提供对完全 UML2 标准的支持。</span></p><p class="content"><span style="font-size: 12px;">Graphical Editor Framework (GEF) 是用于为任意对象模型创建富图形编辑器的框架。该框架还用于其他许多提供可视编辑功能的项目中，比如 UML 图、图和工作流编辑器。Graphical Modeling Framework (GMF) 扩展了 GEF 和 EMF 以将可视编辑能力添加到任意 EMF 模型中。</span></p><p class="content"><span style="font-size: 12px;">Data Tools Platform (DTP) 项目旨在创建使用各种相关数据源的通用工具集。它提供用于管理数据库连接以及创建和执行 SQL 脚本的工具。</span></p><p class="content"><span style="font-size: 12px;">Eclipse Test 和 Performance Tools Platform (TPTP) 包括四个子项目:通用 TPTP Platform、用于应用程序监控和日志记录的 Monitoring Tools、Tracing and Profiling Tools 和最后一个 Testing 工具。这些工具允许在各种执行环境中监控、剖析和测试 Java 应用程序。</span></p><p class="content"><span style="font-size: 12px;">Business Intelligence and Reporting Tools (BIRT) 将业务报告能力添加到现有应用程序中。BIRT 支持许多媒体，其中包括 HTML 和 PDF。</span></p><p class="content"><span style="font-size: 12px;">Device Software Development Platform (DSDP) 旨在提供为嵌入式设备开发软件的工具集。相关项目 eRCP 试图将 Rich Client Platform (RCP) 扩展到嵌入式设备。</span></p><p class="content"><span style="font-size: 12px;">SOA Tools Platform (STP) 的使命是构建框架和可模仿的可扩展工具，以支持软件的设计、配置、组装、部署、监控，以及围绕面向服务架构 (SOA) 而设计的软件的管理。它由一些子项目构成，比如 Core Frameworks、SOA System、Service Creation、BPEL2Java 和 BMPN。</span></p><p class="content"><span style="font-size: 12px;">许多子项目宿主在 Eclipse Technology 项目的保护伞之下，后者作为有趣想法的孵化器，可能有益于其他的新项目或现有项目。其中已经在别处提到的一些项目包括 Eclipse Communication Framework (ECF)，它提供用于构建实时通信和协作应用程序的通用 API 和组件集;Higgins Trust Framework，一个用于各种组上下文中的身份、概要文件和关系数据的可视集成的可扩展框架;以及 Voice Tools Project，它扩展 WTP 以支持语音识别应用程序的创建。</span></p><p class="content"><span style="font-size: 12px;"><strong>作为 RCP 的 Eclipse</strong></span></p><p class="content"><span style="font-size: 12px;">随着 Eclipse 动力的增加，许多公司和开发人员已经发现 Eclipse 不仅是集成工具的伟大平台，还可以用于其他类型的功能丰富的客户端应用程序，比如商业和协作。因此，从版本 3.0 开始，Eclipse 已经跨越了工具，现在正式被支持作为 Rich Client Platform (RCP)。</span></p><p class="content"><span style="font-size: 12px;">RCP 应用程序共享面向工具的相应方的所有灵活性和可扩展性，因为这些对应方也是由插件组成。但是，通用 RCP 插件集要小得多，而且一个插件不能将另一个插件放入 RCP 应用程序中，除非该应用程序明确支持它。</span></p><p class="content"><span style="font-size: 12px;">IBM 的 Workplace Client Technology 是基于全部 Eclipse RCP 的平台的商业示例。就架构而言，它是客户端的协作工具，Eclipse IDE 是开发工具。IBM Workplace 是一个产品族，其中包括使用集中管理的富客户机技术的信息管理和团队协作。它提供即时消息、Web 会议、共享日历计划，等等。</span></p><p class="content"><span style="font-size: 12px;">基于 Eclipse RCP 的开放源码应用程序的两个流行示例是 Azureus 和 RSSOwl。Azureus 是一个功能强大的 BitTorrent 客户机，允许您下载使用 BitTorrent 技术分布的大型文件。它支持自己不断增长的插件集。RSSOwl 是功能丰富的联合新闻阅读器和聚合器。它允许您使用许多流行的联合格式(比如 RSS、RDF 和 Atom)搜索、订阅和阅读新闻和博客。</span></p><p class="content"><span style="font-size: 12px;">Eclipse RCP 在学术领域和研究应用程序中也变得流行起来。例如，NASA 的 Jet Propulsion Laboratory (JPL) 选择 Eclipse RCP 作为其 Maestro 项目的基础，该项目是用于管理 NASA 的 Mars Exploration Rovers 的高级操作的工具集。该软件用于计划飞行器的表面活动，比如到哪里以及要拍摄多少照片。</span></p><p class="content"><span style="font-size: 12px;">还有许多其他商业和开放源码应用程序基于 Eclipse RCP。它们跨越无数领域，其中包括生物医学研究(Bioclipse、Sequence Scanner Software)数学和物理建模(BrainBox、GumTree、Kalypso)、通信和协作 (WiredReach)、商业和金融(Eclipse Trader、BSI CRM、eClarus、Logic MindGuide)，等等。</span></p><p class="content"><span style="font-size: 12px;"><strong>结束语</strong></span></p><p class="content"><span style="font-size: 12px;">由于其基于插件的架构，Eclipse 成为集成开发工具以及许多其他种类应用程序的万能平台。作为一个 IDE，Eclipse 不仅可以用于编写 Java 代码，还可以使用其他编程语言开发。作为 Rich Client Platform，它甚至可以用于执行范围广泛的非编程任务。将 Eclipse 技术用于各种目的的商业和开放源码应用程序在不断增多。</span></p><p><br/></p><ul class="article_next_prev list-paddingleft-2"></ul><p><!-- Baidu Button BEGIN --></p><script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=1536434" src="http://bdimg.share.baidu.com/static/js/bds_s_v2.js?cdnversion=399365"></script><script type="text/javascript">document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)</script><p><!-- Baidu Button END --></p><link rel="stylesheet" href="http://static.blog.csdn.net/css/blog_detail.css"/>
+</article>
+<div class="share bgfd fixed">
+    <span>分享</span>
+    <div class="bdsharebuttonbox">
+        <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+        <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+        <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+        <a href="#" class="bds_more" data-cmd="more"></a>
+    </div>
+    <script>
+        window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+    </script>
+</div>
+
+
+<script type="text/javascript">
+	$('article').imagesLoaded( function() {
+		var wh = $(window).height();
+		var bh = $('body').height();
+		if (bh<wh) {
+			$('body').height(wh);
+		};
+	});
+</script>
+    
+
+
+</body>
+</html>

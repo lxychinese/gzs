@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*case*/
+.wd3{ margin:0 auto; width:1000px;}
+.cz{animation:z1 3s;}
+.textDiv{ height:246px; position:relative; background-color:#fef6ed; width:100%; margin-bottom:27px; color:#8f6535; font-size:15px; line-height:33px;}
+.textImg{ float:left; margin:40px 0 0 46px;}
+.textInfo{ margin:0 85px 0 201px; padding-top:60px;}
+/*fullSlide*/
+.fullSlide {
+	height:526px;
+	width:934px;
+	position: relative;
+	padding-top:222px;
+	margin-left:23px;
+}
+.fullSlide .bd {
+	position: relative;
+	z-index: 0;
+}
+.fullSlide .bd ul {
+	width:934px;
+}
+.fullSlide .bd li {
+	height:526px;
+	width:934px;
+	overflow: hidden;
+	text-align: center;
+	text-indent:-9999px;
+}
+.fullSlide .prev,.fullSlide .next { width: 23px; height: 42px; position: absolute; top:221px; z-index: 10; cursor: pointer; text-indent: -9999px; }
+.fullSlide .prev{ left:-119px; background:url(../..\images\case\jindafu\jprev.png) no-repeat 0 0;}
+.fullSlide .next { right: -119px; background:url(../..\images\case\jindafu\jnext.png) no-repeat 0 0;}
+.fullSlide .prev:hover,.fullSlide .next:hover { filter:alpha(opacity=50) !important;opacity:0.5 !important;  }
+
+.y_fd {
+	-webkit-animation: fadeInDown 1s .2s ease both;
+	-moz-animation: fadeInDown 1s .2s ease both;
+	animation: fadeInDown 1s .2s ease both;
+	display:block !important;
+}
+@-webkit-keyframes fadeInDown {
+0% {
+opacity: 0;
+-webkit-transform: translateY(-120px);
+}
+ 100% {
+opacity: 1;
+-webkit-transform: translateY(0);
+}
+}
+@-moz-keyframes fadeInDown {
+0% {
+opacity: 0;
+-moz-transform: translateY(-120px);
+}
+ 100% {
+opacity: 1;
+-moz-transform: translateY(0);
+}
+}
+@keyframes fadeInDown {
+0% {
+opacity: 0;
+transform: translateY(-120px);
+}
+ 100% {
+opacity: 1;
+transform: translateY(0);
+}
+}

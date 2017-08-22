@@ -1,0 +1,292 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>垄上工作室-网站建设高端品牌-广州网站建设-企业网站建设</title>
+
+
+
+<link rel="stylesheet" href="/templates/default/style/style.css" />
+
+<link rel="stylesheet" href="/templates/default/style/media.css" />
+
+
+
+<script type="text/javascript" src="/templates\default\script\jquery1.72.js"></script>
+
+<script type="text/javascript" src="/templates\default\script\respond.min.js"></script>
+
+<script type="text/javascript" src="/templates\default\script\jquery.SuperSlide2.11.js"></script>
+
+<script type="text/javascript" src="/templates\default\script\jquery.lavalamp.min.js"></script>
+
+<script type="text/javascript" src="/templates\default\script\jquery.imagesloaded.js"></script>
+
+<script type="text/javascript" src="/templates\default\script\jquery.wookmark.min.js"></script>
+
+<script type="text/javascript" src="/templates\default\script\jquery.easing.1.3.min.js"></script>
+
+<script type="text/javascript" src="/templates\default\script\script.js"></script>
+<script src="//cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+<!--[if IE 6]>
+
+        <script type="text/javascript" src="/templates\default\script\DD_PNG.js" ></script>
+
+        <script type="text/javascript">
+
+                DD_belatedPNG.fix('div, ul, img, li, input , a');
+
+        </script>
+
+<![endif]--> 
+
+</head>
+
+<body>
+
+	<div id="web">
+
+
+
+
+
+
+
+		<div class="newsBanner">
+			<ul class="newsMenu fixed">
+				<li rel="18"><a href="#">公司新闻</a></li>
+				<li rel="19"><a href="#">项目动态</a></li>
+				<li rel="20"><a href="#">杂记</a></li>
+
+			</ul>
+		</div>
+		<script>
+    (function ($) {
+        var tid=20;
+         $(".newsMenu li").each(function(ii){  
+             if($(".newsMenu li").eq(ii).attr("rel")==tid)
+             {
+                   $(".newsMenu li").removeClass("on");
+                   $(".newsMenu li").eq(ii).addClass("on");
+             }
+         }); 
+    })(jQuery);
+</script>
+
+
+
+		<div class="newsCon">
+
+			<div class="newsInfoCon wp">
+
+				<div class="newsInfoBox">
+
+					<div class="closeBtn">
+						<a href="javascript:window.close()">关闭</a>
+					</div>
+
+					<h1>	Tomcat 7下如何利用 catalina.properties 部署公用类</h1>
+
+					<div class="time">
+						发布日期：2015-07-25&nbsp;&nbsp;&nbsp;浏览次数：
+						&nbsp;&nbsp;&nbsp;来源：<a href="" title="查看来源">广州网站建设</a>
+					</div>
+
+					<div class="article">
+
+						<p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">Tomcat 有很多配置文件，其中一个是 &nbsp;catalina.properties ，本文介绍catalina.properties 中的设置项。</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><br/></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;"><strong><span style="font-size: 24px;">一、组成</span></strong></span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;"><strong><span style="font-size: 24px;"><br/></span></strong></span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">catalina.properties中的设置项包括四个部分：</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><br/></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;"><strong>＃第一部分：安全设置</strong></span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">package.access<br/></span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">package.definition<br/></span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><br/></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;"><strong>＃第二部分：类加载设置</strong></span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">common.loader<br/></span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">server.loader<br/></span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">shared.loader<br/></span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><br/></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;"><strong>＃第三部分：不需要扫描的类设置</strong></span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">tomcat.util.scan.DefaultJarScanner.jarsToSkip<br/></span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">org.apache.catalina.startup.ContextConfig.jarsToSkip<br/></span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">org.apache.catalina.startup.TldConfig.jarsToSkip<br/></span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><br/></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;"><strong>＃第四部分：字符缓存设置</strong></span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">tomcat.util.buf.StringCache.byte.enabled<br/>tomcat.util.buf.StringCache.char.enabled<br/>tomcat.util.buf.StringCache.trainThreshold<br/>tomcat.util.buf.StringCache.cacheSize<br/></span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><br/></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">二、安全设置</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;"><br/></span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">请参见 ：</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">http://tomcat.apache.org/tomcat-7.0-doc/security-manager-howto.html<br/></span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">http://www.oracle.com/technetwork/java/seccodeguide-139067.html<br/></span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><br/></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">三、类加载设置</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">请参见：</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">http://tomcat.apache.org/tomcat-7.0-doc/class-loader-howto.html<br/></span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><br/></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><br/></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">1、classloader加载顺序</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><br/></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">Bootstrap---&gt;System---&gt;/WEB-INF/classes---&gt; /WEB-INF/lib/*.jar---&gt; Common</span></p><p><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"/></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">Common的配置是通过 catalina.properties中的common.loader设置的。</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><br/></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">2、common.loader设置</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;"><br/></span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">通常情况下，common.loader是已经设置好的，不需要修改。</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">common.loader包括以下路径：</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><br/></p><ul style="color: rgb(51, 51, 51); font-size: 14px; line-height: 26px; white-space: normal; font-family: STHeiti; background-color: rgb(255, 255, 255);" class=" list-paddingleft-2"><li><p><span style="font-size: 12px;">unpacked classes and resources in&nbsp;</span><code style="padding: 0px 0.1em; background-color: rgb(224, 255, 255);"><span style="font-size: 12px;">$CATALINA_BASE/lib</span></code></p></li><li><p><span style="font-size: 12px;">JAR files in&nbsp;</span><code style="padding: 0px 0.1em; background-color: rgb(224, 255, 255);"><span style="font-size: 12px;">$CATALINA_BASE/lib</span></code></p></li><li><p><span style="font-size: 12px;">unpacked classes and resources in&nbsp;</span><code style="padding: 0px 0.1em; background-color: rgb(224, 255, 255);"><span style="font-size: 12px;">$CATALINA_HOME/lib</span></code></p></li><li><p><span style="font-size: 12px;">JAR files in&nbsp;</span><code style="padding: 0px 0.1em; background-color: rgb(224, 255, 255);"><span style="font-size: 12px;">$CATALINA_HOME/lib</span></code></p></li></ul><p><span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 12px; line-height: 26px; background-color: rgb(255, 255, 255);">和默认的一些jar包：</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><br/></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><br/></p><ul style="color: rgb(51, 51, 51); font-size: 14px; line-height: 26px; white-space: normal; font-family: STHeiti; background-color: rgb(255, 255, 255);" class=" list-paddingleft-2"><li><p><span style="font-size: 12px;"><em>annotations-api.jar</em>&nbsp;— JavaEE annotations classes.</span></p></li><li><p><span style="font-size: 12px;"><em>catalina.jar</em>&nbsp;— Implementation of the Catalina servlet container portion of Tomcat.</span></p></li><li><p><span style="font-size: 12px;"><em>catalina-ant.jar</em>&nbsp;— Tomcat Catalina Ant tasks.</span></p></li><li><p><span style="font-size: 12px;"><em>catalina-ha.jar</em>&nbsp;— High availability package.</span></p></li><li><p><span style="font-size: 12px;"><em>catalina-tribes.jar</em>&nbsp;— Group communication package.</span></p></li><li><p><span style="font-size: 12px;"><em>ecj-*.jar</em>&nbsp;— Eclipse JDT Java compiler.</span></p></li><li><p><span style="font-size: 12px;"><em>el-api.jar</em>&nbsp;— EL 2.2 API.</span></p></li><li><p><span style="font-size: 12px;"><em>jasper.jar</em>&nbsp;— Tomcat Jasper JSP Compiler and Runtime.</span></p></li><li><p><span style="font-size: 12px;"><em>jasper-el.jar</em>&nbsp;— Tomcat Jasper EL implementation.</span></p></li><li><p><span style="font-size: 12px;"><em>jsp-api.jar</em>&nbsp;— JSP 2.2 API.</span></p></li><li><p><span style="font-size: 12px;"><em>servlet-api.jar</em>&nbsp;— Servlet 3.0 API.</span></p></li><li><p><span style="font-size: 12px;"><em>tomcat-api.jar</em>&nbsp;— Several interfaces defined by Tomcat.</span></p></li><li><p><span style="font-size: 12px;"><em>tomcat-coyote.jar</em>&nbsp;— Tomcat connectors and utility classes.</span></p></li><li><p><span style="font-size: 12px;"><em>tomcat-dbcp.jar</em>&nbsp;— Database connection pool implementation based on package-renamed copy of Apache Commons Pool and Apache Commons DBCP.</span></p></li><li><p><span style="font-size: 12px;"><em>tomcat-i18n-**.jar</em>&nbsp;— Optional JARs containing resource bundles for other languages. As default bundles are also included in each individual JAR, they can be safely removed if no internationalization of messages is needed.</span></p></li><li><p><span style="font-size: 12px;"><em>tomcat-jdbc.jar</em>&nbsp;— An alternative database connection pool implementation, known as Tomcat JDBC pool. See&nbsp;</span><a target="_blank" href="http://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html" style="color: rgb(51, 102, 153); text-decoration: underline; font-size: 12px;"><span style="font-size: 12px;">documentation</span></a><span style="font-size: 12px;">&nbsp;for more details.</span></p></li><li><p><span style="font-size: 12px;"><em>tomcat-util.jar</em>&nbsp;— Common classes used by various components of Apache Tomcat.</span></p></li></ul><p><span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 12px; line-height: 26px; background-color: rgb(255, 255, 255);">这些都是系统和工具类，比如数据库的驱动类库、log 类库可以放到此处，web应用的jar 不要放到common.loader 中。</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><br/></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><br/></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><br/></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">3、server.loader 和&nbsp;shared.loader</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><br/></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">在common.loader 加载完后，tomcat启动程序会检查&nbsp;catalina.properties文件中配置的server.loader和shared.loader是否设置</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">如果设置，读取 tomcat下对应的server和shared这两个目录的类库。</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">server和shared是对应tomcat目录下的两个目录,默认的Tomcat7 下这两个目录是没有的。</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><br/></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">设置方法：</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">server.loader=${catalina.base}/server/classes,${catalina.base}/server/lib/*.jar<br/></span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">shared.loader=${catalina.base}/server/classes,${catalina.base}/server/lib/*.jar<br/></span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">同时需要在tomcat目录下创建 server和shared目录结构并将公用的、应用类放到里面。</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><br/></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 18px;">Bootstrap---&gt;System---&gt;/WEB-INF/classes---&gt; /WEB-INF/lib/*.jar---&gt; Common---&gt;Server---&gt;Shared<br/></span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><br/></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">四、忽略扫描的类设置</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">默认的一些类tomcat已经设置。</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><br/></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">五、字符缓存设置</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">根据需要设置字符的缓存策略。</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">默认&nbsp;tomcat.util.buf.StringCache.byte.enabled=true 设置，其他的被注释了。</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><br/></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">六、小结</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">Tomcat可以通过catalina.properties的server和shared设置，为webapp提供公用类库。</span></p><p style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 26px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-size: 12px;">使一些公用的、不需要与webapp放在一起的设置信息单独保存，在更新webapp的war的时候无需更改webapp的设置。</span></p><p><br/></p>
+
+					</div>
+
+				</div>
+
+				<div class="otherPage fixed">
+
+					<ol class="pageList">
+
+						<li>上一篇：<a href="2852.html">什么是微网站？与手机网站、app之间有什么区别？</a></li>
+
+						<li>下一篇：<a href="2847.html">网页内容排版对SEO优化有何影响？</a></li>
+
+					</ol>
+
+					<ol class="otherTool fixed">
+
+						<li id="bdshare" class="share bdshare_b bdsharebuttonbox"><a
+							class="bds_more" title="分享" data-cmd="more" href="javascript:;">分享</a></li>
+
+						<li class="close"><a href="javascript:window.close()">关闭</a></li>
+
+					</ol>
+
+				</div>
+
+			</div>
+
+			<div class="reNewsCon wp">
+
+				<div class="reNewsTit">相关新闻文章</div>
+
+				<div class="reNewsBox">
+
+					<ul class="newsList fixed">
+					
+					
+
+						<li class="fixed">
+
+							<div class="info">
+
+								<a href="176.htm" target="_blank"
+									title="">Tomcat 7下如何利用 catalina.properties 部署公用类</span></a>
+
+								<p>Tomcat 7的高级运用</p>
+
+							</div>
+
+						</li>
+
+						<li class="fixed">
+
+							<div class="info">
+
+								<a href="174.htm" target="_blank"
+									title="">Eclipse在SOA中尽显王者风范</span></a>
+
+								<p>SOA一直是一个高端的话题</p>
+
+							</div>
+
+						</li>
+
+						<li class="fixed">
+
+							<div class="info">
+
+								<a href="181.htm" target="_blank"
+									title="">Restlet 2.2中提供的Service</span></a>
+
+								<p>Restlet 2.2中提供的Service分析</p>
+
+							</div>
+
+						</li>
+
+						<li class="fixed">
+
+							<div class="info">
+
+								<a href="167.htm" target="_blank"
+									title="">Activiti 5.17 一行代码验证并启动引擎</span></a>
+
+								<p>工作流引擎之启动方式</p>
+
+							</div>
+
+						</li>
+
+						
+
+
+
+					</ul>
+
+				</div>
+
+				<a href="news" class="readMore">查看更多>></a>
+
+			</div>
+
+		</div>
+
+
+
+		<script>
+
+	window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+
+	</script>
+
+
+
+
+
+	</div>
+
+
+
+
+
+	<ul class="indexFloatCon">
+
+		<li><a href="javascript:;" class="indexGoTop" title="返回顶部"></a></li>
+
+		<li><a target="_blank"
+			href="http://wpa.qq.com/msgrd?v=3&uin=2355767030&site=qq&menu=yes"
+			title="点击咨询" class="online">在线服务</a></li>
+
+		<li class="wenti"><a href="news"></a>
+
+			<dl class="wentiCon fixed">
+
+				<dt>
+					<a href="news.html">更多></a><span>常见问题</span>
+				</dt>
+
+				<dd>
+					<a href="208.htm" target="_blank">· 天猫双11前端分享系列（四）</a>
+				</dd>
+
+				<dd>
+					<a href="205.htm" target="_blank">· 天猫双11前端分享系列（一）</a>
+				</dd>
+
+				<dd>
+					<a href="203.htm" target="_blank">· socket简单运用</a>
+				</dd>
+
+				<dd>
+					<a href="201.htm" target="_blank">· 正则表达式小用法</a>
+				</dd>
+
+				<dd>
+					<a href="199.htm" target="_blank">· 数据库事务隔离级别 </a>
+				</dd>
+
+				<dd>
+					<a href="191.htm" target="_blank">· Facebook图片存储架构的学习</a>
+				</dd>
+
+
+			</dl></li>
+
+		<li class="ewmLi"><a href="javascript:;" class="erweima"></a>
+
+			<div class="ewmCon fixed">
+
+				<div class="ewm">
+					<img src="/templates\default\images\erweima.jpg"><p>关注</p>
+				</div>
+
+				<div class="ewm">
+					<img src="/templates\default\images\weim.jpg"><p>手机站</p>
+				</div>
+
+			</div></li>
+
+	</ul>
+
+
+
+	<span class="pdisplay"><script type="text/javascript"> var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa1a6296ef1286432ec2f1f459385026f' type='text/javascript'%3E%3C/script%3E")) </script></span>
+
+</body>
+
+</html>

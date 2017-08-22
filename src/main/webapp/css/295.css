@@ -1,0 +1,396 @@
+.brandleft {
+	float: left;
+	width: 65%;
+	-webkit-animation: transleft 1s .2s ease both;
+	-moz-animation: transleft 1s .2s ease both;
+	animation: transleft 1s .2s ease both;
+}
+
+.brandmenu {
+	position: relative;
+	height: 39px;
+	border: 1px solid #e1e1e1;
+	background: #fff;
+}
+
+.brandmenu ul {
+	position: absolute;
+	left: -1px;
+	top: -1px;
+	z-index: 5;
+}
+
+.brandmenu ul li {
+	height: 38px;
+	line-height: 38px;
+	padding-top: 2px;
+	float: left;
+	width: 117px;
+	font-size: 14px;
+	text-align: center;
+	border-right: 1px solid #e9e9e9;
+}
+
+.brandmenu ul li a {
+	display: block;
+	color: #555;
+}
+
+.brandmenu ul li:hover,.brandmenu ul li.on {
+	border-top: 2px solid #de0a3a;
+	padding-top: 0;
+}
+
+.brandlist {
+	height: auto;
+	overflow: hidden;
+}
+
+.brandlist li {
+	height: auto;
+	overflow: hidden;
+	margin-top: 11px;
+	border: 1px solid #e1e1e1;
+	background: #fff;
+}
+
+.brandlist li a {
+	display: block;
+	position: relative;
+	padding: 0 22px 22px 28px;
+}
+
+.brandlist li a p {
+	color: #777;
+	line-height: 25px;
+}
+
+.brandlist li a span {
+	padding-right: 12px;
+}
+
+.brandlist li a b {
+	font-weight: normal;
+	color: #dc0a39;
+	font-size: 15px;
+	padding-left: 12px;
+}
+
+.brandimg {
+	margin-top: 52px;
+	float: left;
+	border: 1px solid #dfdede;
+}
+
+.brandimg img {
+	width: 214px;
+	height: 105px;
+}
+
+.branddiv {
+	margin-left: 239px;
+}
+
+.branddiv h3 {
+	font-size: 18px;
+	color: #555;
+	height: 41px;
+	line-height: 41px;
+	padding-top: 4px;
+}
+
+.brandtext {
+	position: relative;
+	padding: 9px 0;
+	border-bottom: 1px dashed #d4d4d4;
+	border-top: 1px dashed #d4d4d4;
+	min-height: 125px;
+}
+
+.jia {
+	position: absolute;
+	right: 0;
+	top: 9px;
+	z-index: 5;
+	width: 30px;
+	height: 124px;
+	border: 1px solid #e4e4e4;
+	background: url(../images/bjia.png) no-repeat center center #fdfdfd;
+}
+
+.brandlist li:hover {
+	-webkit-transition: All .2s ease;
+	-moz-transition: All .2s ease;
+	transition: All .2s ease;
+}
+
+.brandlist li:hover .branddiv h3 {
+	color: #dc0a39;
+	padding-left: 10px;
+}
+
+.brandlist li:hover .jia {
+	background: url(../images/bjia2.png) no-repeat center center #dc0a39;
+}
+
+.brandleft .newsboxlist {
+	padding: 0;
+}
+
+.newsimg {
+	float: left;
+	margin-right: 31px;
+}
+
+.newsimg img {
+	width: 219px;
+	height: 165px;
+}
+
+
+
+.newsboxlist {
+	height: auto;
+	overflow: hidden;
+	padding: 0 46px;
+}
+
+.newsboxlist li {
+	padding: 30px 0;
+	height: auto;
+	overflow: hidden;
+	border-bottom: 1px dashed #d3d3d3;
+}
+
+.newsboxlist li a {
+	display: block;
+}
+
+.newsboxlist li a p {
+	color: #666;
+	line-height: 26px;
+	padding-bottom: 20px;
+}
+
+.newsimg {
+	float: left;
+	margin-right: 31px;
+}
+
+.newsimg img {
+	width: 219px;
+	height: 165px;
+}
+
+.title {
+	color: #333;
+	margin: -2px 0 10px;
+}
+
+.title b {
+	font-size: 16px;
+}
+
+.title span {
+	float: right;
+	display: block;
+	padding-top: 3px;
+}
+
+.readmore {
+	width: 93px;
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+	color: #fff;
+	background: #4b4b4b;
+	display: inline-block;
+}
+
+.newsboxlist li:hover .title b {
+	color: #dc0a39;
+	padding-left: 10px;
+	-webkit-transition: All .2s ease;
+	-moz-transition: All .2s ease;
+	transition: All .2s ease;
+}
+
+.newsboxlist li:hover .readmore {
+	background: #dc0a39;
+	-webkit-transition: All .2s ease;
+	-moz-transition: All .2s ease;
+	transition: All .2s ease;
+}
+
+.newsboxlist li:hover img {
+	filter: alpha(opacity = 70);
+	opacity: 0.7;
+}
+
+
+
+.brandlist li:hover img {
+	box-shadow: 0 0 3px 3px #e1e1e1;
+	-moz-box-shadow: 0 0 3px 3px #e1e1e1;
+	-webkit-box-shadow: 0 0 3px 3px #e1e1e1;
+	-ms-box-shadow: 0 0 3px 3px #e1e1e1;
+}
+
+.brandright {
+	float: right;
+	width: 30%;
+	animation: fadeInUp 1s .5s ease both;
+	-webkit-animation: fadeInUp 1s .5s ease both;
+	-moz-animation: fadeInUp 1s .5s ease both;
+}
+
+.apply {
+	padding: 0 14px;
+	height: auto;
+	overflow: hidden;
+	border: 1px solid #e1e1e1;
+	background: #fff;
+}
+
+.apply h3 {
+	margin-top: 9px;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 155px;
+	font-size: 14px;
+	color: #646262;
+	font-style: italic;
+	border-bottom: 1px solid #e3e3e3;
+	background: url(../images/apply.png) no-repeat left 5px;
+}
+
+.apply h3 a {
+	font-weight: bold;
+	color: #dc0a39;
+}
+
+.apply h3 a:hover {
+	text-decoration: underline;
+}
+
+.apply h3.abg {
+	padding-left: 107px;
+	border-bottom: 1px solid #e3e3e3;
+	background: url(../images/apply2.png) no-repeat left 6px;
+}
+
+.applyform {
+	padding: 19px 0 27px;
+	height: auto;
+	overflow: hidden;
+}
+
+.applyname {
+	height: 29px;
+	line-height: 29px;
+	margin-bottom: 16px;
+	font-size:12px;
+}
+
+.applyname label {
+	display: inline-block;
+	color: #666;
+	width: 66px;
+	padding-left: 2px;
+}
+
+.baikerecommand {
+	padding: 12px 0 19px;
+}
+
+.baikerecommand li {
+	height: 35px;
+	line-height: 35px;
+	overflow: hidden;
+	border-top: 1px dashed #e3e3e3;
+	background: url(../images/baikei.png) no-repeat 3px center;
+}
+
+.casetitle {
+	height: 52px;
+	line-height: 52px;
+	overflow: hidden;
+	border-bottom: 1px solid #e6e6e6;
+}
+
+.casetitle a {
+	display: block;
+	color: #777;
+}
+
+.casetitle a b {
+	font-size: 20px;
+}
+
+.casetitle a span {
+	float: right;
+	padding: 4px 3px 0 0;
+	display: inline-block;
+}
+
+.casetitle a:hover span {
+	color: #dc0a39;
+	-webkit-transition: All .2s ease;
+	-moz-transition: All .2s ease;
+	transition: All .2s ease;
+}
+
+.baikerecommand li a {
+	display: inline-block;
+	padding-left: 22px;
+	color: #666;
+	font-size: 14px;
+}
+
+.baikerecommand li a:hover {
+	color: #dc0a39;
+	-webkit-transition: All .2s ease;
+	-moz-transition: All .2s ease;
+	transition: All .2s ease;
+}
+
+.baikerecommand li:first-child {
+	border-top: none;
+}
+
+
+.applytext {
+	width: 230px;
+	padding: 0 5px;
+	vertical-align: top;
+	height: 27px;
+	line-height: 27px;
+	border: 1px solid #d5d4d4;
+}
+
+.applysubmit {
+	display: block;
+	width: 100%;
+	height: 33px;
+	line-height: 33px;
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+	border: none;
+	cursor: pointer;
+	background: url(../images/brandicon.png) no-repeat left center;
+}
+
+.applysubmit:hover {
+	filter: alpha(opacity = 70);
+	opacity: 0.7;
+}
+
+.hotcase {
+	height: auto;
+	overflow: hidden;
+	border: 1px solid #e1e1e1;
+	background: #fff;
+	padding: 0 19px;
+	margin-top: 23px;
+}

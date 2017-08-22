@@ -1,0 +1,64 @@
+@purple:#8575ac;
+@red:#fd8174;
+@orange:#fea964;
+@yellow:#ffd76c;
+@green:#8fd36d;
+@blue:#1894fd;
+@blue-dark:#1376ca;
+@blue-light:#a3d4fe;
+@black3:#141417;
+@black2:#2e3033;
+@black1:#525459;
+@gray3:#909399;
+@gray2:#d9dbde;
+@gray1:#e9ebee;
+@gray0:#f6f7f8;
+html{
+	font-family:Microsoft Yahei;
+	-webkit-text-size-adjust: 100%;
+  	text-size-adjust: 100%
+}
+body{
+	margin:0;
+	background: #fff;
+	font-size:13px;
+	color:@gray3;
+}
+div,section,ul,li{margin:0;padding:0;}
+img{border:none;}
+input,button,select,textarea,a{outline:none;}
+b,em,i{
+	font-weight:normal;
+	font-style:normal
+}
+a{
+	text-decoration: none;
+}
+ul{list-style-type:none;}
+h1,h2,h3,h4{font-weight:normal;margin:0;padding:0;}
+/*清浮动*/
+.clearfix{
+	display: table;zoom:1;
+	&:after{
+		height: 0;
+		display: block;
+		content:"";
+		clear:both;
+		font-size: 0;
+		visibility: hidden;
+	}
+}
+
+/*定义通用border样式*/
+.border(@color:#d9dbde;@radius:2px){border:1px solid @color;border-radius:@radius;}
+.border-box(@color:#d9dbde;@radius:2px){border:1px solid @color@hack;border-radius:@radius;box-shadow:0px 0px 10px 4px rgba(203,203,203,.55);}
+
+/* 按钮 */
+.btn{font-size:12px;padding:6px 12px;}
+.btn-blue{color:#fff;.border(@color:@blue);background: @blue;
+	&:hover{
+		background:#1376ca;border:1px solid #1376ca;
+	}
+}
+
+

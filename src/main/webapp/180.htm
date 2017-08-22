@@ -1,0 +1,292 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>垄上工作室-网站建设高端品牌-广州网站建设-企业网站建设</title>
+
+
+
+<link rel="stylesheet" href="/templates/default/style/style.css" />
+
+<link rel="stylesheet" href="/templates/default/style/media.css" />
+
+
+
+<script type="text/javascript" src="/templates\default\script\jquery1.72.js"></script>
+
+<script type="text/javascript" src="/templates\default\script\respond.min.js"></script>
+
+<script type="text/javascript" src="/templates\default\script\jquery.SuperSlide2.11.js"></script>
+
+<script type="text/javascript" src="/templates\default\script\jquery.lavalamp.min.js"></script>
+
+<script type="text/javascript" src="/templates\default\script\jquery.imagesloaded.js"></script>
+
+<script type="text/javascript" src="/templates\default\script\jquery.wookmark.min.js"></script>
+
+<script type="text/javascript" src="/templates\default\script\jquery.easing.1.3.min.js"></script>
+
+<script type="text/javascript" src="/templates\default\script\script.js"></script>
+<script src="//cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+<!--[if IE 6]>
+
+        <script type="text/javascript" src="/templates\default\script\DD_PNG.js" ></script>
+
+        <script type="text/javascript">
+
+                DD_belatedPNG.fix('div, ul, img, li, input , a');
+
+        </script>
+
+<![endif]--> 
+
+</head>
+
+<body>
+
+	<div id="web">
+
+
+
+
+
+
+
+		<div class="newsBanner">
+			<ul class="newsMenu fixed">
+				<li rel="18"><a href="#">公司新闻</a></li>
+				<li rel="19"><a href="#">项目动态</a></li>
+				<li rel="20"><a href="#">杂记</a></li>
+
+			</ul>
+		</div>
+		<script>
+    (function ($) {
+        var tid=20;
+         $(".newsMenu li").each(function(ii){  
+             if($(".newsMenu li").eq(ii).attr("rel")==tid)
+             {
+                   $(".newsMenu li").removeClass("on");
+                   $(".newsMenu li").eq(ii).addClass("on");
+             }
+         }); 
+    })(jQuery);
+</script>
+
+
+
+		<div class="newsCon">
+
+			<div class="newsInfoCon wp">
+
+				<div class="newsInfoBox">
+
+					<div class="closeBtn">
+						<a href="javascript:window.close()">关闭</a>
+					</div>
+
+					<h1>	Component 的创建和启动</h1>
+
+					<div class="time">
+						发布日期：2015-07-25&nbsp;&nbsp;&nbsp;浏览次数：
+						&nbsp;&nbsp;&nbsp;来源：<a href="" title="查看来源">广州网站建设</a>
+					</div>
+
+					<div class="article">
+
+						<p><span class="ico ico_type_Original"></span></p><p><span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; ">SpringServerServlet继承了ServerServlet， 在web.xml声明了SpringServerServlet。</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "/><span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; ">当Tomcat启动的时候，会调用ServerServlet的init()方法。</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "/><span style="font-weight: 700; color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "><span style="color: rgb(0, 176, 240); ">这是Restlet启动的开始点！</span></span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "/><span style="font-weight: 700; color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "><span style="color: rgb(0, 176, 240); "><br/></span></span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "/><span style="font-family: Arial; font-size: 14px; line-height: 21px; color: rgb(0, 176, 80); "><span style="font-weight: 700; ">一、init()方法</span></span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "/><span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; ">1、ServerServlet init()方法先获取 component :&nbsp;</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "/><span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; ">Component component = getComponent();</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "/><span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; ">2、然后启动component</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "/><span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; ">component.start();</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "/><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "/><span style="font-family: Arial; font-size: 14px; line-height: 21px; color: rgb(0, 176, 80); "><span style="font-weight: 700; ">二、getComponent()方法</span></span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "/><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "/><span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; ">1、getComponent()方法首先调用createComponent()创建compoennt</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "/><span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; ">Compoennt component = createComponent();</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "/><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "/><span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; ">createComponent的方法在SpringServerServlet 中提供了一个实现。</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "/><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "/><span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; ">SpringServerServlet 从Spring环境中以 org.restlet.component 为键值，获取 Component 的实例。如果没有，则创建一个新的 Component 实例。</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "/><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "/><span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; ">这时候，Component实例没有设置 defaultTarget 的值。</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "/><span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; ">2、然后调用 init(component)初始化，完成一些参数的传递</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "/><span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; ">init(component&nbsp;&nbsp;);</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "/><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "/><span style="font-family: Arial; font-size: 14px; line-height: 21px; color: rgb(0, 176, 80); "><span style="font-weight: 700; ">三、component.start()方法</span></span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "/><span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; ">此方法在 ServerServlet 类中 init()方法中。</span></p><p>public synchronized void start() throws Exception {</p><p>&nbsp;&nbsp; &nbsp;if (isStopped()) {</p><p>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;startClients();</p><p>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;startServers();</p><p>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;startRouters();</p><p>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;startServices();</p><p>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;startRealms();</p><p>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;startHelper();</p><p>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;super.start();</p><p>&nbsp;&nbsp; &nbsp; }</p><p>&nbsp;&nbsp; &nbsp;}</p><p><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "/><span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; ">其中 startRouters 如下，internalRouter、defaultHost 和 host都是在这里启动的：</span><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "/><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "/></p><p><a href="http://127.0.0.1/phpwind/read.php?tid=89" style="text-decoration: none; color: rgb(0, 112, 175); ">复制代码</a></p><p>protected synchronized void startRouters() throws Exception {</p><p>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;if (this.internalRouter != null) {</p><p>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;this.internalRouter.start();</p><p>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;}</p><p><br/></p><p>&nbsp; &nbsp; &nbsp; &nbsp; if (this.defaultHost != null) {</p><p>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;this.defaultHost.start();</p><p>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;}</p><p><br/></p><p>&nbsp; &nbsp; &nbsp; &nbsp; for (VirtualHost host : getHosts()) {</p><p>&nbsp;&nbsp; &nbsp; &nbsp; host.start();</p><p>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;}</p><p>&nbsp;&nbsp; &nbsp;}</p><p><br style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; line-height: 21px; "/></p><p><br/></p><link rel="stylesheet" href="http://static.blog.csdn.net/css/blog_detail.css"/>
+
+					</div>
+
+				</div>
+
+				<div class="otherPage fixed">
+
+					<ol class="pageList">
+
+						<li>上一篇：<a href="2852.html">什么是微网站？与手机网站、app之间有什么区别？</a></li>
+
+						<li>下一篇：<a href="2847.html">网页内容排版对SEO优化有何影响？</a></li>
+
+					</ol>
+
+					<ol class="otherTool fixed">
+
+						<li id="bdshare" class="share bdshare_b bdsharebuttonbox"><a
+							class="bds_more" title="分享" data-cmd="more" href="javascript:;">分享</a></li>
+
+						<li class="close"><a href="javascript:window.close()">关闭</a></li>
+
+					</ol>
+
+				</div>
+
+			</div>
+
+			<div class="reNewsCon wp">
+
+				<div class="reNewsTit">相关新闻文章</div>
+
+				<div class="reNewsBox">
+
+					<ul class="newsList fixed">
+					
+					
+
+						<li class="fixed">
+
+							<div class="info">
+
+								<a href="205.htm" target="_blank"
+									title="">天猫双11前端分享系列（一）</span></a>
+
+								<p>提高页面响应速度</p>
+
+							</div>
+
+						</li>
+
+						<li class="fixed">
+
+							<div class="info">
+
+								<a href="173.htm" target="_blank"
+									title="">Code First vs WSDL Frist</span></a>
+
+								<p>webservice部署，发布</p>
+
+							</div>
+
+						</li>
+
+						<li class="fixed">
+
+							<div class="info">
+
+								<a href="204.htm" target="_blank"
+									title="">js延迟加载</span></a>
+
+								<p>提高页面响应速度</p>
+
+							</div>
+
+						</li>
+
+						<li class="fixed">
+
+							<div class="info">
+
+								<a href="165.htm" target="_blank"
+									title="">redis 3.0.1 在CentOS上的安装</span></a>
+
+								<p>CentOS之相关应用安装</p>
+
+							</div>
+
+						</li>
+
+						
+
+
+
+					</ul>
+
+				</div>
+
+				<a href="news" class="readMore">查看更多>></a>
+
+			</div>
+
+		</div>
+
+
+
+		<script>
+
+	window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+
+	</script>
+
+
+
+
+
+	</div>
+
+
+
+
+
+	<ul class="indexFloatCon">
+
+		<li><a href="javascript:;" class="indexGoTop" title="返回顶部"></a></li>
+
+		<li><a target="_blank"
+			href="http://wpa.qq.com/msgrd?v=3&uin=2355767030&site=qq&menu=yes"
+			title="点击咨询" class="online">在线服务</a></li>
+
+		<li class="wenti"><a href="news"></a>
+
+			<dl class="wentiCon fixed">
+
+				<dt>
+					<a href="news.html">更多></a><span>常见问题</span>
+				</dt>
+
+				<dd>
+					<a href="208.htm" target="_blank">· 天猫双11前端分享系列（四）</a>
+				</dd>
+
+				<dd>
+					<a href="205.htm" target="_blank">· 天猫双11前端分享系列（一）</a>
+				</dd>
+
+				<dd>
+					<a href="203.htm" target="_blank">· socket简单运用</a>
+				</dd>
+
+				<dd>
+					<a href="201.htm" target="_blank">· 正则表达式小用法</a>
+				</dd>
+
+				<dd>
+					<a href="199.htm" target="_blank">· 数据库事务隔离级别 </a>
+				</dd>
+
+				<dd>
+					<a href="191.htm" target="_blank">· Facebook图片存储架构的学习</a>
+				</dd>
+
+
+			</dl></li>
+
+		<li class="ewmLi"><a href="javascript:;" class="erweima"></a>
+
+			<div class="ewmCon fixed">
+
+				<div class="ewm">
+					<img src="/templates\default\images\erweima.jpg"><p>关注</p>
+				</div>
+
+				<div class="ewm">
+					<img src="/templates\default\images\weim.jpg"><p>手机站</p>
+				</div>
+
+			</div></li>
+
+	</ul>
+
+
+
+	<span class="pdisplay"><script type="text/javascript"> var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa1a6296ef1286432ec2f1f459385026f' type='text/javascript'%3E%3C/script%3E")) </script></span>
+
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>SharePoint 2013 JavaScript 对象判断用户权限-垄上工作室</title>
+
+</head>
+<body>
+   
+<header class="fixed">
+	<a href="n.htm" class="goBack"></a>
+	<a href="javascript:;" class="goBack" id="goBackBtn"></a>
+     <h1>新闻详细</h1>
+     <a href="javascript:;" class="headerMenu" id="headerMenu"></a>
+     <a href="javascript:;" class="headerClose" id="closeBtn"></a>
+ </header>
+<section class="bgfd">
+    <h2>SharePoint 2013 JavaScript 对象判断用户权限</h2>
+    <p>日期：2015-07-15&nbsp;&nbsp;&nbsp;来源：<a href="">广州网站建设</a></p>
+</section>
+<p>
+    <span class="ico ico_type_Original"></span>
+</p>
+<p>
+    <strong>场 景</strong><br/>
+</p>
+<p>
+    　　近期有个场景，判断当前用户对项目有没有编辑权限，使用JavaScript完成，弄了好久才弄出来，分享一下，有需要的自行扩展吧，具体如下；
+</p>
+<p>
+    <strong>代 码</strong>
+</p>
+<pre>function getPermissions()
+{    var mycontext = new SP.ClientContext();  
+  var mysite = mycontext.get_web();    
+  var mylist = mysite.get_lists().getByTitle(&#39;Demo&#39;);
+    myitem = mylist.getItemById(16);
+
+    mycontext.load(myitem,&#39;EffectiveBasePermissions&#39;);
+    mycontext.executeQueryAsync(function(){        var perms = myitem.get_effectiveBasePermissions();        if (perms.has(SP.PermissionKind.editListItems)) {
+            alert(&quot;Yes!&quot;);
+        }        else
+        {
+            alert(&quot;No!&quot;);
+        }
+    },function(){});
+}
+
+SP.SOD.executeFunc(&#39;sp.js&#39;,&#39;SP.ClientContext&#39;,getPermissions);</pre>
+<p>
+    <strong>测 试</strong><br/>　　拥有编辑权限的人：
+</p>
+<p>
+    <img alt="" src="http://images0.cnblogs.com/blog2015/256729/201507/131608087517838.png" data-mce-src="http://images0.cnblogs.com/blog2015/256729/201507/131608087517838.png"/>
+</p>
+<p>
+    　　没有编辑权限的人：
+</p>
+<p>
+    <img alt="" src="http://images0.cnblogs.com/blog2015/256729/201507/131608239542727.png" data-mce-src="http://images0.cnblogs.com/blog2015/256729/201507/131608239542727.png"/>
+</p>
+<p>
+    　　特：服务器端对象模型：item.DoesUserHavePermissions()方法即可；
+</p>
+<link rel="stylesheet" href="http://static.blog.csdn.net/css/blog_detail.css"/>
+<div class="share bgfd fixed">
+    <span>分享</span>
+    <div class="bdsharebuttonbox">
+        <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+        <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+        <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+        <a href="#" class="bds_more" data-cmd="more"></a>
+    </div>
+    <script>
+        window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+    </script>
+</div>
+
+
+<script type="text/javascript">
+	$('article').imagesLoaded( function() {
+		var wh = $(window).height();
+		var bh = $('body').height();
+		if (bh<wh) {
+			$('body').height(wh);
+		};
+	});
+</script>
+    
+
+
+</body>
+</html>

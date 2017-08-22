@@ -1,0 +1,292 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>垄上工作室-网站建设高端品牌-广州网站建设-企业网站建设</title>
+
+
+
+<link rel="stylesheet" href="/templates/default/style/style.css" />
+
+<link rel="stylesheet" href="/templates/default/style/media.css" />
+
+
+
+<script type="text/javascript" src="/templates\default\script\jquery1.72.js"></script>
+
+<script type="text/javascript" src="/templates\default\script\respond.min.js"></script>
+
+<script type="text/javascript" src="/templates\default\script\jquery.SuperSlide2.11.js"></script>
+
+<script type="text/javascript" src="/templates\default\script\jquery.lavalamp.min.js"></script>
+
+<script type="text/javascript" src="/templates\default\script\jquery.imagesloaded.js"></script>
+
+<script type="text/javascript" src="/templates\default\script\jquery.wookmark.min.js"></script>
+
+<script type="text/javascript" src="/templates\default\script\jquery.easing.1.3.min.js"></script>
+
+<script type="text/javascript" src="/templates\default\script\script.js"></script>
+<script src="//cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+<!--[if IE 6]>
+
+        <script type="text/javascript" src="/templates\default\script\DD_PNG.js" ></script>
+
+        <script type="text/javascript">
+
+                DD_belatedPNG.fix('div, ul, img, li, input , a');
+
+        </script>
+
+<![endif]--> 
+
+</head>
+
+<body>
+
+	<div id="web">
+
+
+
+
+
+
+
+		<div class="newsBanner">
+			<ul class="newsMenu fixed">
+				<li rel="18"><a href="#">公司新闻</a></li>
+				<li rel="19"><a href="#">项目动态</a></li>
+				<li rel="20"><a href="#">杂记</a></li>
+
+			</ul>
+		</div>
+		<script>
+    (function ($) {
+        var tid=20;
+         $(".newsMenu li").each(function(ii){  
+             if($(".newsMenu li").eq(ii).attr("rel")==tid)
+             {
+                   $(".newsMenu li").removeClass("on");
+                   $(".newsMenu li").eq(ii).addClass("on");
+             }
+         }); 
+    })(jQuery);
+</script>
+
+
+
+		<div class="newsCon">
+
+			<div class="newsInfoCon wp">
+
+				<div class="newsInfoBox">
+
+					<div class="closeBtn">
+						<a href="javascript:window.close()">关闭</a>
+					</div>
+
+					<h1>	Finder 及其子类的分析</h1>
+
+					<div class="time">
+						发布日期：2015-07-25&nbsp;&nbsp;&nbsp;浏览次数：
+						&nbsp;&nbsp;&nbsp;来源：<a href="" title="查看来源">广州网站建设</a>
+					</div>
+
+					<div class="article">
+
+						<p><span style="font-size: 12px;">Finder&nbsp;能够找到目标ServerResource并有效地处理请求。</span></p><p><span style="font-size: 12px;">&nbsp;</span></p><p><span style="font-size: 12px;"><strong><span style="font-size: 12px; color: rgb(0, 102, 0);">一、Finder管理着ServerResource子类的整个生命周期</span></strong></span></p><p><span style="font-size: 12px;">&nbsp;</span></p><p><span style="font-size: 12px;">Finder默认的实现是通过getTargetClass()获得保存在Finder类的属性targetClass中的ServerResource的子类的名字。</span></p><p><span style="font-size: 12px;">首先Finder实例化ServerResource的子类的实例，然后调用&nbsp;ServerResource.init(Context,&nbsp;Request,&nbsp;Response)方法。</span></p><p><span style="font-size: 12px;">实例创建成功后，ServerResource.handle()进行请求处理。</span></p><p><span style="font-size: 12px;">请求处理结束后，调用&nbsp;ServerResource.release()&nbsp;释放资源。</span></p><p><span style="font-size: 12px;">Finder默认的实现，对于每次请求都要重新创建相应ServerResource的子类。</span></p><p><span style="font-size: 12px;">&nbsp;</span></p><p><span style="font-size: 12px;">在请求进入handle()方法，Finder先查找ServerResource子类的名字，然后实例化这个类，并顺序调用这个类的init()、handle()和release()方法。</span></p><p><span style="font-size: 12px;">Finder&nbsp;将ServerResource子类的名称保存在属性&nbsp;targetClass&nbsp;中，这个属性的类型是&nbsp;Class&nbsp;,因此每个Finder实例只能保存一个对应的&nbsp;ServerResource的子类名称。所以，一个Finder的实例或者Finder子类的实例对应一个&nbsp;ServerResource的子类的实例，即&nbsp;Finder&nbsp;与&nbsp;ServerResource是一对一&nbsp;的关系。</span></p><p><span style="font-size: 12px;">&nbsp;</span></p><p><span style="font-size: 12px;"><strong><span style="font-size: 12px; color: rgb(0, 102, 0);">二、SpringBeanFinder</span></strong></span></p><p><span style="font-size: 12px;">SpringFinder是Finder的子类，SpringBeanFinder是SpringFinder的子类。</span></p><p><span style="font-size: 12px;">SpringBeanFinder实现了Spring的 BeanFactoryAware 和&nbsp;ApplicationContextAware 接口，利用Spring实现目标类的实例化。</span></p><p><span style="font-size: 12px;">与Finder的默认实现相比，配置和灵活性增强。SpringBeanFinder中通过保存beanName完成ServerResource子类实例的查找。</span></p><p><br/></p>
+
+					</div>
+
+				</div>
+
+				<div class="otherPage fixed">
+
+					<ol class="pageList">
+
+						<li>上一篇：<a href="2852.html">什么是微网站？与手机网站、app之间有什么区别？</a></li>
+
+						<li>下一篇：<a href="2847.html">网页内容排版对SEO优化有何影响？</a></li>
+
+					</ol>
+
+					<ol class="otherTool fixed">
+
+						<li id="bdshare" class="share bdshare_b bdsharebuttonbox"><a
+							class="bds_more" title="分享" data-cmd="more" href="javascript:;">分享</a></li>
+
+						<li class="close"><a href="javascript:window.close()">关闭</a></li>
+
+					</ol>
+
+				</div>
+
+			</div>
+
+			<div class="reNewsCon wp">
+
+				<div class="reNewsTit">相关新闻文章</div>
+
+				<div class="reNewsBox">
+
+					<ul class="newsList fixed">
+					
+					
+
+						<li class="fixed">
+
+							<div class="info">
+
+								<a href="200.htm" target="_blank"
+									title="">互联网时代的无栈开发</span></a>
+
+								<p>软件应用无栈化趋势</p>
+
+							</div>
+
+						</li>
+
+						<li class="fixed">
+
+							<div class="info">
+
+								<a href="180.htm" target="_blank"
+									title="">Component 的创建和启动</span></a>
+
+								<p>Component 的生命周期解读</p>
+
+							</div>
+
+						</li>
+
+						<li class="fixed">
+
+							<div class="info">
+
+								<a href="212.htm" target="_blank"
+									title="">编程认知：多思考、多编码、多测试</span></a>
+
+								<p>每位程序员有自己独有的编程方式，悟出对编码流程的一些见解：多思考、多编码、多测试</p>
+
+							</div>
+
+						</li>
+
+						<li class="fixed">
+
+							<div class="info">
+
+								<a href="167.htm" target="_blank"
+									title="">Activiti 5.17 一行代码验证并启动引擎</span></a>
+
+								<p>工作流引擎之启动方式</p>
+
+							</div>
+
+						</li>
+
+						
+
+
+
+					</ul>
+
+				</div>
+
+				<a href="news" class="readMore">查看更多>></a>
+
+			</div>
+
+		</div>
+
+
+
+		<script>
+
+	window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+
+	</script>
+
+
+
+
+
+	</div>
+
+
+
+
+
+	<ul class="indexFloatCon">
+
+		<li><a href="javascript:;" class="indexGoTop" title="返回顶部"></a></li>
+
+		<li><a target="_blank"
+			href="http://wpa.qq.com/msgrd?v=3&uin=2355767030&site=qq&menu=yes"
+			title="点击咨询" class="online">在线服务</a></li>
+
+		<li class="wenti"><a href="news"></a>
+
+			<dl class="wentiCon fixed">
+
+				<dt>
+					<a href="news.html">更多></a><span>常见问题</span>
+				</dt>
+
+				<dd>
+					<a href="208.htm" target="_blank">· 天猫双11前端分享系列（四）</a>
+				</dd>
+
+				<dd>
+					<a href="205.htm" target="_blank">· 天猫双11前端分享系列（一）</a>
+				</dd>
+
+				<dd>
+					<a href="203.htm" target="_blank">· socket简单运用</a>
+				</dd>
+
+				<dd>
+					<a href="201.htm" target="_blank">· 正则表达式小用法</a>
+				</dd>
+
+				<dd>
+					<a href="199.htm" target="_blank">· 数据库事务隔离级别 </a>
+				</dd>
+
+				<dd>
+					<a href="191.htm" target="_blank">· Facebook图片存储架构的学习</a>
+				</dd>
+
+
+			</dl></li>
+
+		<li class="ewmLi"><a href="javascript:;" class="erweima"></a>
+
+			<div class="ewmCon fixed">
+
+				<div class="ewm">
+					<img src="/templates\default\images\erweima.jpg"><p>关注</p>
+				</div>
+
+				<div class="ewm">
+					<img src="/templates\default\images\weim.jpg"><p>手机站</p>
+				</div>
+
+			</div></li>
+
+	</ul>
+
+
+
+	<span class="pdisplay"><script type="text/javascript"> var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa1a6296ef1286432ec2f1f459385026f' type='text/javascript'%3E%3C/script%3E")) </script></span>
+
+</body>
+
+</html>

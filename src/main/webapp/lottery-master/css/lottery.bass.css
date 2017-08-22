@@ -1,0 +1,77 @@
+html {
+  font-family: Microsoft Yahei;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  background: #fff;
+  font-size: 13px;
+  color: #909399;
+}
+div,
+section,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+img {
+  border: none;
+}
+input,
+button,
+select,
+textarea,
+a {
+  outline: none;
+}
+b,
+em,
+i {
+  font-weight: normal;
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+/*清浮动*/
+.clearfix {
+  display: table;
+  zoom: 1;
+}
+.clearfix:after {
+  height: 0;
+  display: block;
+  content: "";
+  clear: both;
+  font-size: 0;
+  visibility: hidden;
+}
+/*定义通用border样式*/
+/* 按钮 */
+.btn {
+  font-size: 12px;
+  padding: 6px 12px;
+}
+.btn-blue {
+  color: #fff;
+  border: 1px solid #1894fd;
+  border-radius: 2px;
+  background: #1894fd;
+}
+.btn-blue:hover {
+  background: #1376ca;
+  border: 1px solid #1376ca;
+}

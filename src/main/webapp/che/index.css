@@ -1,0 +1,202 @@
+.govip2 {
+	text-align: center;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 300;
+	width: 17%;
+	height: 26.39px;
+	vertical-align: middle;
+	color: #fff;
+	margin-right: 0.5rem
+}
+
+header {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	vertical-align: baseline
+}
+
+.share-mp-info,.share-mp-info a,.share-mp-info em,.share-mp-info i {
+	color: #999
+}
+
+.share-mp-info {
+	position: relative;
+	background: #1e1d22;
+	font-size: 0;
+	line-height: 0;
+	padding: 1px 160px 1px 1px
+}
+
+.share-mp-info .links,.share-mp-info .page-mp-info {
+	font-size: 14px;
+	line-height: 2rem;
+	color: #999
+}
+
+.share-mp-info .page-mp-info {
+	display: block;
+	padding: 4px 0 4px 10px
+}
+
+.share-mp-info img.mp-image {
+	vertical-align: middle;
+	margin-right: 3px;
+	width: 24px;
+	height: 24px;
+	border-radius: 100%;
+	-webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .25);
+	box-shadow: 0 0 3px rgba(0, 0, 0, .25)
+}
+
+.share-mp-info .links,.share-mp-info .page-mp-info {
+	font-size: 14px;
+	line-height: 24px;
+	color: #999
+}
+
+.share-mp-info .links {
+	position: absolute;
+	top: 6px;
+	right: 10px;
+	display: inline-block
+}
+
+.share-mp-info .mp-search {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	width: 25px;
+	height: 27px
+}
+
+.share-mp-info .mp-search::before {
+	content: '';
+	position: absolute;
+	top: 6px;
+	left: 6px;
+	width: 12px;
+	height: 12px;
+	background: url(data : image/ png; base64
+	,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAANlBMVEUAAACampqcnJyampqampqampqZmZmoqKiZmZmZmZmampqZmZmampqZmZmampqZmZmZmZmZmZkjvjFoAAAAEXRSTlMAVkSc5Yk3DPPc2aVR7M/GUP5yJZQAAACPSURBVCjPhZFZEgMhCEQFcRl1tvtfNoBJMFNFpb8antWohCnordbWIfxqbPdb21j76V6UnP5ChpYxl5Kj2k+a5BNOjyRzpgc5pH0lUoHaLjk2UNK6usYuG8hcNnWVXTFQuKwe2L2o0xseveui88DD+5Jkn/gQ/Ce2qCN9ia12PyOyM/LQJJdHKDjEwKqLCF/tMQ6H98ej5gAAAABJRU5ErkJggg==)
+	no-repeat;
+	background-size: 12px 12px
+}
+
+.share-mp-info .links .mp-homepage {
+	margin-left: 0
+}
+
+.popup-container {
+	display: -webkit-box;
+	display: -moz-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-moz-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-moz-align-items: center;
+	align-items: center;
+	visibility: hidden;
+	z-index: 12
+}
+
+.popup-container,.popup-container .popup-mask {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%
+}
+
+.popup-container .popup-mask {
+	background: rgba(0, 0, 0, .8)
+}
+
+.popup-container.active .popup {
+	-webkit-animation-name: superScaleIn;
+	animation-name: superScaleIn;
+	-webkit-animation-duration: .2s;
+	animation-duration: .2s;
+	-webkit-animation-timing-function: ease-in-out;
+	animation-timing-function: ease-in-out;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both
+}
+
+.popup-container .popup {
+	position: relative;
+	width: 250px;
+	max-width: 100%;
+	max-height: 90%;
+	border-radius: 3px;
+	background-color: #fff;
+	display: -webkit-box;
+	display: -moz-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-direction: normal;
+	-webkit-box-orient: vertical;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	z-index: 13
+}
+
+.popup-container.popup-show {
+	visibility: visible;
+	z-index: 1005;
+}
+
+.popup-head {
+	padding: 15px 10px;
+	border-bottom: 1px solid #eee
+}
+
+.popup-title {
+	margin: 0;
+	padding: 0;
+	font-size: 15px
+}
+
+.balanced {
+	color: #4ebd52
+}
+
+.popup-body {
+	padding: 10px
+}
+
+.centerwin,.dmenu .tab,.gz-qr,.popup-body,.popup-head {
+	text-align: center
+}
+
+.suggestnotices {
+	padding: 0 2%;
+	margin: 0 auto;
+	max-height: 7rem;
+	min-height: 2.8rem;
+	line-height: 2.3rem;
+	/* border:1px #ddd solid; */
+	color: #757575;
+	/* border-top-left-radius: 10px; */
+	/* border-bottom-right-radius: 25px; */
+	font-size: 1.5rem;
+	/* font-weight: 600; */
+	background: #FFF;
+	border-bottom: 1px #f3f3f3 solid;
+}
+
+
