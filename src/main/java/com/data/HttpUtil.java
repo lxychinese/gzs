@@ -50,6 +50,7 @@ public class HttpUtil {
     }
 
     public static String httpPost(String urladdress, String param) {
+        System.out.println(param);
         HttpURLConnection uc = null;
         try {
             URL url = new URL(urladdress);
